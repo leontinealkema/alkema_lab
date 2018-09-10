@@ -1,0 +1,8 @@
+modified javascript file "bootstrap.portfilter" to split strings into two tags
+it then checks each tag and if either matches an element it is selected
+
+added javascript to the top of publications page which uses a loop to check each button upon selection
+if the button was not the most recent selection it has its style nullified
+this combined with the custom style called "mystyle" allows the buttons to stay selected
+when other page elements are selected yet deselect itself if another "demo" button is pressed
+
