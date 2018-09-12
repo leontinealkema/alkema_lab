@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5{
   background-color:#20B2AA !important;
 }
 
-/* l0go */
+/* logo */
 #Logo img {
     width: 15%;
 }
@@ -143,7 +143,7 @@ body {
 
 
 /* ===================================
-10. Inner - Section: page headline
+10. Nav 2 Inner - Section: page headline
 ==================================== */
 
 #inner-headline {
@@ -205,36 +205,58 @@ ul.breadcrumb li a:hover {
 }
 
 #people {
-    width: 15%;
+    width: 135px;
+    height: 135px;
     float: left;
     border: 5px solid #ddd;
     border-radius: 50%;
-    margin-top: 10px;
+
     margin-left: 10px;
     margin-right: 10px;
     object-fit: contain;
 }
+
+
+
+
 /* Display the columns below each other instead of side by side on small screens */
-@media screen and (max-width: 650px) {
-    .column {
-        width: 100%;
-        display: block;
-        margin-bottom: 5px; /* below each card padding */
+@media screen and (min-width: 601px) {
+    .card-body {
+      font-size: 18px;
+    }
 
+}
+
+
+@media screen and (max-width: 600px) {
+    .card-body {
+      font-size: 12px;
+    }
+    #people {
+          width: 70px;
+          height: 70px;
+    }
+    .card-title {
+      font-size: 14px;
     }
 }
 
-.card-title {
-
-      display: inline;
-    }
 
 
 
-
+.card {
+  background-color: #FCFCFC;
+}
 .title {
-    color: grey;
+  color: grey;
+  display: inline;
 }
+
+.card-body {
+  padding-top: 2%;
+}
+
+
 
 /* end people page
 
