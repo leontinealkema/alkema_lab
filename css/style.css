@@ -1,365 +1,371 @@
 
 
-@import url('../js/google-code-prettify/prettify.css');
-/* === fontawesome === */
+  @import url('../js/google-code-prettify/prettify.css');
+  /* === fontawesome === */
 
-@import url('font-awesome.css');
-/* === custom icon === */
+  @import url('font-awesome.css');
+  /* === custom icon === */
 
-@import url('custom-fonts.css');
-/* ==== overwrite bootstrap standard ==== */
+  @import url('custom-fonts.css');
+  /* ==== overwrite bootstrap standard ==== */
 
-@import url('overwrite.css');
-@import url('animate.css');
-/* Table of content */
-html, body {
-  height: 100%;
-  width: 100%;
-  /*font-family: 'Poppins', sans-serif;*/
-  color: #222;
-}
-
-
-
-
-.navbar-expand-md {
-  background-color:#E6E6FA;
-}
-
-/* space between words? */
-.navbar {
-  padding: .8rem; important;
-}
-
-/* shift to the rightk */
-.navbar-nav li {
-  padding-right: 5px;
-}
-
-.nav-link {
-  font-size: 1.1em; !important;
-}
-
-h1, h2, h3, h4, h5{
- margin: 0px;
-}
-
-.card-text {
-  font-size: 14px;
-}
-.btn {
-  display: inline-block;
-  
-}
-
-/* unvisited link */
-.btn {
-  color:black;
-  background-color:#E6E6FA; important;
-}
-
-.mystyle{
-  background-color: #20B2AA;
-}
-
-/* mouse over link */
-.btn:hover {
-  color:black;
-  background-color:#20B2AA; important;
-  border-color:black;
-}
-
-.btn:focus{
-   background-color:#20B2AA;
-}
-.btn:active{
-  background-color:#20B2AA !important;
-}
-
-/* logo */
-#Logo img {
-    width: 15%;
-}
-
-/* unvisited link */
-#myNav:hover {
-  color: black !important;
-}
-
-#myNav a:active {
-  color: black !important;
-}
-
-#navbarResponsive a.active {
-  color: black !important;
-}
-
-a:link {
-    color: black;
-}
-
-a:hover {
-  cursor: pointer;
-}
-
-/* visited link */
-
-/* mouse over link */
-a:hover {
-    color: #20B2AA !important;
-}
-
-
-/* 54px top to go to no padding */
-body {
-  padding-top: 54px;
-}
-
-
-@media (min-width: 992px) {
-  body {
-  }
-}
-
-.carousel-item {
-  height: 40vh;
-  min-height: 300px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.portfolio-item {
-  margin-bottom: 30px;
-}
-
-.py-5 {
-  background-color:#E6E6FA; important;
-}
-
-
-
-
-/* ===================================
-10. Nav 2 Inner - Section: page headline
-==================================== */
-
-#inner-headline {
-  background: #252525;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  color: #fefefe;
-}
-
-#inner-headline .inner-heading h2 {
-  color: #fff;
-  margin: 20px 0 0 0;
-}
-
-/* --- breadcrumbs --- */
-
-#inner-headline ul.breadcrumb {
-
-  margin: 30px 0 0;
-  float: right;
-  
-}
-
-#inner-headline ul.breadcrumb li {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-#inner-headline ul.breadcrumb li {
-  font-size: 13px;
-  color: #ddd;
-}
-
-#inner-headline ul.breadcrumb li i {
-  color: #dedede;
-}
-
-#inner-headline ul.breadcrumb li a {
-  color: #fff;
-}
-
-ul.breadcrumb li a:hover {
-  text-decoration: none;
-}
-
-
-
-
-
-/* People page
-
-/* Three columns side by side */
-.column {
-    float: left;
+  @import url('overwrite.css');
+  @import url('animate.css');
+  /* Table of content */
+  html, body {
+    height: 100%;
     width: 100%;
-    margin-bottom: 5px; /* below each card padding */
-    padding: 5px; /* top of all cards? */
-}
-
-#people {
-    width: 135px;
-    height: 135px;
-    float: left;
-    border: 5px solid #ddd;
-    border-radius: 50%;
-
-    margin-left: 10px;
-    margin-right: 10px;
-    object-fit: contain;
-}
+    /*font-family: 'Poppins', sans-serif;*/
+    color: #222;
+  }
 
 
 
 
-/* Display the columns below each other instead of side by side on small screens */
-@media screen and (min-width: 601px) {
-    .card-body {
-      font-size: 18px;
+  .navbar-expand-md {
+    background-color:#E6E6FA;
+  }
+
+  /* space between words? */
+  .navbar {
+    padding: .8rem; important;
+  }
+
+  /* shift to the rightk */
+  .navbar-nav li {
+    padding-right: 5px;
+  }
+
+  .nav-link {
+    font-size: 1.1em; !important;
+  }
+
+  h1, h2, h3, h4, h5{
+   margin: 0px;
+  }
+
+  .card-text {
+    font-size: 14px;
+  }
+  .btn {
+    display: inline-block;
+    
+  }
+
+  /* unvisited link */
+  .btn {
+    color:black;
+    background-color:#E6E6FA; important;
+    text-transform: none;
+  }
+
+  .mystyle{
+    background-color: #20B2AA;
+  }
+
+  /* mouse over link */
+  .btn:hover {
+    color:black;
+    background-color:#20B2AA; important;
+    border-color:black;
+  }
+
+  .btn:focus{
+     background-color:#20B2AA;
+  }
+  .btn:active{
+    background-color:#20B2AA !important;
+  }
+
+  /* logo */
+  #Logo img {
+      width: 15%;
+  }
+
+  /* unvisited link */
+  #myNav:hover {
+    color: black !important;
+  }
+
+  #myNav a:active {
+    color: black !important;
+  }
+
+  #navbarResponsive a.active {
+    color: black !important;
+  }
+
+  a:link {
+      color: black;
+  }
+
+  a:hover {
+    cursor: pointer;
+  }
+
+  /* visited link */
+
+  /* mouse over link */
+  a:hover {
+      color: #20B2AA !important;
+  }
+
+
+  /* 54px top to go to no padding */
+  body {
+    padding-top: 54px;
+  }
+
+
+  @media (min-width: 992px) {
+    body {
     }
+  }
 
-}
+  .carousel-item {
+    height: 40vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 
+  .portfolio-item {
+    margin-bottom: 30px;
+  }
 
-@media screen and (max-width: 600px) {
-    .card-body {
-      font-size: 12px;
-    }
-    #people {
-          width: 70px;
-          height: 70px;
-    }
-    .card-title {
-      font-size: 14px;
-    }
-}
-
-
-
-
-.card {
-  background-color: #FCFCFC;
-}
-.title {
-  color: grey;
-  display: inline;
-}
-
-.card-body {
-  padding-top: 2%;
-}
-
-
-
-/* end people page
+  .py-5 {
+    background-color:#E6E6FA; important;
+  }
 
 
 
 
+  /* ===================================
+  10. Nav 2 Inner - Section: page headline
+  ==================================== */
 
+  #inner-headline {
+    background: #252525;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    color: #fefefe;
+  }
 
+  #inner-headline .inner-heading h2 {
+    color: #fff;
+    margin: 20px 0 0 0;
+  }
 
+  /* --- breadcrumbs --- */
 
+  #inner-headline ul.breadcrumb {
 
+    margin: 30px 0 0;
+    float: right;
+    
+  }
 
+  #inner-headline ul.breadcrumb li {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
 
+  #inner-headline ul.breadcrumb li {
+    font-size: 15px;
+    color: #ddd;
+  }
 
+  #inner-headline ul.breadcrumb li i {
+    color: #dedede;
+  }
 
+  #inner-headline ul.breadcrumb li a {
+    color: #fff;
+  }
 
+  #people-card ul.breadcrumb li a {
+    color: #ddd;
+    font-size: 30px;
+  }
 
-
-
-
-
-
-/* =============================
-19. Custom icon from custom font icon
-============================= */
-
-/* ==================================================
-   Icons Example
-================================================== */
-
-.icons-example ul {
-  margin: 0 0 0 -20px;
-  padding: 0;
-  text-align: center;
-}
-
-.icons-example ul li {
-  display: inline-block;
-  margin: 0 0 10px 20px;
-  list-style: none;
-  cursor: pointer;
-}
-
-.icons-example ul li a {
-  display: inline;
-  -webkit-transition: all 400ms ease-out 0s;
-  -moz-transition: all 400ms ease-out 0s;
-  -o-transition: all 400ms ease-out 0s;
-  transition: all 400ms ease-out 0s;
-}
-
-.icons-example ul li a span {
-  display: inline-block;
-  margin: 0;
-  color: #111;
-  font-size: 32px;
-  line-height: 70px;
-}
-
-
-.icon-control {
-  margin: 0 0 0 140px;
-}
+  ul.breadcrumb li a:hover {
+    text-decoration: none;
+  }
 
 
 
 
 
-.row, .row-fluid {
-  margin-bottom: 30px;
-}
+  /* People page
 
-.row .row, .row-fluid .row-fluid {
-  margin-bottom: 30px;
-}
+  /* Three columns side by side */
+  .column {
+      float: left;
+      width: 100%;
+      margin-bottom: 5px; /* below each card padding */
+      padding: 5px; /* top of all cards? */
+  }
 
-.row.nomargin, .row-fluid.nomargin {
-  margin-bottom: 0;
-}
+  #people {
+      width: 170px;
+      height: 170px;
+      float: left;
+      border: 5px solid #ddd;
+      border-radius: 50%;
 
-/* ===============================
-17. Divider, Line & Misc
-================================ */
+      margin-left: 10px;
+      margin-right: 10px;
+      object-fit: contain;
+  }
 
-.solidline {
-  border-top: 1px solid #e6e6e6;
-  margin: 0 0 30px;
-}
 
-.dottedline {
-  border-top: 1px dotted #e6e6e6;
-  margin: 0 0 30px;
-}
 
-.dashedline {
-  border-top: 1px dotted #e6e6e6;
-  margin: 0 0 30px;
-}
 
-.blankline {
-  height: 1px;
-  margin: 0 0 30px;
-}
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (min-width: 601px) {
+      .card-body {
+        font-size: 18px;
+      }
+
+  }
+
+
+  @media screen and (max-width: 600px) {
+      .card-body {
+        font-size: 12px;
+      }
+      #people {
+            width: 70px;
+            height: 70px;
+      }
+      .card-title {
+        font-size: 14px;
+      }
+  }
+
+
+
+
+  .card {
+    background-color: #FCFCFC;
+  }
+  .title {
+    color: grey;
+    display: inline;
+  }
+
+  .card-body {
+    padding-top: 2%;
+  }
+
+
+
+  /* end people page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* =============================
+  19. Custom icon from custom font icon
+  ============================= */
+
+  /* ==================================================
+     Icons Example
+  ================================================== */
+
+  .icons-example ul {
+    margin: 0 0 0 -20px;
+    padding: 0;
+    text-align: center;
+  }
+
+  .icons-example ul li {
+    display: inline-block;
+    margin: 0 0 10px 20px;
+    list-style: none;
+    cursor: pointer;
+  }
+
+  .icons-example ul li a {
+    display: inline;
+    -webkit-transition: all 400ms ease-out 0s;
+    -moz-transition: all 400ms ease-out 0s;
+    -o-transition: all 400ms ease-out 0s;
+    transition: all 400ms ease-out 0s;
+  }
+
+  .icons-example ul li a span {
+    display: inline-block;
+    margin: 0;
+    color: #111;
+    font-size: 32px;
+    line-height: 70px;
+  }
+
+
+  .icon-control {
+    margin: 0 0 0 140px;
+  }
+
+
+
+
+
+  .row, .row-fluid {
+    margin-bottom: 30px;
+  }
+
+  .row .row, .row-fluid .row-fluid {
+    margin-bottom: 30px;
+  }
+
+  .row.nomargin, .row-fluid.nomargin {
+    margin-bottom: 0;
+  }
+
+  /* ===============================
+  17. Divider, Line & Misc
+  ================================ */
+
+  .solidline {
+    border-top: 1px solid #e6e6e6;
+    margin: 0 0 30px;
+  }
+
+  .dottedline {
+    border-top: 1px dotted #e6e6e6;
+    margin: 0 0 30px;
+  }
+
+  .dashedline {
+    border-top: 1px dotted #e6e6e6;
+    margin: 0 0 30px;
+  }
+
+  .blankline {
+    height: 1px;
+    margin: 0 0 30px;
+  }
 
 
 
