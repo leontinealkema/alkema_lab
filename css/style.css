@@ -140,14 +140,20 @@
 .carousel-caption {
   position: absolute;
   z-index: 20;
-  left: -55%;
+  /*left: -55%;*/
+  text-align: left;
+  left: 3% !important;
+  top: 78%;
   }
 ol {
  z-index: 20!important;
  position: absolute;
  }
 .carousel-indicators {
-  right: -90%;
+  /*right: -90%;*/
+  float: right;
+  right: -13% !important;
+  left: inherit;
 }
 .carousel-indicators li {
     border-radius: 15px;
@@ -174,7 +180,7 @@ ol {
       position: absolute;
       left: 0;
       opacity: .7;
-      top: 75%;
+      top: 78%;
       width: 180%;
       height: 120%;
       background: black;
