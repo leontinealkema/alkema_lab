@@ -122,6 +122,7 @@
     }
   }
 
+/* carousel code start */
   .carousel-item {
     height: 40vh;
     min-height: 300px;
@@ -131,6 +132,38 @@
     -o-background-size: cover;
     background-size: cover;
   }
+
+.carousel-control {
+  position: absolute;
+  z-index: 3;
+}
+.carousel-caption {
+  position: absolute;
+  z-index: 20;
+  }
+ol {
+ z-index: 20!important;
+ position: absolute;
+ }
+
+
+
+  .main-slider {
+    position: relative;
+    overflow: hidden;
+  }
+  section.main-slider:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      opacity: .7;
+      top: 75%;
+      width: 180%;
+      height: 120%;
+      background: black;
+      z-index: 2;
+  }
+/* carousel code end*/
 
   .portfolio-item {
     margin-bottom: 30px;

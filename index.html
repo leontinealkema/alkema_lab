@@ -48,26 +48,32 @@
         </div>
       </div>
     </nav>
-
-    <header style="padding-left:10px;padding-right: 10px;padding-top: 20px">
+    
+    <div class="container">
+    <header style="padding-left:-20px;padding-top: 20px">
+      <section class="main-slider">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+        <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
-          <!-- Slide One - Set the background image for this slide in the line below -->
+          <!-- Slide One  -->
           <div class="carousel-item active" style="background-image: url('img/bios1.jpg')">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
+              <p>Some text to draw attention</p>
             </div>
           </div>
-          <!-- Slide Two - Set the background image for this slide in the line below -->
+          <!-- Slide Two -->
           <div class="carousel-item" style="background-image: url('img/bios2.jpg')">
-            <div class="carousel-caption d-none d-md-block">
+             <div class="carousel-caption">
+              <p>Some text to draw attention</p>
             </div>
           </div>
-          <!-- Slide Three - Set the background image for this slide in the line below -->
+          <!-- Slide Three -->
           <div class="carousel-item" style="background-image: url('img/bios3.jpg')">
             <div class="carousel-caption d-none d-md-block">
             </div>
@@ -82,7 +88,10 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
+    </section>
     </header>
+  </div>
+
 
     <!-- Page Content -->
     <div class="container">
