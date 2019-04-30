@@ -19,7 +19,10 @@
     color: #222;
   }
 
-
+/* a class edit*/
+.text-link {
+  color: #20B2AA!important;
+}
 
 
   .navbar-expand-md {
@@ -199,6 +202,8 @@ ol {
 #breadmover {
   margin-left: 21%;
 }
+
+
 
 /*cant move the breadcrumb itself, the section needs to be moved*/
 
