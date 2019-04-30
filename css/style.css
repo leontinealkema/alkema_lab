@@ -19,6 +19,31 @@
     color: #222;
   }
 
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+/*The content-wrap has a bottom padding 
+that is the height of the footer, ensuring 
+that exactly enough space is left for the footer 
+inside the container they are both in. A wrapping div is 
+used here that would contain all other page content.*/
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3.5rem; 
+  background-color:#E6E6FA;           
+}
+
+.copyright{
+  margin-top: 20%;
+}
 /* a class edit*/
 .text-link {
   color: #20B2AA!important;
@@ -195,9 +220,6 @@ ol {
     margin-bottom: 30px;
   }
 
-  .py-5 {
-    background-color:#E6E6FA; important;
-  }
 
 #breadmover {
   margin-left: 21%;
