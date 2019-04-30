@@ -56,7 +56,7 @@
   .btn {
     color:black;
     background-color:#E6E6FA; important;
-    text-transform: none;
+    text-transform: lowercase;
   }
 
   .mystyle{

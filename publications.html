@@ -1,1255 +1,1248 @@
-  <!DOCTYPE html>
-  <html lang="en">
-    <script>
-  function myFunction(j) {
-       var element = document.getElementById("demo"+j);
-        element.classList.toggle("mystyle");
-        for (i = 0; i < 9; i++) { 
-          if (i != j){
-            var element = document.getElementById("demo" + i );
-            element.classList.remove("mystyle");
-          }
-        }
-  }
-  </script>
+	  <!DOCTYPE html>
+	  <html lang="en">
+	    <script>
+	  function myFunction(j) {
+	       var element = document.getElementById("demo"+j);
+	        element.classList.toggle("mystyle");
+	        for (i = 0; i < 9; i++) { 
+	          if (i != j){
+	            var element = document.getElementById("demo" + i );
+	            element.classList.remove("mystyle");
+	          }
+	        }
+	  }
+	  </script>
 
-    <head>
+	    <head>
 
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <meta name="description" content="">
-      <meta name="author" content="">
+	      <meta charset="utf-8">
+	      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	      <meta name="description" content="">
+	      <meta name="author" content="">
 
-      <title>Home</title>
+	      <title>Home</title>
 
-      <!-- Bootstrap core CSS -->
-      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	      <!-- Bootstrap core CSS -->
+	      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-      <!-- Custom styles for this template -->
-      <link href="css/style.css" rel="stylesheet">
+	      <!-- Custom styles for this template -->
+	      <link href="css/style.css" rel="stylesheet">
 
-    </head>
+	    </head>
 
-    <body>
+	    <body>
 
-      <!-- Navigation -->
-      <nav class="navbar navbar-expand-md navbar-light fixed-top">
-        <div class="container">
-          <a id="myNav" class="navbar-brand" href="index.html"><img src="">Alkema Lab</a>
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a id="myNav" class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a id="myNav" class="nav-link" href="people.html">People</a>
-              </li>
-              <li class="nav-item">
-                <a id="myNav" class="nav-link" href="research.html">Research</a>
-              </li>
-              <li class="nav-item">
-                <a id="myNav" class="nav-link" href=".html">Family Planning</a>
-              </li>
-              <li class="nav-item">
-                <a id="myNav" class="nav-link" href="publications.html">Publications</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-  <!-- Navigation2 -->
-      <section id="inner-headline">
-        <div class="container">
-          <div class="row justify-content-between">
-            <div class="span4">
-              <div class="inner-heading">
-                <h2>Publications</h2>
-              </div>
-            </div>
-            <div class="span12">
-              <ul class="breadcrumb">
-                <li><a href="index.html"><i class="icon-home"></i></a><i class="icon-angle-right"></i></li>
-                <li class="active">Publications</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-
-
-      <!-- Page Content -->
+	         <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top">
       <div class="container">
-          <div class="container wrapper">
-          <div classs="pull-right">
-            <div class="row">
-                <div>
-                <button id="demo0" class="btn btn-small btn-light btn-primary" data-toggle="portfilter" data-target="all" onclick="myFunction(0)">All</button>
-                </div>
-                <div>
-                <button id="demo1" class="btn btn-small btn-light" data-toggle="portfilter" data-target="fun" onclick="myFunction(1)">Fun stats stuff</button>
-                </div>
-                <div>
-                <button id="demo2" class="btn btn-small btn-light" data-toggle="portfilter" data-target="child" onclick="myFunction(2)">Child mortality</button>
-                </div>
-                <div>
-                <button id="demo3" class="btn btn-small btn-light" data-toggle="portfilter" data-target="fam" onclick="myFunction(3)">Family planning</button>
-                </div>
-                <div>
-                <button id="demo4" class="btn btn-small btn-light" data-toggle="portfilter" data-target="fert" onclick="myFunction(4)">Fertility</button>
-                </div>
-                <div>
-                <button id="demo5" class="btn btn-small btn-light" data-toggle="portfilter" data-target="mat" onclick="myFunction(5)">Maternal mortality</button>
-                </div>
-                <div>
-                <button id="demo6" class="btn btn-small btn-light" data-toggle="portfilter" data-target="hiv" onclick="myFunction(6)">HIV/AIDS</button>
-                </div>
-                <div>
-                <button id="demo7" class="btn btn-small btn-light" data-toggle="portfilter" data-target="pop"
-                onclick="myFunction(7)">Population projections</button>
-                </div>
-                <div>
-                <button id="demo8" class="btn btn-small btn-light" data-toggle="portfilter" data-target="abo"
-                onclick="myFunction(8)">Unintended pregnancies and abortion</button>
-                </div>
-                <br>
-                <br>
-            </div>
-          </div>
-          <div class="clearfix"></div>
-
-
-             <div class="card mb-4" data-tag='fun child'>
-              <div class="card-body">
-                <p class="card-title" data-toggle="collapse" data-target="#demo35">
-                <a><strong>National and regional under-5 mortality rate by
-                economic status for low-income and middle-income countries: a systematic assessment.</strong></a> </p>
-                <p class="card-text">  F Chao, D You, J Pedersen, L Hug, L Alkema (2018). <i>The Lancet
-                Global Health</i> 6(5): e535-e547.
-                </p>
-                <div id="demo35" class="collapse">
-
-                <br>
-                Background
-                <p>The progress to achieve the fourth Millennium Development Goal in reducing mortality rate in children younger than 5 years since 1990 has been remarkable. However, work remains to be done in the Sustainable Development Goal era. Estimates of under-5 mortality rates at the national level can hide disparities within countries. We assessed disparities in under-5 mortality rates by household economic status in low-income and middle-income countries (LMICs).</p>
-
-                Method
-                <p> We estimated country-year-specific under-5 mortality rates by wealth quintile on the basis of household wealth indices for 137 LMICs from 1990 to 2016, using a Bayesian statistical model. We estimated the association between quintile-specific and national-level under-5 mortality rates. We assessed the levels and trends of absolute and relative disparity in under-5 mortality rate between the poorest and richest quintiles, and among all quintiles.
-                </p>
-                Findings
-                <p>In 2016, for all LMICs (excluding China), the aggregated under-5 mortality rate was 64·6 (90% uncertainty interval [UI] 61·1–70·1) deaths per 1000 livebirths in the poorest households (first quintile), 31·3 (29·5–34·2) deaths per 1000 livebirths in the richest households (fifth quintile), and in between those outcomes for the middle quintiles. Between 1990 and 2016, the largest absolute decline in under-5 mortality rate occurred in the two poorest quintiles: 77·6 (90% UI 71·2–82·6) deaths per 1000 livebirths in the poorest quintile and 77·9 (72·0–82·2) deaths per 1000 livebirths in the second poorest quintile. The difference in under-5 mortality rate between the poorest and richest quintiles decreased significantly by 38·8 (90% UI 32·9–43·8) deaths per 1000 livebirths between 1990 and 2016. The poorest to richest under-5 mortality rate ratio, however, remained similar (2·03 [90% UI 1·94–2·11] in 1990, 1·99 [1·91–2·08] in 2000, and 2·06 [1·92–2·20] in 2016). During 1990–2016, around half of the total under-5 deaths occurred in the poorest two quintiles (48·5% in 1990 and 2000, 49·5% in 2016) and less than a third were in the richest two quintiles (30·4% in 1990, 30·5% in 2000, 29·9% in 2016). For all regions, differences in the under-5 mortality rate between the first and fifth quintiles decreased significantly, ranging from 20·6 (90% UI 15·9–25·1) deaths per 1000 livebirths in eastern Europe and central Asia to 59·5 (48·5–70·4) deaths per 1000 livebirths in south Asia. In 2016, the ratios of under-5 mortality rate in the first quintile to under-5 mortality rate in the fifth quintile were significantly above 2·00 in two regions, with 2·49 (90% UI 2·15–2·87) in east Asia and Pacific (excluding China) and 2·41 (2·05–2·80) in south Asia. Eastern and southern Africa had the smallest ratio in 2016 at 1·62 (90% UI 1·48–1·76). Our model suggested that the expected ratio of under-5 mortality rate in the first quintile to under-5 mortality rate in the fifth quintile increases as national-level under-5 mortality rate decreases.</p>
-
-                Interpretation
-                <p>For all LMICs (excluding China) combined, the absolute disparities in under-5 mortality rate between the poorest and richest households have narrowed significantly since 1990, whereas the relative differences have remained stable. To further narrow the rich-and-poor gap in under-5 mortality rate on the relative scale, targeted interventions that focus on the poorest populations are needed.</p>
-
-                Funding
-                <p>National University of Singapore, UN Children's Fund, United States Agency for International Development, and the Bill & Melinda Gates Foundation.</p>
-
-                </div>
-              </div>
-
-            </div>
-
-            <div class="card mb-4" data-tag='abo fun'>
-              <div class="card-body">
-                <p class="card-title" data-toggle="collapse" data-target="#demo34">
-                <a><strong>Global, regional, and subregional trends in unintended pregnancy and its outcomes from 1990 to 2014: estimates from a Bayesian hierarchical model</strong></a> </p>
-                <p class="card-text"> J. Bearak, A Popinchalk, L Alkema, G Sedgh (2018). <i>The Lancet Global Health</i> 6(4): e380 - e389.
-                </p>
-                <div id="demo34" class="collapse">
-
-                <br>
-                Background
-                <p>The progress to achieve the fourth Millennium Development Goal in reducing mortality rate in children younger than 5 years since 1990 has been remarkable. However, work remains to be done in the Sustainable Development Goal era. Estimates of under-5 mortality rates at the national level can hide disparities within countries. We assessed disparities in under-5 mortality rates by household economic status in low-income and middle-income countries (LMICs).</p>
-                <br>
-                Background
-                <p>Estimates of pregnancy incidence by intention status and outcome indicate how effectively women and couples are able to fulfil their childbearing aspirations, and can be used to monitor the impact of family-planning programmes. We estimate global, regional, and subregional pregnancy rates by intention status and outcome for 1990–2014.</p>
-
-                Methods
-                <p>
-                We developed a Bayesian hierarchical time series model whereby the unintended pregnancy rate is a function of the distribution of women across subgroups defined by marital status and contraceptive need and use, and of the risk of unintended pregnancy in each subgroup. Data included numbers of births and of women estimated by the UN Population Division, recently published abortion incidence estimates, and findings from surveys of women on the percentage of births or pregnancies that were unintended. Some 298 datapoints on the intention status of births or pregnancies were obtained for 105 countries.</p>
-
-                Findings
-                <p>Worldwide, an estimated 44% (90% uncertainty interval [UI] 42–48) of pregnancies were unintended in 2010–14. The unintended pregnancy rate declined by 30% (90% UI 21–39) in developed regions, from 64 (59–81) per 1000 women aged 15–44 years in 1990–94 to 45 (42–56) in 2010–14. In developing regions, the unintended pregnancy rate fell 16% (90% UI 5–24), from 77 (74–88) per 1000 women aged 15–44 years to 65 (62–76). Whereas the decline in the unintended pregnancy rate in developed regions coincided with a declining abortion rate, the decline in developing regions coincided with a declining unintended birth rate. In 2010–14, 59% (90% UI 54–65) of unintended pregnancies ended in abortion in developed regions, as did 55% (52–60) of unintended pregnancies in developing regions.</p>
-
-                Interpretation
-                <p>The unintended pregnancy rate remains substantially higher in developing regions than in developed regions. Sexual and reproductive health services are needed to help women avoid unintended pregnancies, and to ensure healthy outcomes for those who do experience such pregnancies.</p>
-
-                Funding
-                <p>Dutch Ministry of Foreign Affairs and UK Aid from the UK Government.</p>
-
-                </div>
-              </div>
-            </div>
-         
-         <div class="card mb-4" data-tag='fun child'>
-              <div class="card-body">
-                <p class="card-title" data-toggle="collapse" data-target="#demo33">
-                <a><strong>Global estimation of neonatal mortality using a Bayesian hierarchical splines regression model</strong></a> </p>
-                <p class="card-text"> M. Alexander<sup></sup>, L. Alkema (2018). <i>Demographic Research</i> 38: 335 – 372.
-
-                </p>
-                <div id="demo33" class="collapse">
-                <br>
-                Background
-                <p> In recent years, much of the focus in monitoring child mortality has been on assessing changes in the under-5 mortality rate (U5MR). However, as the U5MR decreases, the share of neonatal deaths (within the ﬁrst month) tends to increase, warranting increased efforts in monitoring the neonatal mortality rate (NMR) in addition to the U5MR.</p>
-
-                Objective
-                <p> Data on neonatal deaths comes from a range of sources across different countries, with the amount of data available and the quality of data varying widely. Our objective in estimating the NMR globally is to combine all data sources available to obtain accurate estimates, be able to project mortality levels, and have some indication of the uncertainty in the estimates and projections.</p>
-
-                Methods
-                <p>We present a new model for estimating the NMR for countries worldwide, using a Bayesian hierarchical model framework.</p>
-
-                Contribution
-                <p>Our modeling approach offers an intuitive way to share information across different countries and time points, and incorporates different sources of error into the estimates. It also improves on previous modeling approaches by allowing for trends observed in NMR to be more driven by the data available, rather than trends in covariates.</p>
-                </div>
-              </div>
-            </div>
-         <div class="card mb-4" data-tag="fun fam">
-              <div class="card-body">
-                <p class="card-title" data-toggle="collapse" data-target="#demo32">
-                <a><strong>Modern contraceptive use, unmet need, and demand satisfied among women of reproductive age who are married or in a union in the focus countries of the Family Planning 2020 initiative: a systematic analysis using the Family Planning Estimation Tool. </strong></a> </p>
-                <p class="card-text"> N. Cahill<sup></sup>, E. Sonneveldt, J. Stover, M. Weinberger, J. Williamson, C. Wei<sup></sup>, W. Brown, L. Alkema (2018).  <i>The Lancet</i> 391 (10123): 870 – 882. 
-
-
-                </p>
-                <div id="demo32" class="collapse">
-                <br>
-                Background
-                <p>The London Summit on Family Planning in 2012 inspired the Family Planning 2020 (FP2020) initiative and the 120×20 goal of having an additional 120 million women and adolescent girls become users of modern contraceptives in 69 of the world's poorest countries by the year 2020. Working towards achieving 120 × 20 is crucial for ultimately achieving the Sustainable Development Goals of universal access and satisfying demand for reproductive health. Thus, a performance assessment is required to determine countries' progress.</p>
-
-                Methods
-                <p>
-                An updated version of the Family Planning Estimation Tool (FPET) was used to construct estimates and projections of the modern contraceptive prevalence rate (mCPR), unmet need for, and demand satisfied with modern methods of contraception among women of reproductive age who are married or in a union in the focus countries of the FP2020 initiative. We assessed current levels of family planning indicators and changes between 2012 and 2017. A counterfactual analysis was used to assess if recent levels of mCPR exceeded pre-FP2020 expectations.</p>
-
-                Findings
-                <p>
-                In 2017, the mCPR among women of reproductive age who are married or in a union in the FP2020 focus countries was 45·7% (95% uncertainty interval [UI] 42·4–49·1), unmet need for modern methods was 21·6% (19·7–23·9), and the demand satisfied with modern methods was 67·9% (64·4–71·1). Between 2012 and 2017 the number of women of reproductive age who are married or in a union who use modern methods increased by 28·8 million (95% UI 5·8–52·5). At the regional level, Asia has seen the mCPR among women of reproductive age who are married or in a union grow from 51·0% (95% UI 48·5–53·4) to 51·8% (47·3–56·5) between 2012 and 2017, which is slow growth, particularly when compared with a change from 23·9% (22·9–25·0) to 28·5% (26·8–30·2) across Africa. At the country level, based on a counterfactual analysis, we found that 61% of the countries that have made a commitment to FP2020 exceeded pre-FP2020 expectations for modern contraceptive use. Country success stories include rapid increases in Kenya, Mozambique, Malawi, Lesotho, Sierra Leone, Liberia, and Chad relative to what was expected in 2012.</p>
-
-                Interpretation
-                <p>
-                Whereas the estimate of additional users up to 2017 for women of reproductive age who are married or in a union would suggest that the 120 × 20 goal for all women is overly ambitious, the aggregate outcomes mask the diversity in progress at the country level. We identified countries with accelerated progress, that provide inspiration and guidance on how to increase the use of family planning and inform future efforts, especially in countries where progress has been poor.</p>
-
-                Funding
-                <p>
-                The Bill & Melinda Gates Foundation, through grant support to the University of Massachusetts Amherst and Avenir Health.</p>
-              </div>
-            </div>
-          </div>
-
-        <div class="card mb-4" data-tag='abo'>
-              <div class="card-body">
-                <p class="card-title" data-toggle="collapse" data-target="#demo31">
-                <a><strong>Global, regional and sub-regional classification of abortions by safety: Estimates for 2010-14</strong></a> </p>
-                <p class="card-text"> B. Ganatra, C. Gerdts, C. Rossier, R. Johnson, Ö. Tunçalp, A. Assifi,  G. Sedgh, S. Singh, A. Bankole, A. Popinchalk, J. Bearak, Z. Kang<sup></sup>, L. Alkema (2017).  <i>The Lancet</i> 
-                </p>
-                <div id="demo31" class="collapse">
-                <div class="push"></div>
-                <br>
-                Background
-                <p>Global estimates of unsafe abortions have been produced for 1995, 2003, and 2008. However, reconceptualisation of the framework and methods for estimating abortion safety is needed owing to the increased availability of simple methods for safe abortion (eg, medical abortion), the increasingly widespread use of misoprostol outside formal health systems in contexts where abortion is legally restricted, and the need to account for the multiple factors that affect abortion safety.
-                </p>
-                Methods
-                <p>We used all available empirical data on abortion methods, providers, and settings, and factors affecting safety as covariates within a Bayesian hierarchical model to estimate the global, regional, and subregional distributions of abortion by safety categories. We used a three-tiered categorisation based on the WHO definition of unsafe abortion and WHO guidelines on safe abortion to categorise abortions as safe or unsafe and to further divide unsafe abortions into two categories of less safe and least safe.
-                </p>
-                Findings
-                <p>Of the 55· 7 million abortions that occurred worldwide each year between 2010-14, we estimated that 30·6 million (54·9%, 90% uncertainty interval 49·9-59·4) were safe, 17·1 million (30·7%, 25·5-35·6) were less safe, and 8·0 million (14·4%, 11·5-18·1) were least safe. Thus, 25·1 million (45·1%, 40·6-50·1) abortions each year between 2010 and 2014 were unsafe, with 24·3 million (97%) of these in developing countries. The proportion of unsafe abortions was significantly higher in developing countries than developed countries (49·5% vs 12·5%). When grouped by the legal status of abortion, the proportion of unsafe abortions was significantly higher in countries with highly restrictive abortion laws than in those with less restrictive laws.
-                </p>
-                Interpretation
-                <p>Increased efforts are needed, especially in developing countries, to ensure access to safe abortion. The paucity of empirical data is a limitation of these findings. Improved in-country data for health services and innovative research to address these gaps are needed to improve future estimates.
-                </p>
-                Funding
-                <p>UNDP/UNFPA/UNICEF/WHO/World Bank Special Programme of Research, Development and Research Training in Human Reproduction; David and Lucile Packard Foundation; UK Aid from the UK Government; Dutch Ministry of Foreign Affairs; Norwegian Agency for Development Cooperation.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="card mb-4" data-tag="fun mat">
-            <div class="card-body">
-              <p class="card-title" data-toggle="collapse" data-target="#demo30">
-              <a><strong>A Bayesian approach to the global estimation of maternal mortality </strong></a> </p>
-              <p class="card-text">L. Alkema, S. Zhang, D. Chou, A. Gemmill<sup></sup>, A.B. Moller, D.M. Fat, L. Say, C.D. Mathers, D. Hogan (2017). <i>The The Annals of Applied Statistics</i>  11(3): 1245 – 1274. 
-              </p>
-              <div id="demo30" class="collapse">
-                <br>
-                Summary
-                <p>The maternal mortality ratio (MMR) is defined as the number of maternal deaths in a population per 100,000 live births. Country-specific MMR estimates are published on a regular basis by the United Nations Maternal Mortality Estimation Inter-agency Group (UN MMEIG) to track progress in reducing maternal deaths and to evaluate regional and national performance related to Millennium Development Goal (MDG) 5, which calls for a 75% reduction in the MMR between 1990 and 2015. 
-                </p>
-                <p>
-                Until 2014, the UN MMEIG used a multilevel regression model for producing estimates for countries without sufficient data from vital registration systems. While this model worked well in the past to assess MMR levels for countries with limited data, it was deemed unsatisfactory for final MDG 5 reporting for countries where longer time series of observations had become available because by construction, estimated trends in the MMR were covariate-driven only and did not necessarily track data-driven trends. 
-                </p>
-                <p>
-                We developed a Bayesian maternal mortality estimation model, which extends upon the UN MMEIG multilevel regression model. The new model assesses data-driven trends through the inclusion of an ARIMA time series model that captures accelerations and decelerations in the rate of change in the MMR. Varying reporting and data quality issues are accounted for in source-specific data models. The revised model provides data-driven estimates of MMR levels and trends and will be used for MDG 5 reporting for all countries.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="card mb-4" data-tag='fam'>
-            <div class="card-body">
-              <p class="card-title" data-toggle="collapse" data-target="#demo29">
-              <a><strong>Setting ambitious yet achievable targets using probabilistic projections: meeting demand for family planning </strong></a> </p>
-              <p class="card-text">V. Kantorova, J.R. New<sup></sup>, A. Biddlecom, L. Alkema (2017). <i>Studies in Family Planning</i> 48(3): 223 – 233. 
-              </p>
-              <div id="demo29" class="collapse">
-                <br>
-                Abstract
-                <p>
-                In 2015, governments adopted 17 internationally agreed goals to ensure progress and well-being in the economic, social, and environmental dimensions of sustainable development. These new goals present a challenge for countries to set empirical targets that are ambitious yet achievable and that can account for different starting points and rates of progress. We used probabilistic projections of family planning indicators, based on a global data set and Bayesian hierarchical modeling, to generate illustrative targets at the country level. Targets were defined as the percentage of demand for family planning satisfied with modern contraceptive methods where a country has at least a 10 percent chance of reaching the target by 2030. National targets for 2030 ranged from below 50 percent of demand satisfied with modern contraceptives (for three countries in Africa) to above 90 percent (for 41 countries from all major areas of the world). The probabilistic approach also identified countries for which a global fixed target value of 75 percent demand satisfied was either unambitious or has little chance of achievement. We present the web-based Family Planning Estimation Tool (FPET) enabling national decision makers to compute and assess targets for meeting family planning demand.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="card mb-4" data-tag='fam'>
-            <div class="card-body">
-              <p class="card-title" data-toggle="collapse" data-target="#demo28">
-              <a><strong>Subnational Rates and Trends in Contraceptive Prevalence and Unmet Need for Family Planning from 1990 to 2020: An Analysis for All 29 States in India </strong></a> </p>
-              <p class="card-text"> J.R. New<sup></sup>, N. Cahill<sup></sup>, J. Stover, Y.P. Gupta, L. Alkema (2017).  <i>The Lancet Global Health </i>5(3): e350-e358. 
-              </p>
-              <div id="demo28" class="collapse">
-              <br>
-              Background
-              <p>
-              Improving access to reproductive health services and commodities is central to development. Efforts to assess progress on this front have been largely focused on national estimates, but such analyses can mask local disparities. We assessed progress in reproductive health services subnationally in India.
-              </p>
-              Findings
-              <p>
-              There is a large amount of heterogeneity in India, with a difference of up to 55·1 percentage points (95% uncertainty interval 46·4-62·1) in modern contraceptive use in 2015 between subregions. States such as Andhra Pradesh, with 92·7% (90·9-94·2) demand satisfied with modern methods, are performing well above the national average (71·8%, 56·7-83·6), whereas Manipur, with 26·8% (16·7-38·5) of demand satisfied, and Meghalaya, with 45·0% (40·1-50·0), consistently lag behind the rest of the country. Manipur and Meghalaya require the highest percentage increase in modern contraceptive use to achieve 75% demand satisfied with modern methods by 2030. In terms of absolute numbers, Uttar Pradesh requires the greatest increase, needing 9·2 million (5·5-12·6 million) additional users of modern contraception by 2030 to meet the target of 75%.
-              </p>
-
-              Interpretation
-              <p>The demand for family planning among the states and union territories in India is highly diverse. Greatest attention is needed in Uttar Pradesh, Manipur, and Meghalaya to meet UN targets. The analysis can be generalised to other countries as well as other subpopulations.
-              </p>
-              Funding
-              <p>Avenir Health through a grant from the Bill & Melinda Gates Foundation.
-              </p>
-            </div>
-          </div>
-        </div>
-          <div class="card mb-4" data-tag='fun abo'>
-            <div class="card-body">
-              <p class="card-title" data-toggle="collapse" data-target="#demo27">
-              <a><strong>Abortion incidence between 1990 and 2014: global, regional, and subregional levels and trends </strong></a> </p>
-              <p class="card-text">G. Sedgh, J. Bearak, S. Singh, A. Bankole, A. Popinchalk, B. Ganatra, C. Rossier, C. Gerdts, Ö. Tunçalp, R. Johnson, H.B. Johnston, L. Alkema (2016). <i>The Lancet </i>388(10041): 258 – 267. 
-              </p>
-              <div id="demo27" class="collapse">
-              <br>
-              Background
-              <p>
-              Information about the incidence of induced abortion is needed to motivate and inform efforts to help women avoid unintended pregnancies and to monitor progress toward that end. We estimate subregional, regional, and global levels and trends in abortion incidence for 1990 to 2014, and abortion rates in subgroups of women. We use the results to estimate the proportion of pregnancies that end in abortion and examine whether abortion rates vary in countries grouped by the legal status of abortion.
-              </p>
-
-              Methods
-              <p>We requested abortion data from government agencies and compiled data from international sources and nationally representative studies. With data for 1069 country-years, we estimated incidence using a Bayesian hierarchical time series model whereby the overall abortion rate is a function of the modelled rates in subgroups of women of reproductive age defined by their marital status and contraceptive need and use, and the sizes of these subgroups.
-              </p>
-
-              Findings
-              <p>We estimated that 35 abortions (90% uncertainty interval [UI] 33 to 44) occurred annually per 1000 women aged 15–44 years worldwide in 2010–14, which was 5 points less than 40 (39–48) in 1990–94 (90% UI for decline −11 to 0). Because of population growth, the annual number of abortions worldwide increased by 5·9 million (90% UI −1·3 to 15·4), from 50·4 million in 1990–94 (48·6 to 59·9) to 56·3 million (52·4 to 70·0) in 2010–14. In the developed world, the abortion rate declined 19 points (–26 to −14), from 46 (41 to 59) to 27 (24 to 37). In the developing world, we found a non-significant 2 point decline (90% UI −9 to 4) in the rate from 39 (37 to 47) to 37 (34 to 46). Some 25% (90% UI 23 to 29) of pregnancies ended in abortion in 2010–14. Globally, 73% (90% UI 59 to 82) of abortions were obtained by married women in 2010–14 compared with 27% (18 to 41) obtained by unmarried women. We did not observe an association between the abortion rates for 2010–14 and the grounds under which abortion is legally allowed.
-              </p>
-
-              Interpretation
-              <p>Abortion rates have declined significantly since 1990 in the developed world but not in the developing world. Ensuring access to sexual and reproductive health care could help millions of women avoid unintended pregnancies and ensure access to safe abortion.
-              </p>
-
-              Funding
-              <p>UK Government, Dutch Ministry of Foreign Affairs, Norwegian Agency for Development Cooperation, The David and Lucile Packard Foundation, UNDP/UNFPA/UNICEF/WHO/World Bank Special Programme of Research, Development and Research Training in Human Reproduction.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="card mb-4" data-tag='mat'>
-            <div class="card-body">
-              <p class="card-title" data-toggle="collapse" data-target="#demo26">
-              <a><strong>
-              Global, regional, and national levels and trends in maternal mortality between 1990 and 2015, with scenario-based projections to 2030: a systematic analysis by the UN Inter-agency Group for Maternal Mortality Estimation 
-              </strong></a> 
-              </p>
-              <p class="card-text">
-              L. Alkema, D. Chou, D. Hogan, S. Zhang, A.B. Moller, A. Gemmill<sup></sup>, D.M. Fat, T. Boerma, M. Temmerman, C.D. Mathers, L. Say (2016). 
-              <i>
-              The Lancet
-              </i>
-              387(10017): 462 – 474. 
-              </p>
-              <div id="demo26" class="collapse">
-              <br>
-              Background
-              <p>
-              Millennium Development Goal 5 calls for a 75% reduction in the maternal mortality ratio (MMR) between 1990 and 2015. We estimated levels and trends in maternal mortality for 183 countries to assess progress made. Based on MMR estimates for 2015, we constructed projections to show the requirements for the Sustainable Development Goal (SDG) of less than 70 maternal deaths per 100 000 livebirths globally by 2030. 
-              </p>
-              Methods
-              <p> We updated the UN Maternal Mortality Estimation Inter-Agency Group (MMEIG) database with more than 200 additional records (vital statistics from civil registration systems, surveys, studies, or reports). We generated estimates of maternal mortality and related indicators with 80% uncertainty intervals (UIs) using a Bayesian model. The model combines the rate of change implied by a multilevel regression model with a time-series model to capture data-driven changes in country-specific MMRs, and includes a data model to adjust for systematic and random errors associated with different data sources. 
-              </p>
-              Results
-              <p>
-               We had data for 171 of 183 countries. The global MMR fell from 385 deaths per 100 000 livebirths (80% UI 359-427) in 1990, to 216 (207-249) in 2015, corresponding to a relative decline of 43 9% (34 0-48 7), with 303 000 (291 000-349 000) maternal deaths worldwide in 2015. Regional progress in reducing the MMR since 1990 ranged from an annual rate of reduction of 1.8% (0.0-3.1) in the Caribbean to 5.0% (4.0-6.0) in eastern Asia. Regional MMRs for 2015 ranged from 12 deaths per 100 000 livebirths (11-14) for high-income regions to 546 (511-65 2) for sub-Saharan Africa. Accelerated progress will be needed to achieve the SDG goal; countries will need to reduce their MMRs at an annual rate of reduction of at least 7.5%. 
-              </p>
-              Interpretation
-               <p>
-               Despite global progress in reducing maternal mortality, immediate action is needed to meet the ambitious SDG 2030 target, and ultimately eliminate preventable maternal mortality. Although the rates of reduction that are needed to achieve country-specific SDG targets are ambitious for most high mortality countries, countries that made a concerted effort to reduce maternal mortality between 2000 and 2010 provide inspiration and guidance on how to accomplish the acceleration necessary to substantially reduce preventable maternal deaths.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="card mb-4" data-tag='child'>
-            <div class="card-body">
-              <p class="card-title" data-toggle="collapse" data-target="#demo25">
-              <a><strong>
-              Global, regional, and national levels and trends in under-5 mortality between 1990 and 2015, with scenario-based projections to 2030: a systematic analysis by the UN Inter-agency Group for Child Mortality Estimation 
-              </strong></a> 
-              </p>
-              <p class="card-text">
-              D. You, L. Hug, S. Ejdemyr, P. Idele, D. Hogan, C. Mathers, P. Gerland, J.R. New<sup></sup>, L. Alkema (2015).  
-              <i>
-              The Lancet
-              </i>
-              386(10010): 2275–2286.
-              </p>
-              <div id="demo25" class="collapse">
-              <br>
-              Background
-              <p>
-              In 2000, world leaders agreed on the Millennium Development Goals (MDGs). MDG 4 called for a two-thirds reduction in the under-5 mortality rate between 1990 and 2015. We aimed to estimate levels and trends in under-5 mortality for 195 countries from 1990 to 2015 to assess MDG 4 achievement and then intended to project how various post-2015 targets and observed rates of change will affect the burden of under-5 deaths from 2016 to 2030.
-              </p>
-              Methods
-              <p>
-              We updated the UN Inter-agency Group for Child Mortality Estimation (UN IGME) database with 5700 country-year datapoints. As of July, 2015, the database contains about 17 000 country-year datapoints for mortality of children younger than 5 years for 195 countries, and includes all available nationally-representative data from vital registration systems, population censuses, household surveys, and sample registration systems. We used these data to generate estimates, with uncertainty intervals, of under-5 (age 0-4 years) mortality using a Bayesian B-spline bias-reduction model (B3 model). This model includes a data model to adjust for systematic biases associated with different types of data sources. To provide insights into the global and regional burden of under-5 deaths associated with post-2015 targets, we constructed five scenario-based projections for under-5 mortality from 2016 to 2030 and estimated national, regional, and global under-5 mortality rates up to 2030 for each scenario.
-              </p>
-              Results
-              <p>
-              The global under-5 mortality rate has fallen from 90·6 deaths per 1000 livebirths (90% uncertainty interval 89·3-92·2) in 1990 to 42·5 (40·9-45·6) in 2015. During the same period, the annual number of under-5 deaths worldwide dropped from 12·7 million (12·6 million-13·0 million) to 5·9 million (5·7 million-6·4 million). The global under-5 mortality rate reduced by 53% (50-55%) in the past 25 years and therefore missed the MDG 4 target. Based on point estimates, two regions-east Asia and the Pacific, and Latin America and the Caribbean-achieved the MDG 4 target. 62 countries achieved the MDG 4 target, of which 24 were low-income and lower-middle income countries. Between 2016 and 2030, 94·4 million children are projected to die before the age of 5 years if the 2015 mortality rate remains constant in each country, and 68·8 million would die if each country continues to reduce its mortality rate at the pace estimated from 2000 to 2015. If all countries achieve the Sustainable Development Goal of an under-5 mortality rate of 25 or fewer deaths per 1000 livebirths by 2030, we project 56·0 million deaths by 2030. About two-thirds of all sub-Saharan African countries need to accelerate progress to achieve this target.
-              </p>
-              Interpretation
-              <p>
-              Despite substantial progress in reducing child mortality, concerted efforts remain necessary to avoid preventable under-5 deaths in the coming years and to accelerate progress in improving child survival further. Urgent actions are needed most in the regions and countries with high under-5 mortality rates, particularly those in sub-Saharan Africa and south Asia.
-              </p>
-              <p>
-              Funding
-              No funding
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="card mb-4" data-tag='pop'>
-            <div class="card-body">
-              <p class="card-title" data-toggle="collapse" data-target="#demo24">
-              <a><strong>
-              The United Nations Probabilistic Population Projections: An Introduction to Demographic Forecasting with Uncertainty. 
-              </strong></a> 
-              </p>
-              <p class="card-text">
-              L. Alkema, P. Gerland, A.E. Raftery, J. Wilmoth (2015).   
-              <i>
-              Foresight: The International Journal of Applied Forecasting 
-              </i>
-              37: 19–24.
-              </p>
-              <div id="demo24" class="collapse">
-              <br>
-            </div>
-          </div>
-        </div>
-        <div class="card mb-4" data-tag='fun child'>
-            <div class="card-body">
-              <p class="card-title" data-toggle="collapse" data-target="#demo23">
-              <a><strong>
-              Global estimation of child mortality using a Bayesian B-spline bias-reduction method 
-              </strong></a> 
-              </p>
-              <p class="card-text">
-              L. Alkema, J.R. New<sup></sup> (2014).   
-              <i>
-              The Annals of Applied Statistics 
-              </i>
-              8(4): 2122–2149.
-              </p>
-              <div id="demo23" class="collapse">
-              <br>
-            </div>
-          </div>
-        </div>
-        <div class="card mb-4" data-tag='pop'>
-            <div class="card-body">
-              <p class="card-title" data-toggle="collapse" data-target="#demo22">
-              <a><strong>
-              World population stabilization unlikely this century
-              </strong></a> 
-              </p>
-              <p class="card-text">
-              P. Gerland, A.E. Raftery, H. Ševčíková, N. Li, D. Gu, T. Spoorenberg, L. Alkema, B.K. Fosdick, J. Chunn, N. Lalic, G. Bay, T. Buettner, G.K. Heilig, J. Wilmoth (2014).    
-              <i>
-              Science 
-              </i>
-              346(6206): 234–237.
-              </p>
-              <div id="demo22" class="collapse">
-              <br>
-              Abstract
-              <p>
-                The United Nations recently released population projections based on data until 2012 and a Bayesian probabilistic methodology. Analysis of these data reveals that, contrary to previous literature, world population is unlikely to stop growing this century. There is an 80% probability that world population, now 7.2 billion, will increase to between 9.6 and 12.3 billion in 2100. This uncertainty is much smaller than the range from the traditional UN high and low variants. Much of the increase is expected to happen in Africa, in part due to higher fertility and a recent slowdown in the pace of fertility decline. Also, the ratio of working age people to older people is likely to decline substantially in all countries, even those that currently have young populations.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="card mb-4" data-tag='fun child'>
-            <div class="card-body">
-              <p class="card-title" data-toggle="collapse" data-target="#demo21">
-              <a><strong>
-              National, regional, and global sex ratios of infant, child, and under-5 mortality and identification of countries with outlying ratios: a systematic assessment
-              </strong></a> 
-              </p>
-              <p class="card-text">
-              L. Alkema, F. Chao, D. You, J. Pedersen, C.C. Sawyer (2014).     
-              <i>
-              The Lancet Global Health   
-              </i>
-              2(9): e521–e530.
-              </p>
-              <div id="demo21" class="collapse">
-              <br>
-              Background
-              <p>
-              Under natural circumstances, the sex ratio of male to female mortality up to the age of 5 years is greater than one but sex discrimination can change sex ratios. The estimation of mortality by sex and identification of countries with outlying levels is challenging because of issues with data availability and quality, and because sex ratios might vary naturally based on differences in mortality levels and associated cause of death distributions.
-              </p>
-              Methods
-              <p>For this systematic analysis, we estimated country-specific mortality sex ratios for infants, children aged 1–4 years, and children under the age of 5 years (under 5s) for all countries from 1990 (or the earliest year of data collection) to 2012 using a Bayesian hierarchical time series model, accounting for various data quality issues and assessing the uncertainty in sex ratios. We simultaneously estimated the global relation between sex ratios and mortality levels and constructed estimates of expected and excess female mortality rates to identify countries with outlying sex ratios.
-              </p>
-              Findings
-              <p>Global sex ratios in 2012 were 1·13 (90% uncertainty interval 1·12–1·15) for infants, 0·95 (0·93–0·97) for children aged 1–5 years, and 1·08 (1·07–1·09) for under 5s, an increase since 1990 of 0·01 (−0·01 to 0·02) for infants, 0·04 (0·02 to 0·06) for children aged 1–4 years, and 0·02 (0·01 to 0·04) for under 5s. Levels and trends varied across regions and countries. Sex ratios were lowest in southern Asia for 1990 and 2012 for all age groups. Highest sex ratios were seen in developed regions and the Caucasus and central Asia region. Decreasing mortality was associated with increasing sex ratios, except at very low infant mortality, where sex ratios decreased with total mortality. For 2012, we identified 15 countries with outlying under-5 sex ratios, of which ten countries had female mortality higher than expected (Afghanistan, Bahrain, Bangladesh, China, Egypt, India, Iran, Jordan, Nepal, and Pakistan). Although excess female mortality has decreased since 1990 for the vast majority of countries with outlying sex ratios, the ratios of estimated to expected female mortality did not change substantially for most countries, and worsened for India.
-              </p>
-              Interpretation
-              <p>Important differences exist between boys and girls with respect to survival up to the age of 5 years. Survival chances tend to improve more rapidly for girls compared with boys as total mortality decreases, with a reversal of this trend at very low infant mortality. For many countries, sex ratios follow this pattern but important exceptions exist. An explanation needs to be sought for selected countries with outlying sex ratios and action should be undertaken if sex discrimination is present.
-              </p>
-              Funding
-              <p>The National University of Singapore and the United Nations Children's Fund (UNICEF).
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="card mb-4" data-tag='child'>
-            <div class="card-body">
-              <p class="card-title" data-toggle="collapse" data-target="#demo20">
-              <a><strong>
-              Child Mortality Estimation 2013: An overview of updates in estimation methods by the United Nations Inter-agency Group for Child Mortality Estimation 
-              </strong></a> 
-              </p>
-              <p class="card-text">
-              L. Alkema, J.R. New<sup></sup>, J. Pedersen, D. You, on behalf of the members of the UN Inter-agency Group for Child Mortality Estimation and its Technical Advisory Group (2014).      
-              <i>
-              PLOS ONE 
-              </i>
-              9(7): e101112.  
-              </p>
-              <div id="demo20" class="collapse">
-              <br>
-            </div>
-          </div>
-        </div>
-        <div class="card mb-4" data-tag='fun mat'>
-            <div class="card-body">
-              <p class="card-title" data-toggle="collapse" data-target="#demo19">
-              <a><strong>
-              Global causes of maternal deaths: A WHO systematic analysis
-              </strong></a> 
-              </p>
-              <p class="card-text">
-              L. Say, D. Chou, A. Gemmill<sup></sup>, Ö. Tunçalp, A. B. Moller, J. Daniels, A. M. Gülmezoglu, M. Temmerman, L. Alkema (2014).  
-              <i>
-              The Lancet Global Health 
-              </i>
-              2(6): e323–e3332.   
-              </p>
-              <div id="demo19" class="collapse">
-              <br>
-              Background
-              <p>
-              Data for the causes of maternal deaths are needed to inform policies to improve maternal health. We developed and analysed global, regional, and subregional estimates of the causes of maternal death during 2003-09, with a novel method, updating the previous WHO systematic review.
-              </p>
-              Methods
-              <p>
-              We searched specialised and general bibliographic databases for articles published between between Jan 1, 2003, and Dec 31, 2012, for research data, with no language restrictions, and the WHO mortality database for vital registration data. On the basis of prespecified inclusion criteria, we analysed causes of maternal death from datasets. We aggregated country level estimates to report estimates of causes of death by Millennium Development Goal regions and worldwide, for main and subcauses of death categories with a Bayesian hierarchical model.
-              </p>
-              Findings
-              <p>
-              We identified 23 eligible studies (published 2003-12). We included 417 datasets from 115 countries comprising 60 799 deaths in the analysis. About 73% (1 771 000 of 2 443 000) of all maternal deaths between 2003 and 2009 were due to direct obstetric causes and deaths due to indirect causes accounted for 27·5% (672 000, 95% UI 19·7-37·5) of all deaths. Haemorrhage accounted for 27·1% (661 000, 19·9-36·2), hypertensive disorders 14·0% (343 000, 11·1-17·4), and sepsis 10·7% (261 000, 5·9-18·6) of maternal deaths. The rest of deaths were due to abortion (7·9% [193 000], 4·7-13·2), embolism (3·2% [78 000], 1·8-5·5), and all other direct causes of death (9·6% [235 000], 6·5-14·3). Regional estimates varied substantially.
-              </p>
-              Interpretation
-              <p>
-              Between 2003 and 2009, haemorrhage, hypertensive disorders, and sepsis were responsible for more than half of maternal deaths worldwide. More than a quarter of deaths were attributable to indirect causes. These analyses should inform the prioritisation of health policies, programmes, and funding to reduce maternal deaths at regional and global levels. Further efforts are needed to improve the availability and quality of data related to maternal mortality.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="card mb-4" data-tag=''>
-            <div class="card-body">
-              <p class="card-title" data-toggle="collapse" data-target="#demo18">
-              <a><strong>
-              Forecasting the burden of type 2 diabetes in Singapore using a demographic epidemiological model of Singapore
-              </strong></a> 
-              </p>
-              <p class="card-text">
-              T.P. Phan, L. Alkema, E.S. Tai, K.H.X. Tan, Q. Yang, W.Y. Lim, Y.Y. Teo, C.Y. Cheng, X. Wang, T.Y. Wong, K.S. Chia, A.R. Cook (2014).     
-              <i>
-              BMJ Open Diabetes Research and Care 
-              </i>
-              2(1): e000012. 
-              </p>
-              <div id="demo18" class="collapse">
-              <br>
-              Objective
-              <p>
-              Singapore is a microcosm of Asia as a whole, and its rapidly ageing, increasingly sedentary population heralds the chronic health problems other Asian countries are starting to face and will likely face in the decades ahead. Forecasting the changing burden of chronic diseases such as type 2 diabetes in Singapore is vital to plan the resources needed and motivate preventive efforts.
-              </p>
-              Methods
-              <p>
-              This paper describes an individual-level simulation model that uses evidence synthesis from multiple data streams-national statistics, national health surveys, and four cohort studies, and known risk factors-aging, obesity, ethnicity, and genetics-to forecast the prevalence of type 2 diabetes in Singapore. This comprises submodels for mortality, fertility, migration, body mass index trajectories, genetics, and workforce participation, parameterized using Markov chain Monte Carlo methods, and permits forecasts by ethnicity and employment status.
-              </p>
-              Results
-              <p>
-              We forecast that the obesity prevalence will quadruple from 4.3% in 1990 to 15.9% in 2050, while the prevalence of type 2 diabetes (diagnosed and undiagnosed) among Singapore adults aged 18-69 will double from 7.3% in 1990 to 15% in 2050, that ethnic Indians and Malays will bear a disproportionate burden compared with the Chinese majority, and that the number of patients with diabetes in the workforce will grow markedly.
-              </p>
-              Conclusion
-              <p>
-              If the recent rise in obesity prevalence continues, the lifetime risk of type 2 diabetes in Singapore will be one in two by 2050 with concomitant implications for greater healthcare expenditure, productivity losses, and the targeting of health promotion programmes.
-              </p>
-              </div>
-              </div>
-              </div>
-        <div class="card mb-4" data-tag='pop'>
-            <div class="card-body">
-              <p class="card-title" data-toggle="collapse" data-target="#demo17">
-              <a><strong>
-              Bayesian population projections for the United Nations
-              </strong></a> 
-              </p>
-              <p class="card-text">
-              A. E. Raftery, L. Alkema, P. Gerland (2014).      
-              <i>
-              Statistical Science 
-              </i>
-              29(1): 56–68.
-              </p>
-              <div id="demo17" class="collapse">
-              <br>
-              Abstract
-              <p>
-              The United Nations regularly publishes projections of the populations of all the world’s countries broken down by age and sex. These projections are the de facto standard and are widely used by international organizations, governments and researchers. Like almost all other population projections, they are produced using the standard deterministic cohort-component projection method and do not yield statements of uncertainty. We describe a Bayesian method for producing probabilistic population projections for most countries that the United Nations could use. It has at its core Bayesian hierarchical models for the total fertility rate and life expectancy at birth. We illustrate the method and show how it can be extended to address concerns about the UN’s current assumptions about the long-term distribution of fertility. The method is implemented in the R packages bayesTFR, bayesLife, bayesPop and bayesDem.
-            </p>
-          </div>
+        <a class="navbar-brand" id="myNav" href="index.html"><img src="">Alkema Lab</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a id="myNav" class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a id="myNav" class="nav-link" href="people.html">People</a>
+            </li>
+            <li class="nav-item">
+              <a id="myNav" class="nav-link" href="publications.html">Publications</a>
+            </li>
+          </ul>
         </div>
       </div>
-            <div class="card mb-4" data-tag='mat'>
-            <div class="card-body">
-              <p class="card-title" data-toggle="collapse" data-target="#demo16">
-              <a><strong>
-              How informative are vital registration data for estimating maternal mortality? A Bayesian analysis of WHO adjustment data and parameters
-              </strong></a> 
-              </p>
-              <p class="card-text">
-              F. Chao<sup></sup>, L. Alkema (2014).      
-              <i>
-              Statistics and Public Policy
-              </i>
-              1(1): 6–14.
-              </p>
-              <div id="demo16" class="collapse">
-              <br>
-              Summary
-              <p>
-              Monitoring maternal mortality is challenging due to fragmented data of varying quality. The maternal mortality estimates published by the
-              WHO in 2012 included data adjustment parameters to account for these data quality issues, but there was a discrepancy between the WHO
-              assumption about, and the observed variability in, misclassification errors in vital registration (VR) observations. We developed a Bayesian
-              hierarchical time series model to estimate the extent of VR misclassification errors and to provide a plausible assessment of the uncertainty
-              associated with VR observations for countries with and without external information on VR adjustment parameters. The resulting Bayesian
-              distribution for VR adjustments was more comparable to the observed biases than the WHO expert distribution and the model allows for
-              estimation of VR adjustment values for any period of interest for countries with partial information on such adjustments. We also illustrated
-              that a fully Bayesian modeling approach for estimating maternal mortality can provide more data-driven insights into maternal mortality
-              estimates and data adjustment parameters. However, given the paucity of, and the issues with, maternal mortality data, validation of modeling
-              assumptions and fin
-              </p>
-              </div>
-              </div>
-              </div>
-            <div class="card mb-4" data-tag='pop'>
-            <div class="card-body">
-              <p class="card-title" data-toggle="collapse" data-target="#demo15">
-              <a><strong>
-              Levels of urbanization in the world’s countries: testing consistency of estimates based on national definitions
-              </strong></a> 
-              </p>
-              <p class="card-text">
-              L. Alkema, G. Jones, C. Rue (2013).       
-              <i>
-              Journal of Population Research
-              </i>
-              30(4): 291–304.
-              </p>
-              <div id="demo15" class="collapse">
-              <br>
-              Background
-              <p>
-              Estimates of urbanization levels for all countries, as published in the United
-              Nations World Urbanization Prospects, are not comparable across countries because they are
-              based on national definitions of urbanization, which vary greatly across countries.
-              </p>
-              Objective
-              <p>
-               To construct alternative estimates of urbanization for all countries for 1990 and
-              2000 which are comparable across countries and can be used to point out countries with
-              definitional problems or interesting urban characteristics.
-              </p>
-              Methods 
-              <p>We assume that the UN estimates represent the true proportion urban in a country,
-              with measurement errors caused by definitional issues. To construct alternative estimates, we
-              regress this proportion urban against variables that are associated with urbanization, as well as
-              a categorical variable that summarizes the urban definition.
-              </p>
-              Results
-              <p>Among the 181 countries included in the analysis, 21 per cent have a restrictive
-              definition, and 31 per cent a generous definition of urbanization. Among the set of candidate
-              predictor variables, GDP per capita, percent of employment in the agriculture sector and
-              population density were selected as important predictors for urbanization. In 2000, the
-              difference between the alternative estimate and the UN estimate was more than 10 per cent
-              for 67 countries. Examples of countries with large differences include Trinidad and Tobago,
-              Guyana, Sri Lanka and Thailand.
-              </p>
-              Conclusions
-              <p> Comparison of urbanization estimates across countries should be treated with
-              care, given the wide range of definitions used. To produce more informative estimates of
-              urbanization, several countries would need to clarify or re-think their definition of urban.
-              </p>
-              </div>
-              </div>
-              </div>
+    </nav>
 
-          <div class="card mb-4" data-tag='child'>
-            <div class="card-body">
-              <p class="card-title" data-toggle="collapse" data-target="#demo14">
-              <a><strong>
-              Millennium Development Goals national targets are moving targets and the results will not be known until well after the 5 deadline of 2015.
-              </strong></a> 
-              </p>
-              <p class="card-text">
-              M. Oestergaard, L. Alkema, J.E. Lawn (Editorial, 2013).       
-              <i>
-              International Journal of Epidemiology
-              </i>
-              42(3): 645–647.
-              </p>
-              <div id="demo14" class="collapse">
-              <br>
-              Summary
-              <p>
-                The Millennium Development Goal 4 (MDG-4) was
-                agreed upon at the United Nations Millennium
-                Summit in September 2000 to accelerate national
-                and international efforts to reduce child mortality,
-                and improve development by setting explicit targets.
-                However, there is very little awareness among global
-                health data experts, let alone policymakers, that in
-                reality, the Millennium Development Goals related
-                to mortality outcomes are moving targets that may
-                change every year.
-                </p>
-                <p>
-                The MDG-4 target is the under-five mortality rate
-                (U5MR, deaths in children less than 5 years of age
-                per 1000 live births) in 2015 given a two-thirds reduction
-                in the rate compared with 1990. The target is
-                set for each country of the world and at the global
-                level and is determined by the estimated baseline
-                mortality levels for year 1990.
-                </p>
-                <p>
-                We explain why MDG-4 targets are moving and
-                summarize indicators of progress, quantify how
-                much national and global targets have moved and
-                outline key policy implications and considerations
-                for tracking country progress. Our aim is to
-                strengthen the process of evaluating progress and to
-                inform the debate on a next generation of goals that
-                are likely to succeed when the MDG period ends in
-                2015. We illustrate changes in targets by using MDG4
-                predictions from the United Nations Inter-agency
-                Group on Child Mortality Estimation (UN-IGME),1,2
-                but the same principles and implications apply to any
-                burden of disease prediction exercise, for example for
-                MDG-5.3-5
-                </p>
-                <p>
-                The UN-IGME, comprising the United Nations
-                Children’s Fund, World Health Organization, United
-                Nations Population Division and the World Bank, was
-                formed in 2004 with a brief to produce annual updates
-                of child mortality levels and trends for all 195
-                UN member states in order to facilitate consistent
-                tracking for MDG-4.6 UN-IGME has identified the
-                annual rate of change as the indicator of choice for
-                tracking progress towards the MDG-4 target. A twothirds
-                reduction in U5MR between 1990 and 2015
-                amounts to an annual rate of change of 4.4%, so if
-                a country’s annual rate of change is 4.4% or greater,
-                the country is said to be on target. With lower rates
-                than this, the country is off target.
-                Both the progress between 1990 and today and the
-                required change going forward to reach the MDG
-                target are changing every year as these are determined
-                by mortality levels for both 1990 and today.
-                Paradoxically, this means that the required change
-                today to reach the MDG target may differ from previous
-                years even if the 1990 level and thus the MDG-4
-                target stay the same; or it may mean that the required
-                change fluctuates between years even if the mortality
-                level in recent years stays constant but the estimated
-                1990 level changes.
-                </p>
-                </div>
-                </div>
-                </div>
-          <div class="card mb-4" data-tag='fam fun'>
-            <div class="card-body">
-              <p class="card-title" data-toggle="collapse" data-target="#demo13">
-              <a><strong>
-              National, regional and global rates and trends in contraceptive prevalence and unmet need for family planning between 1990 and 2015: a systematic and comprehensive analysis
-              </strong></a> 
-              </p>
-              <p class="card-text">
-              L. Alkema, V. Kantorova, C. Menozzi, A. Biddlecom (2013).        
-              <i>
-              The Lancet 
-              </i>
-              381(9878): 1642–1652. 
-              </p>
-              <div id="demo13" class="collapse">
-              <br>
-              Background
-              <p> Expansion of access to contraception and reduction of unmet n eed for family planning are key
-              components to improve reproductive health, but scarce data and variability in data sources create diffi culties in
-              monitoring of progress for these outcomes. We estimated and projected indicators of contraceptive prevalence and
-              unmet need for family planning from 1990 to 2015.
-              </p>
-              Methods 
-              <p>
-              We obtained data from nationally representative surveys, for women aged 15–49 years who were married or
-              in a union. Estimates were based on 930 observations of contraceptive prevalence between 1950 and 2011 from
-              194 countries or areas, and 306 observations of unmet need for family planning from 111 countries or areas. We used
-              a Bayesian hierarchical model combined with country-specifi c time trends to yield estimates of these indicators and
-              uncertainty assessments. The model accounted for diff erences by data source, sample population, and contraceptive
-              methods included in the measure.
-              </p>
-              Findings 
-              <p>
-              Worldwide, contraceptive prevalence increased from 54·8% (95% uncertainty interval 52·3–57·1) in 1990, to
-              63·3% (60·4–66·0) in 2010, and unmet need for family planning decreased from 15·4% (14·1–16·9) in 1990, to
-              12·3% (10·9–13·9) in 2010. Almost all subregions, except for those where contraceptive prevalence was already high
-              in 1990, had an increase in contraceptive prevalence and a decrease in unmet need for family planning between
-              1990 and 2010, although the pace of change over time varied between countries and subregions. In 2010, 146 million
-              (130–166 million) women worldwide aged 15–49 years who were married or in a union had an unmet need for family
-              planning. The absolute number of married women who either use contraception or who have an unmet need for
-              family planning is projected to grow from 900 million (876–922 million) in 2010 to 962 million (927–992 million) in
-              2015, and will increase in most developing countries.
-              </p>
-              Interpretation 
-              <p>
-              Trends in contraceptive prevalence and unmet need for family planning, and the projected growth in
-              the number of potential contraceptive users indicate that increased investment is necessary to meet demand for
-              contraceptive methods and improve reproductive health worldwide.
-              </p>
-              Funding 
-              <p>
-              United Nations Population Division and National University of Singapore.
-              </p>
-              </div>
-              </div>
-              </div>
-        <div class="card mb-4" data-tag='child'>
-            <div class="card-body">
-              <p class="card-title" data-toggle="collapse" data-target="#demo12">
-              <a><strong>
-              Progress toward global reduction in under-5 mortality: A bootstrap analysis of uncertainty in Millennium Development Goal 4 estimates
-              </strong></a> 
-              </p>
-              <p class="card-text">
-              L. Alkema, J.R. New<sup></sup> (2012).         
-              <i>
-              PLOS Medicine 
-              </i>
-              9(12): e1001355. 
-              </p>
-              <div id="demo12" class="collapse">
-              <br>
-              Background
-              <p>
-              Millennium Development Goal 4 calls for an annual rate of reduction (ARR) of the under-five mortality rate (U5MR) of 4.4% between 1990 and 2015. Progress is measured through the point estimates of the United Nations Inter-agency Group for Child Mortality Estimation (UN IGME). To facilitate evidence-based conclusions about progress toward the goal, we assessed the uncertainty in the estimates arising from sampling errors and biases in data series and the inferior quality of specific data series.
-              </p>
-              Methods and Findings
-              <p>
-              We implemented a bootstrap procedure to construct 90% uncertainty intervals (UIs) for the U5MR and ARR to complement the UN IGME estimates. We constructed the bounds for all countries without a generalized HIV epidemic, where a standard estimation approach is carried out (174 countries). In the bootstrap procedure, potential biases in levels and trends of data series of different source types were accounted for. There is considerable uncertainty about the U5MR, particularly for high mortality countries and in recent years. Among 86 countries with a U5MR of at least 40 deaths per 1,000 live births in 1990, the median width of the UI, relative to the U5MR level, was 19% for 1990 and 48% for 2011, with the increase in uncertainty due to more limited data availability. The median absolute width of the 90% UI for the ARR from 1990 to 2011 was 2.2%. Although the ARR point estimate for all high mortality countries was greater than zero, for eight of them uncertainty included the possibility of no improvement between 1990 and 2011. For 13 countries, it is deemed likely that the ARR from 1990 to 2011 exceeded 4.4%.
-              </p>
-              Conclusion
-              <p>
-              In light of the upcoming evaluation of Millennium Development Goal 4 in 2015, uncertainty assessments need to be taken into account to avoid unwarranted conclusions about countries' progress based on limited data.
-              </p>
-              </div>
-              </div>
-              </div>
-  <div class="card mb-4" data-tag='child'>
-            <div class="card-body">
-              <p class="card-title" data-toggle="collapse" data-target="#demo11">
-              <a><strong>
-              Child Mortality Estimation: a comparison of UN-IGME and IHME estimates of levels and trends in under-5 mortality rates and deaths
-              </strong></a> 
-              </p>
-              <p class="card-text">
-              L. Alkema, D. You (2012).          
-              <i>
-              PLOS Medicine 
-              </i>
-              9(8): e1001288.
-              </p>
-              <div id="demo11" class="collapse">
-              <br>
-              Background
-              <p>
-              Millennium Development Goal 4 calls for a reduction in the under-five mortality rate (U5MR) by two-thirds between 1990 and 2015. In 2011, estimates were published by the United Nations Inter-agency Group for Child Mortality Estimation (UN IGME) and the Institute for Health Metrics and Evaluation (IHME). The difference in the U5MR estimates produced by the two research groups was more than 10% and corresponded to more than ten deaths per 1,000 live births for 10% of all countries in 1990 and 20% of all countries in 2010, which can lead to conflicting conclusions with respect to countries' progress. To understand what caused the differences in estimates, we summarised differences in underlying data and modelling approaches used by the two groups, and analysed their effects.
-              </p>
-              Methods and Findings
-              <p>
-              UN IGME and IHME estimation approaches differ with respect to the construction of databases and the pre-processing of data, trend fitting procedures, inclusion and exclusion of data series, and additional adjustment procedures. Large differences in U5MR estimates between the UN IGME and the IHME exist in countries with conflicts or civil unrest, countries with high HIV prevalence, and countries where the underlying data used to derive the estimates were different, especially if the exclusion of data series differed between the two research groups. A decomposition of the differences showed that differences in estimates due to using different data (inclusion of data series and pre-processing of data) are on average larger than the differences due to using different trend fitting methods.
-              </p>
-              Conclusions
-              <p>
-              Substantial country-specific differences between UN IGME and IHME estimates for U5MR and the number of under-five deaths exist because of various differences in data and modelling assumptions used. Often differences are illustrative of the lack of reliable data and likely to decrease as more data become available. Improved transparency on methods and data used will help to improve understanding about the drivers of the differences.
-              </p>
-              </div>
-              </div>
-              </div>
-
-  <div class="card mb-4" data-tag='child'>
-            <div class="card-body">
-              <p class="card-title" data-toggle="collapse" data-target="#demo10">
-              <a><strong>
-              Monitoring progress towards Millennium Development Goal 4: A call for improved validation of under-5 mortality rate estimates
-              </strong></a> 
-              </p>
-              <p class="card-text">
-              L. Alkema, M. Wong<sup></sup>, P.R. Seah<sup>UG</sup> (2012).        
-              <i>
-              Statistics, Politics, and Policy 
-              </i>
-              3(2): Art. 2.
-              </p>
-              <div id="demo10" class="collapse">
-              <br>
-              Background
-              <p>
-              With 4 years until 2015, it is essential to monitor progress towards Millennium Development Goals (MDGs) 4 and 5. Although estimates of maternal and child mortality were published in 2010, an update of estimates is timely in view of additional data sources that have become available and new methods developed. Our aim was to update previous estimates of maternal and child mortality using better data and more robust methods to provide the best available evidence for tracking progress on MDGs 4 and 5.
-              </p>
-              Methods
-              <p>
-              We update the analyses of the progress towards MDGs 4 and 5 from 2010 with additional surveys, censuses, vital registration, and verbal autopsy data. For children, we estimate early neonatal (0-6 days), late neonatal (7-28 days), postneonatal (29-364 days), childhood (ages 1-4 years), and under-5 mortality. We use an improved model for estimating mortality by age under 5 years. For maternal mortality, our updated analysis includes greater than 1000 additional site-years of data. We tested a large set of alternative models for maternal mortality; we used an ensemble model based on the models with the best out-of-sample predictive validity to generate new estimates from 1990 to 2011.
-              </p>
-              Findings
-              <p>
-              Under-5 deaths have continued to decline, reaching 7·2 million in 2011 of which 2·2 million were early neonatal, 0·7 million late neonatal, 2·1 million postneonatal, and 2·2 million during childhood (ages 1-4 years). Comparing rates of decline from 1990 to 2000 with 2000 to 2011 shows that 106 countries have accelerated declines in the child mortality rate in the past decade. Maternal mortality has also continued to decline from 409,100 (uncertainty interval 382,900-437,900) in 1990 to 273,500 (256,300-291,700) deaths in 2011. We estimate that 56,100 maternal deaths in 2011 were HIV-related deaths during pregnancy. Based on recent trends in developing countries, 31 countries will achieve MDG 4, 13 countries MDG 5, and nine countries will achieve both.
-              </p>
-              Interpretations
-              <p>
-              Even though progress on reducing maternal and child mortality in most countries is accelerating, most developing countries will take many years past 2015 to achieve the targets of the MDGs 4 and 5. Similarly, although there continues to be progress on maternal mortality the pace is slow, without any overall evidence of acceleration. Immediate concerted action is needed for a large number of countries to achieve MDG 4 and MDG 5.
-              </p>
-              Funding
-              <p>
-              Bill & Melinda Gates Foundation.
-              </p>
-            </div>
-          </div>
-        </div>
-  <div class="card mb-4" data-tag='fert'>
-            <div class="card-body">
-              <p class="card-title" data-toggle="collapse" data-target="#demo9">
-              <a><strong>
-              Estimating trends in the total fertility rate with uncertainty using imperfect data: Examples from West Africa
-              </strong></a> 
-              </p>
-              <p class="card-text">
-              L. Alkema, A. E. Raftery, P. Gerland, S. J. Clark, F. Pelletier (2012).       
-              <i>
-              Demographic Research 
-              </i>
-              26(15): 331–362. 
-              </p>
-              <div id="demo9" class="collapse">
-              <br>
-              Background
-              <p>
-              Estimating the total fertility rate is challenging for many developing countries because of
-              limited data and varying data quality. A standardized, reproducible approach to produce
-              estimates that include an uncertainty assessment is desired.
-              </p>
-              Methods
-              <p>
-              We develop a method to estimate and assess uncertainty in the total fertility rate over time,
-              based on multiple imperfect observations from different data sources, including surveys
-              and censuses. We take account of measurement error in observations by decomposing it
-              into bias and variance, and assess both by linear regression on a variety of data quality covariates. We estimate the total fertility rate using a local smoother, and assess uncertainty
-              using the weighted likelihood bootstrap.
-              </p>
-              Results
-              <p>
-              We apply our method to data from seven countries in West Africa and construct estimates
-              and uncertainty intervals for the total fertility rate. Based on cross-validation exercises,
-              we find that accounting for differences in data quality between observations gives better
-              calibrated confidence intervals and reduces bias.
-              </p>
-              Conclusion
-              <p>
-              When working with multiple imperfect observations from different data sources to estimate
-              the total fertility rate, or demographic indicators in general, potential biases and
-              differences in error variance should be taken into account to improve the estimates and
-              their uncertainty assessment.
-              </p>
-              </div>
-              </div>
-              </div>
-        <div class="card mb-4" data-tag='child'>
-            <div class="card-body">
-              <p class="card-title" data-toggle="collapse" data-target="#demo8">
-              <a><strong>
-              Estimating the under-5 mortality rate using a Bayesian hierarchical time series model
-              </strong></a> 
-              </p>
-              <p class="card-text">
-              L. Alkema, W.L. Ann<sup></sup> (2011).      
-              <i>
-              PLOS ONE
-              </i>
-              6(9): e23954. 
-              </p>
-              <div id="demo8" class="collapse">
-              <br>
-              Background
-              <P>
-              Millennium Development Goal 4 calls for a reduction in the under-five mortality rate by two-thirds between 1990 and 2015, which corresponds to an annual rate of decline of 4.4%. The United Nations Inter-Agency Group for Child Mortality Estimation estimates under-five mortality in every country to measure progress. For the majority of countries, the estimates within a country are based on the assumption of a piece-wise constant rate of decline.
-              </P>
-              Methods and Findings
-              <p>
-              This paper proposes an alternative method to estimate under-five mortality, such that the underlying rate of change is allowed to vary smoothly over time using a time series model. Information about the average rate of decline and changes therein is exchanged between countries using a Bayesian hierarchical model. Cross-validation exercises suggest that the proposed model provides credible bounds for the under-five mortality rate that are reasonably well calibrated during the observation period. The alternative estimates suggest smoother trends in under-five mortality and give new insights into changes in the rate of decline within countries.
-              </p>
-              Conclusions
-              <p>
-              The proposed model offers an alternative modeling approach for obtaining estimates of under-five mortality which removes the restriction of a piece-wise linear rate of decline and introduces hierarchy to exchange information between countries. The newly proposed estimates of the rate of decline in under-5 mortality and the uncertainty assessments would help to monitor progress towards Millennium Development Goal 4.
-              </p>
-              </div>
-              </div>
-              </div>
-        <div class="card mb-4" data-tag='fert fun'>
-            <div class="card-body">
-              <p class="card-title" data-toggle="collapse" data-target="#demo7">
-              <a><strong>
-              Probabilistic projections of the total fertility rate for all countries.
-              </strong></a> 
-              </p>
-              <p class="card-text">
-              L. Alkema, A. E. Raftery, P. Gerland, S.J. Clark, F. Pelletier, T. Buettner, G. K. Heilig (2011).       
-              <i>
-              Demography
-              </i>
-              48(3): 815–839 
-              </p>
-              <div id="demo7" class="collapse">
-              <br>
-              Abstract
-              <p>
-              We describe a Bayesian projection model to produce country-specific projections of the total fertility rate (TFR) for all countries. The model decomposes the evolution of TFR into three phases: pre-transition high fertility, the fertility transition, and post-transition low fertility. The model for the fertility decline builds on the United Nations Population Division's current deterministic projection methodology, which assumes that fertility will eventually fall below replacement level. It models the decline in TFR as the sum of two logistic functions that depend on the current TFR level, and a random term. A Bayesian hierarchical model is used to project future TFR based on both the country's TFR history and the pattern of all countries. It is estimated from United Nations estimates of past TFR in all countries using a Markov chain Monte Carlo algorithm. The post-transition low fertility phase is modeled using an autoregressive model, in which long-term TFR projections converge toward and oscillate around replacement level. The method is evaluated using out-of-sample projections for the period since 1980 and the period since 1995, and is found to be well calibrated.
-              </p>
-              </div>
-              </div>
-              </div>
-        <div class="card mb-4" data-tag='mat'>
-            <div class="card-body">
-              <p class="card-title" data-toggle="collapse" data-target="#demo6">
-              <a><strong>
-              BayesTFR: An R package for probabilistic projections of the total fertility rate
-              </strong></a> 
-              </p>
-              <p class="card-text">
-              H. Ševčíková, L. Alkema, A. E. Raftery (2011).      
-              <i>
-              Journal of Statistical Software
-              </i>
-              43: 1–29.
-              </p>
-              <div id="demo6" class="collapse">
-              <br>
-              Abstract
-              <p>
-                The bayesTFR package for R provides a set of functions to produce probabilistic projections of the total fertility rate (TFR) for all countries. In the model, a random walk with drift is used to project the TFR during the fertility transition, using a Bayesian hierarchical model to estimate the parameters of the drift term. The TFR is modeled with a first order autoregressive process during the post-transition phase. The computationally intensive part of the projection model is a Markov chain Monte Carlo algorithm for estimating the parameters of the drift term. This article summarizes the projection model and describes the basic steps to generate probabilistic projections, as well as other functionalities such as projecting aggregate outcomes and dealing with missing values.
-              </p>
-  </div>
-  </div>
-  </div>
-        <div class="card mb-4" data-tag='hiv'>
-            <div class="card-body">
-              <p class="card-title" data-toggle="collapse" data-target="#demo4">
-              <a><strong>
-              A Bayesian approach to uncertainty analysis of sexually transmitted infection models
-              </strong></a> 
-              </p>
-              <p class="card-text">
-              L. F. Johnson, L. Alkema, R. E. Dorrington (2010).      
-              <i>
-              Sexually Transmitted Infections
-              </i>
-              86: 169–174. 
-              </p>
-              <div id="demo4" class="collapse">
-              <br>
-
-              Objectives
-              <p>
-              To propose a Bayesian approach to uncertainty analysis of sexually transmitted infection (STI) models, that can be used to quantify uncertainty in model assessments of policy options, estimate regional STI prevalence from sentinel surveillance data and make inferences about STI transmission and natural history parameters.
-              </p>
-
-              Methods
-              <p>Prior distributions are specified to represent uncertainty regarding STI parameters. A likelihood function is defined using a hierarchical approach that takes account of variation between study populations, variation in diagnostic accuracy as well as random binomial variation. The method is illustrated using a model of syphilis, gonorrhoea, chlamydial infection and trichomoniasis in South Africa.
-              </p>
-
-              Results
-              <p>Model estimates of STI prevalence are in good agreement with observations. Out-of-sample projections and cross-validations also show that the model is reasonably well calibrated. Model predictions of the impact of interventions are subject to significant uncertainty: the predicted reductions in the prevalence of syphilis by 2020, as a result of doubling the rate of health seeking, increasing the proportion of private practitioners using syndromic management protocols, and screening all pregnant women for syphilis, are 43% (95% CI: 3–77%), 9% (95% CI: 1–19%) and 6% (95% CI: 4–7%) respectively.
-              </p>
-
-              Conclusions
-              <p>This study extends uncertainty analysis techniques for fitted HIV/AIDS models to models that are fitted to other STI prevalence data. There is significant uncertainty regarding the relative effectiveness of different STI control strategies. The proposed technique is reasonable for estimating uncertainty in past STI prevalence levels and for projections of future STI prevalence.
-              </p>
-              </div>
-              </div>
-              </div>
-        <div class="card mb-4" data-tag='hiv'>
-            <div class="card-body">
-              <p class="card-title" data-toggle="collapse" data-target="#demo3">
-              <a><strong>
-              Bayesian melding for estimating uncertainty in national HIV prevalence estimates
-              </strong></a> 
-              </p>
-              <p class="card-text">
-              L. Alkema, A. E. Raftery, T. Brown (2008).      
-              <i>
-              Sexually Transmitted Infections
-              </i>
-              84 (Suppl I): i11–i16.  
-              </p>
-              <div id="demo3" class="collapse">
-              <br>
-              Objective
-              <p>
-              To construct confidence intervals for HIV prevalence in countries with generalised epidemics.
-              </p>
-
-              Methods
-              <p>In the Bayesian melding approach, a sample of country-specific epidemic curves describing HIV prevalence over time is derived based on time series of antenatal clinic prevalence data and general information on the parameters that describe the HIV epidemic. The prevalence trends at antenatal clinics are calibrated to population-based HIV prevalence estimates from national surveys. For countries without population based estimates, a general calibration method is developed. Based on the sample of calibrated epidemic curves, we derive annual 95% confidence intervals for HIV prevalence. The curve that best represents the data at antenatal clinics and population-based surveys, as well as general information about the epidemic, is chosen to represent the best estimates and predictions.
-              </p>
-
-              Results
-              <p>
-              We present results for urban areas in Haiti and Namibia to illustrate the estimates and confidence intervals that are derived with the methodology.
-              </p>
-              </div>
-              </div>
-              </div>
-        <div class="card mb-4" data-tag='hiv'>
-            <div class="card-body">
-              <p class="card-title" data-toggle="collapse" data-target="#demo2">
-              <a><strong>
-              Progress and challenges in modelling country-level HIV/AIDS epidemics: the UNAIDS Estimation and Projection Package 2007
-              </strong></a> 
-              </p>
-              <p class="card-text">
-              T. Brown, J. A. Salomon, L. Alkema, A. E. Raftery, E. Gouws (2008)      
-              <i>
-              Sexually Transmitted Infections  
-              </i>
-              84 (Suppl I): i5–i11.
-              </p>
-              <div id="demo2" class="collapse">
-              <br>
-              Abstract
-              <p>
-                The UNAIDS Estimation and Projection Package (EPP) was developed to aid in country-level estimation and short-term projection of HIV/AIDS epidemics. This paper describes advances reflected in the most recent update of this tool (EPP 2007), and identifies key issues that remain to be addressed in future versions. The major change to EPP 2007 is the addition of uncertainty estimation for generalised epidemics using the technique of Bayesian melding, but many additional changes have been made to improve the user interface and efficiency of the package. This paper describes the interface for uncertainty analysis, changes to the user interface for calibration procedures and other user interface changes to improve EPP’s utility in different settings. While formal uncertainty assessment remains an unresolved challenge in low-level and concentrated epidemics, the Bayesian melding approach has been applied to provide analysts in these settings with a visual depiction of the range of models that may be consistent with their data. In fitting the model to countries with longer-running epidemics in sub-Saharan Africa, a number of limitations have been identified in the current model with respect to accommodating behaviour change and accurately replicating certain observed epidemic patterns. This paper discusses these issues along with their implications for future changes to EPP and to the underlying UNAIDS Reference Group model.
-              </p>
-              </div>
-              </div>
-              </div>
-        <div class="card mb-4" data-tag='hiv'>
-            <div class="card-body">
-              <p class="card-title" data-toggle="collapse" data-target="#demo2">
-              <a><strong>
-              Probabilistic projections of HIV prevalence using Bayesian melding
-              </strong></a> 
-              </p>
-              <p class="card-text">
-              L. Alkema, A. E. Raftery, S. J. Clark (2007)      
-              <i>
-              The Annals of Applied Statistics   
-              </i>
-              1(1): 229–248
-              </p>
-              <div id="demo2" class="collapse">
-              <br>
-              Abstract
-              <p>
-                The Joint United Nations Programme on HIV/AIDS (UNAIDS) has developed the Estimation and Projection Package (EPP) for making national estimates and short-term projections of HIV prevalence based on observed prevalence trends at antenatal clinics. Assessing the uncertainty about its estimates and projections is important for informed policy decision making, and we propose the use of Bayesian melding for this purpose. Prevalence data and other information about the EPP model's input parameters are used to derive a probabilistic HIV prevalence projection, namely a probability distribution over a set of future prevalence trajectories. We relate antenatal clinic prevalence to population prevalence and account for variability between clinics using a random effects model. Predictive intervals for clinic prevalence are derived for checking the model. We discuss predictions given by the EPP model and the results of the Bayesian melding procedure for Uganda, where prevalence peaked at around 28% in 1990; the 95% prediction interval for 2010 ranges from 2% to 7%.
-              </p>
-              </div>
-              </div>
-              </div>
+	  <!-- Navigation2 -->
+	      <section id="inner-headline">
+	        <div class="container">
+	          <div class="row justify-content-between">
+	            <div class="span4">
+	              <div class="inner-heading">
+	                <h2>Publications</h2>
+	              </div>
+	            </div>
+	            <div class="span12">
+	              <ul class="breadcrumb">
+	                <li><a href="index.html"><i class="icon-home"></i></a><i class="icon-angle-right"></i></li>
+	                <li class="active">Publications</li>
+	              </ul>
+	            </div>
+	          </div>
+	        </div>
+	      </section>
 
 
 
 
+	      <!-- Page Content -->
+	      <div class="container">
+	          <div class="container wrapper">
+	          <div classs="pull-right">
+	            <div class="row">
+	                <div>
+	                <button id="demo0" class="btn btn-small btn-light btn-primary" data-toggle="portfilter" data-target="all" onclick="myFunction(0)">All</button>
+	                </div>
+	                <div>
+	                <button id="demo1" class="btn btn-small btn-light" data-toggle="portfilter" data-target="fun" onclick="myFunction(1)">Fun stats stuff</button>
+	                </div>
+	                <div>
+	                <button id="demo2" class="btn btn-small btn-light" data-toggle="portfilter" data-target="child" onclick="myFunction(2)">Child mortality</button>
+	                </div>
+	                <div>
+	                <button id="demo3" class="btn btn-small btn-light" data-toggle="portfilter" data-target="fam" onclick="myFunction(3)">Family planning</button>
+	                </div>
+	                <div>
+	                <button id="demo4" class="btn btn-small btn-light" data-toggle="portfilter" data-target="fert" onclick="myFunction(4)">Fertility</button>
+	                </div>
+	                <div>
+	                <button id="demo5" class="btn btn-small btn-light" data-toggle="portfilter" data-target="mat" onclick="myFunction(5)">Maternal mortality</button>
+	                </div>
+	                <div>
+	                <button id="demo6" class="btn btn-small btn-light" data-toggle="portfilter" data-target="hiv" onclick="myFunction(6)">HIV/AIDS</button>
+	                </div>
+	                <div>
+	                <button id="demo7" class="btn btn-small btn-light" data-toggle="portfilter" data-target="pop"
+	                onclick="myFunction(7)">Population projections</button>
+	                </div>
+	                <div>
+	                <button id="demo8" class="btn btn-small btn-light" data-toggle="portfilter" data-target="abo"
+	                onclick="myFunction(8)">Unintended pregnancies and abortion</button>
+	                </div>
+	                <br>
+	                <br>
+	            </div>
+	          </div>
+	          <div class="clearfix"></div>
+
+
+	             <div class="card mb-4" data-tag='fun child'>
+	              <div class="card-body">
+	                <p class="card-title" data-toggle="collapse" data-target="#demo35">
+	                <a><strong>National and regional under-5 mortality rate by
+	                economic status for low-income and middle-income countries: a systematic assessment.</strong></a> </p>
+	                <p class="card-text">  F Chao, D You, J Pedersen, L Hug, L Alkema (2018). <i>The Lancet
+	                Global Health</i> 6(5): e535-e547.
+	                </p>
+	                <div id="demo35" class="collapse">
+
+	                <br>
+	                Background
+	                <p>The progress to achieve the fourth Millennium Development Goal in reducing mortality rate in children younger than 5 years since 1990 has been remarkable. However, work remains to be done in the Sustainable Development Goal era. Estimates of under-5 mortality rates at the national level can hide disparities within countries. We assessed disparities in under-5 mortality rates by household economic status in low-income and middle-income countries (LMICs).</p>
+
+	                Method
+	                <p> We estimated country-year-specific under-5 mortality rates by wealth quintile on the basis of household wealth indices for 137 LMICs from 1990 to 2016, using a Bayesian statistical model. We estimated the association between quintile-specific and national-level under-5 mortality rates. We assessed the levels and trends of absolute and relative disparity in under-5 mortality rate between the poorest and richest quintiles, and among all quintiles.
+	                </p>
+	                Findings
+	                <p>In 2016, for all LMICs (excluding China), the aggregated under-5 mortality rate was 64·6 (90% uncertainty interval [UI] 61·1–70·1) deaths per 1000 livebirths in the poorest households (first quintile), 31·3 (29·5–34·2) deaths per 1000 livebirths in the richest households (fifth quintile), and in between those outcomes for the middle quintiles. Between 1990 and 2016, the largest absolute decline in under-5 mortality rate occurred in the two poorest quintiles: 77·6 (90% UI 71·2–82·6) deaths per 1000 livebirths in the poorest quintile and 77·9 (72·0–82·2) deaths per 1000 livebirths in the second poorest quintile. The difference in under-5 mortality rate between the poorest and richest quintiles decreased significantly by 38·8 (90% UI 32·9–43·8) deaths per 1000 livebirths between 1990 and 2016. The poorest to richest under-5 mortality rate ratio, however, remained similar (2·03 [90% UI 1·94–2·11] in 1990, 1·99 [1·91–2·08] in 2000, and 2·06 [1·92–2·20] in 2016). During 1990–2016, around half of the total under-5 deaths occurred in the poorest two quintiles (48·5% in 1990 and 2000, 49·5% in 2016) and less than a third were in the richest two quintiles (30·4% in 1990, 30·5% in 2000, 29·9% in 2016). For all regions, differences in the under-5 mortality rate between the first and fifth quintiles decreased significantly, ranging from 20·6 (90% UI 15·9–25·1) deaths per 1000 livebirths in eastern Europe and central Asia to 59·5 (48·5–70·4) deaths per 1000 livebirths in south Asia. In 2016, the ratios of under-5 mortality rate in the first quintile to under-5 mortality rate in the fifth quintile were significantly above 2·00 in two regions, with 2·49 (90% UI 2·15–2·87) in east Asia and Pacific (excluding China) and 2·41 (2·05–2·80) in south Asia. Eastern and southern Africa had the smallest ratio in 2016 at 1·62 (90% UI 1·48–1·76). Our model suggested that the expected ratio of under-5 mortality rate in the first quintile to under-5 mortality rate in the fifth quintile increases as national-level under-5 mortality rate decreases.</p>
+
+	                Interpretation
+	                <p>For all LMICs (excluding China) combined, the absolute disparities in under-5 mortality rate between the poorest and richest households have narrowed significantly since 1990, whereas the relative differences have remained stable. To further narrow the rich-and-poor gap in under-5 mortality rate on the relative scale, targeted interventions that focus on the poorest populations are needed.</p>
+
+	                Funding
+	                <p>National University of Singapore, UN Children's Fund, United States Agency for International Development, and the Bill & Melinda Gates Foundation.</p>
+
+	                </div>
+	              </div>
+	            </div>
+
+	            <div class="card mb-4" data-tag='abo fun'>
+	              <div class="card-body">
+	                <p class="card-title" data-toggle="collapse" data-target="#demo34">
+	                <a><strong>Global, regional, and subregional trends in unintended pregnancy and its outcomes from 1990 to 2014: estimates from a Bayesian hierarchical model</strong></a> </p>
+	                <p class="card-text"> J. Bearak, A Popinchalk, L Alkema, G Sedgh (2018). <i>The Lancet Global Health</i> 6(4): e380 - e389.
+	                </p>
+	                <div id="demo34" class="collapse">
+
+	                <br>
+	                Background
+	                <p>The progress to achieve the fourth Millennium Development Goal in reducing mortality rate in children younger than 5 years since 1990 has been remarkable. However, work remains to be done in the Sustainable Development Goal era. Estimates of under-5 mortality rates at the national level can hide disparities within countries. We assessed disparities in under-5 mortality rates by household economic status in low-income and middle-income countries (LMICs).</p>
+	                <br>
+	                Background
+	                <p>Estimates of pregnancy incidence by intention status and outcome indicate how effectively women and couples are able to fulfil their childbearing aspirations, and can be used to monitor the impact of family-planning programmes. We estimate global, regional, and subregional pregnancy rates by intention status and outcome for 1990–2014.</p>
+
+	                Methods
+	                <p>
+	                We developed a Bayesian hierarchical time series model whereby the unintended pregnancy rate is a function of the distribution of women across subgroups defined by marital status and contraceptive need and use, and of the risk of unintended pregnancy in each subgroup. Data included numbers of births and of women estimated by the UN Population Division, recently published abortion incidence estimates, and findings from surveys of women on the percentage of births or pregnancies that were unintended. Some 298 datapoints on the intention status of births or pregnancies were obtained for 105 countries.</p>
+
+	                Findings
+	                <p>Worldwide, an estimated 44% (90% uncertainty interval [UI] 42–48) of pregnancies were unintended in 2010–14. The unintended pregnancy rate declined by 30% (90% UI 21–39) in developed regions, from 64 (59–81) per 1000 women aged 15–44 years in 1990–94 to 45 (42–56) in 2010–14. In developing regions, the unintended pregnancy rate fell 16% (90% UI 5–24), from 77 (74–88) per 1000 women aged 15–44 years to 65 (62–76). Whereas the decline in the unintended pregnancy rate in developed regions coincided with a declining abortion rate, the decline in developing regions coincided with a declining unintended birth rate. In 2010–14, 59% (90% UI 54–65) of unintended pregnancies ended in abortion in developed regions, as did 55% (52–60) of unintended pregnancies in developing regions.</p>
+
+	                Interpretation
+	                <p>The unintended pregnancy rate remains substantially higher in developing regions than in developed regions. Sexual and reproductive health services are needed to help women avoid unintended pregnancies, and to ensure healthy outcomes for those who do experience such pregnancies.</p>
+
+	                Funding
+	                <p>Dutch Ministry of Foreign Affairs and UK Aid from the UK Government.</p>
+
+	                </div>
+	              </div>
+	            </div>
+	         
+	         <div class="card mb-4" data-tag='fun child'>
+	              <div class="card-body">
+	                <p class="card-title" data-toggle="collapse" data-target="#demo33">
+	                <a><strong>Global estimation of neonatal mortality using a Bayesian hierarchical splines regression model</strong></a> </p>
+	                <p class="card-text"> M. Alexander<sup></sup>, L. Alkema (2018). <i>Demographic Research</i> 38: 335 – 372.
+
+	                </p>
+	                <div id="demo33" class="collapse">
+	                <br>
+	                Background
+	                <p> In recent years, much of the focus in monitoring child mortality has been on assessing changes in the under-5 mortality rate (U5MR). However, as the U5MR decreases, the share of neonatal deaths (within the ﬁrst month) tends to increase, warranting increased efforts in monitoring the neonatal mortality rate (NMR) in addition to the U5MR.</p>
+
+	                Objective
+	                <p> Data on neonatal deaths comes from a range of sources across different countries, with the amount of data available and the quality of data varying widely. Our objective in estimating the NMR globally is to combine all data sources available to obtain accurate estimates, be able to project mortality levels, and have some indication of the uncertainty in the estimates and projections.</p>
+
+	                Methods
+	                <p>We present a new model for estimating the NMR for countries worldwide, using a Bayesian hierarchical model framework.</p>
+
+	                Contribution
+	                <p>Our modeling approach offers an intuitive way to share information across different countries and time points, and incorporates different sources of error into the estimates. It also improves on previous modeling approaches by allowing for trends observed in NMR to be more driven by the data available, rather than trends in covariates.</p>
+	                </div>
+	              </div>
+	            </div>
+	         <div class="card mb-4" data-tag="fun fam">
+	              <div class="card-body">
+	                <p class="card-title" data-toggle="collapse" data-target="#demo32">
+	                <a><strong>Modern contraceptive use, unmet need, and demand satisfied among women of reproductive age who are married or in a union in the focus countries of the Family Planning 2020 initiative: a systematic analysis using the Family Planning Estimation Tool. </strong></a> </p>
+	                <p class="card-text"> N. Cahill<sup></sup>, E. Sonneveldt, J. Stover, M. Weinberger, J. Williamson, C. Wei<sup></sup>, W. Brown, L. Alkema (2018).  <i>The Lancet</i> 391 (10123): 870 – 882. 
+
+
+	                </p>
+	                <div id="demo32" class="collapse">
+	                <br>
+	                Background
+	                <p>The London Summit on Family Planning in 2012 inspired the Family Planning 2020 (FP2020) initiative and the 120×20 goal of having an additional 120 million women and adolescent girls become users of modern contraceptives in 69 of the world's poorest countries by the year 2020. Working towards achieving 120 × 20 is crucial for ultimately achieving the Sustainable Development Goals of universal access and satisfying demand for reproductive health. Thus, a performance assessment is required to determine countries' progress.</p>
+
+	                Methods
+	                <p>
+	                An updated version of the Family Planning Estimation Tool (FPET) was used to construct estimates and projections of the modern contraceptive prevalence rate (mCPR), unmet need for, and demand satisfied with modern methods of contraception among women of reproductive age who are married or in a union in the focus countries of the FP2020 initiative. We assessed current levels of family planning indicators and changes between 2012 and 2017. A counterfactual analysis was used to assess if recent levels of mCPR exceeded pre-FP2020 expectations.</p>
+
+	                Findings
+	                <p>
+	                In 2017, the mCPR among women of reproductive age who are married or in a union in the FP2020 focus countries was 45·7% (95% uncertainty interval [UI] 42·4–49·1), unmet need for modern methods was 21·6% (19·7–23·9), and the demand satisfied with modern methods was 67·9% (64·4–71·1). Between 2012 and 2017 the number of women of reproductive age who are married or in a union who use modern methods increased by 28·8 million (95% UI 5·8–52·5). At the regional level, Asia has seen the mCPR among women of reproductive age who are married or in a union grow from 51·0% (95% UI 48·5–53·4) to 51·8% (47·3–56·5) between 2012 and 2017, which is slow growth, particularly when compared with a change from 23·9% (22·9–25·0) to 28·5% (26·8–30·2) across Africa. At the country level, based on a counterfactual analysis, we found that 61% of the countries that have made a commitment to FP2020 exceeded pre-FP2020 expectations for modern contraceptive use. Country success stories include rapid increases in Kenya, Mozambique, Malawi, Lesotho, Sierra Leone, Liberia, and Chad relative to what was expected in 2012.</p>
+
+	                Interpretation
+	                <p>
+	                Whereas the estimate of additional users up to 2017 for women of reproductive age who are married or in a union would suggest that the 120 × 20 goal for all women is overly ambitious, the aggregate outcomes mask the diversity in progress at the country level. We identified countries with accelerated progress, that provide inspiration and guidance on how to increase the use of family planning and inform future efforts, especially in countries where progress has been poor.</p>
+
+	                Funding
+	                <p>
+	                The Bill & Melinda Gates Foundation, through grant support to the University of Massachusetts Amherst and Avenir Health.</p>
+	              </div>
+	            </div>
+	          </div>
+
+	        <div class="card mb-4" data-tag='abo'>
+	              <div class="card-body">
+	                <p class="card-title" data-toggle="collapse" data-target="#demo31">
+	                <a><strong>Global, regional and sub-regional classification of abortions by safety: Estimates for 2010-14</strong></a> </p>
+	                <p class="card-text"> B. Ganatra, C. Gerdts, C. Rossier, R. Johnson, Ö. Tunçalp, A. Assifi,  G. Sedgh, S. Singh, A. Bankole, A. Popinchalk, J. Bearak, Z. Kang<sup></sup>, L. Alkema (2017).  <i>The Lancet</i> 
+	                </p>
+	                <div id="demo31" class="collapse">
+	                <div class="push"></div>
+	                <br>
+	                Background
+	                <p>Global estimates of unsafe abortions have been produced for 1995, 2003, and 2008. However, reconceptualisation of the framework and methods for estimating abortion safety is needed owing to the increased availability of simple methods for safe abortion (eg, medical abortion), the increasingly widespread use of misoprostol outside formal health systems in contexts where abortion is legally restricted, and the need to account for the multiple factors that affect abortion safety.
+	                </p>
+	                Methods
+	                <p>We used all available empirical data on abortion methods, providers, and settings, and factors affecting safety as covariates within a Bayesian hierarchical model to estimate the global, regional, and subregional distributions of abortion by safety categories. We used a three-tiered categorisation based on the WHO definition of unsafe abortion and WHO guidelines on safe abortion to categorise abortions as safe or unsafe and to further divide unsafe abortions into two categories of less safe and least safe.
+	                </p>
+	                Findings
+	                <p>Of the 55· 7 million abortions that occurred worldwide each year between 2010-14, we estimated that 30·6 million (54·9%, 90% uncertainty interval 49·9-59·4) were safe, 17·1 million (30·7%, 25·5-35·6) were less safe, and 8·0 million (14·4%, 11·5-18·1) were least safe. Thus, 25·1 million (45·1%, 40·6-50·1) abortions each year between 2010 and 2014 were unsafe, with 24·3 million (97%) of these in developing countries. The proportion of unsafe abortions was significantly higher in developing countries than developed countries (49·5% vs 12·5%). When grouped by the legal status of abortion, the proportion of unsafe abortions was significantly higher in countries with highly restrictive abortion laws than in those with less restrictive laws.
+	                </p>
+	                Interpretation
+	                <p>Increased efforts are needed, especially in developing countries, to ensure access to safe abortion. The paucity of empirical data is a limitation of these findings. Improved in-country data for health services and innovative research to address these gaps are needed to improve future estimates.
+	                </p>
+	                Funding
+	                <p>UNDP/UNFPA/UNICEF/WHO/World Bank Special Programme of Research, Development and Research Training in Human Reproduction; David and Lucile Packard Foundation; UK Aid from the UK Government; Dutch Ministry of Foreign Affairs; Norwegian Agency for Development Cooperation.
+	                </p>
+	              </div>
+	            </div>
+	          </div>
+
+	          <div class="card mb-4" data-tag="fun mat">
+	            <div class="card-body">
+	              <p class="card-title" data-toggle="collapse" data-target="#demo30">
+	              <a><strong>A Bayesian approach to the global estimation of maternal mortality </strong></a> </p>
+	              <p class="card-text">L. Alkema, S. Zhang, D. Chou, A. Gemmill<sup></sup>, A.B. Moller, D.M. Fat, L. Say, C.D. Mathers, D. Hogan (2017). <i>The The Annals of Applied Statistics</i>  11(3): 1245 – 1274. 
+	              </p>
+	              <div id="demo30" class="collapse">
+	                <br>
+	                Summary
+	                <p>The maternal mortality ratio (MMR) is defined as the number of maternal deaths in a population per 100,000 live births. Country-specific MMR estimates are published on a regular basis by the United Nations Maternal Mortality Estimation Inter-agency Group (UN MMEIG) to track progress in reducing maternal deaths and to evaluate regional and national performance related to Millennium Development Goal (MDG) 5, which calls for a 75% reduction in the MMR between 1990 and 2015. 
+	                </p>
+	                <p>
+	                Until 2014, the UN MMEIG used a multilevel regression model for producing estimates for countries without sufficient data from vital registration systems. While this model worked well in the past to assess MMR levels for countries with limited data, it was deemed unsatisfactory for final MDG 5 reporting for countries where longer time series of observations had become available because by construction, estimated trends in the MMR were covariate-driven only and did not necessarily track data-driven trends. 
+	                </p>
+	                <p>
+	                We developed a Bayesian maternal mortality estimation model, which extends upon the UN MMEIG multilevel regression model. The new model assesses data-driven trends through the inclusion of an ARIMA time series model that captures accelerations and decelerations in the rate of change in the MMR. Varying reporting and data quality issues are accounted for in source-specific data models. The revised model provides data-driven estimates of MMR levels and trends and will be used for MDG 5 reporting for all countries.
+	                </p>
+	              </div>
+	            </div>
+	          </div>
+
+	          <div class="card mb-4" data-tag='fam'>
+	            <div class="card-body">
+	              <p class="card-title" data-toggle="collapse" data-target="#demo29">
+	              <a><strong>Setting ambitious yet achievable targets using probabilistic projections: meeting demand for family planning </strong></a> </p>
+	              <p class="card-text">V. Kantorova, J.R. New<sup></sup>, A. Biddlecom, L. Alkema (2017). <i>Studies in Family Planning</i> 48(3): 223 – 233. 
+	              </p>
+	              <div id="demo29" class="collapse">
+	                <br>
+	                Abstract
+	                <p>
+	                In 2015, governments adopted 17 internationally agreed goals to ensure progress and well-being in the economic, social, and environmental dimensions of sustainable development. These new goals present a challenge for countries to set empirical targets that are ambitious yet achievable and that can account for different starting points and rates of progress. We used probabilistic projections of family planning indicators, based on a global data set and Bayesian hierarchical modeling, to generate illustrative targets at the country level. Targets were defined as the percentage of demand for family planning satisfied with modern contraceptive methods where a country has at least a 10 percent chance of reaching the target by 2030. National targets for 2030 ranged from below 50 percent of demand satisfied with modern contraceptives (for three countries in Africa) to above 90 percent (for 41 countries from all major areas of the world). The probabilistic approach also identified countries for which a global fixed target value of 75 percent demand satisfied was either unambitious or has little chance of achievement. We present the web-based Family Planning Estimation Tool (FPET) enabling national decision makers to compute and assess targets for meeting family planning demand.
+	                </p>
+	              </div>
+	            </div>
+	          </div>
+
+	          <div class="card mb-4" data-tag='fam'>
+	            <div class="card-body">
+	              <p class="card-title" data-toggle="collapse" data-target="#demo28">
+	              <a><strong>Subnational Rates and Trends in Contraceptive Prevalence and Unmet Need for Family Planning from 1990 to 2020: An Analysis for All 29 States in India </strong></a> </p>
+	              <p class="card-text"> J.R. New<sup></sup>, N. Cahill<sup></sup>, J. Stover, Y.P. Gupta, L. Alkema (2017).  <i>The Lancet Global Health </i>5(3): e350-e358. 
+	              </p>
+	              <div id="demo28" class="collapse">
+	              <br>
+	              Background
+	              <p>
+	              Improving access to reproductive health services and commodities is central to development. Efforts to assess progress on this front have been largely focused on national estimates, but such analyses can mask local disparities. We assessed progress in reproductive health services subnationally in India.
+	              </p>
+	              Findings
+	              <p>
+	              There is a large amount of heterogeneity in India, with a difference of up to 55·1 percentage points (95% uncertainty interval 46·4-62·1) in modern contraceptive use in 2015 between subregions. States such as Andhra Pradesh, with 92·7% (90·9-94·2) demand satisfied with modern methods, are performing well above the national average (71·8%, 56·7-83·6), whereas Manipur, with 26·8% (16·7-38·5) of demand satisfied, and Meghalaya, with 45·0% (40·1-50·0), consistently lag behind the rest of the country. Manipur and Meghalaya require the highest percentage increase in modern contraceptive use to achieve 75% demand satisfied with modern methods by 2030. In terms of absolute numbers, Uttar Pradesh requires the greatest increase, needing 9·2 million (5·5-12·6 million) additional users of modern contraception by 2030 to meet the target of 75%.
+	              </p>
+
+	              Interpretation
+	              <p>The demand for family planning among the states and union territories in India is highly diverse. Greatest attention is needed in Uttar Pradesh, Manipur, and Meghalaya to meet UN targets. The analysis can be generalised to other countries as well as other subpopulations.
+	              </p>
+	              Funding
+	              <p>Avenir Health through a grant from the Bill & Melinda Gates Foundation.
+	              </p>
+	            </div>
+	          </div>
+	        </div>
+	          <div class="card mb-4" data-tag='fun abo'>
+	            <div class="card-body">
+	              <p class="card-title" data-toggle="collapse" data-target="#demo27">
+	              <a><strong>Abortion incidence between 1990 and 2014: global, regional, and subregional levels and trends </strong></a> </p>
+	              <p class="card-text">G. Sedgh, J. Bearak, S. Singh, A. Bankole, A. Popinchalk, B. Ganatra, C. Rossier, C. Gerdts, Ö. Tunçalp, R. Johnson, H.B. Johnston, L. Alkema (2016). <i>The Lancet </i>388(10041): 258 – 267. 
+	              </p>
+	              <div id="demo27" class="collapse">
+	              <br>
+	              Background
+	              <p>
+	              Information about the incidence of induced abortion is needed to motivate and inform efforts to help women avoid unintended pregnancies and to monitor progress toward that end. We estimate subregional, regional, and global levels and trends in abortion incidence for 1990 to 2014, and abortion rates in subgroups of women. We use the results to estimate the proportion of pregnancies that end in abortion and examine whether abortion rates vary in countries grouped by the legal status of abortion.
+	              </p>
+
+	              Methods
+	              <p>We requested abortion data from government agencies and compiled data from international sources and nationally representative studies. With data for 1069 country-years, we estimated incidence using a Bayesian hierarchical time series model whereby the overall abortion rate is a function of the modelled rates in subgroups of women of reproductive age defined by their marital status and contraceptive need and use, and the sizes of these subgroups.
+	              </p>
+
+	              Findings
+	              <p>We estimated that 35 abortions (90% uncertainty interval [UI] 33 to 44) occurred annually per 1000 women aged 15–44 years worldwide in 2010–14, which was 5 points less than 40 (39–48) in 1990–94 (90% UI for decline −11 to 0). Because of population growth, the annual number of abortions worldwide increased by 5·9 million (90% UI −1·3 to 15·4), from 50·4 million in 1990–94 (48·6 to 59·9) to 56·3 million (52·4 to 70·0) in 2010–14. In the developed world, the abortion rate declined 19 points (–26 to −14), from 46 (41 to 59) to 27 (24 to 37). In the developing world, we found a non-significant 2 point decline (90% UI −9 to 4) in the rate from 39 (37 to 47) to 37 (34 to 46). Some 25% (90% UI 23 to 29) of pregnancies ended in abortion in 2010–14. Globally, 73% (90% UI 59 to 82) of abortions were obtained by married women in 2010–14 compared with 27% (18 to 41) obtained by unmarried women. We did not observe an association between the abortion rates for 2010–14 and the grounds under which abortion is legally allowed.
+	              </p>
+
+	              Interpretation
+	              <p>Abortion rates have declined significantly since 1990 in the developed world but not in the developing world. Ensuring access to sexual and reproductive health care could help millions of women avoid unintended pregnancies and ensure access to safe abortion.
+	              </p>
+
+	              Funding
+	              <p>UK Government, Dutch Ministry of Foreign Affairs, Norwegian Agency for Development Cooperation, The David and Lucile Packard Foundation, UNDP/UNFPA/UNICEF/WHO/World Bank Special Programme of Research, Development and Research Training in Human Reproduction.
+	              </p>
+	            </div>
+	          </div>
+	        </div>
+	        <div class="card mb-4" data-tag='mat'>
+	            <div class="card-body">
+	              <p class="card-title" data-toggle="collapse" data-target="#demo26">
+	              <a><strong>
+	              Global, regional, and national levels and trends in maternal mortality between 1990 and 2015, with scenario-based projections to 2030: a systematic analysis by the UN Inter-agency Group for Maternal Mortality Estimation 
+	              </strong></a> 
+	              </p>
+	              <p class="card-text">
+	              L. Alkema, D. Chou, D. Hogan, S. Zhang, A.B. Moller, A. Gemmill<sup></sup>, D.M. Fat, T. Boerma, M. Temmerman, C.D. Mathers, L. Say (2016). 
+	              <i>
+	              The Lancet
+	              </i>
+	              387(10017): 462 – 474. 
+	              </p>
+	              <div id="demo26" class="collapse">
+	              <br>
+	              Background
+	              <p>
+	              Millennium Development Goal 5 calls for a 75% reduction in the maternal mortality ratio (MMR) between 1990 and 2015. We estimated levels and trends in maternal mortality for 183 countries to assess progress made. Based on MMR estimates for 2015, we constructed projections to show the requirements for the Sustainable Development Goal (SDG) of less than 70 maternal deaths per 100 000 livebirths globally by 2030. 
+	              </p>
+	              Methods
+	              <p> We updated the UN Maternal Mortality Estimation Inter-Agency Group (MMEIG) database with more than 200 additional records (vital statistics from civil registration systems, surveys, studies, or reports). We generated estimates of maternal mortality and related indicators with 80% uncertainty intervals (UIs) using a Bayesian model. The model combines the rate of change implied by a multilevel regression model with a time-series model to capture data-driven changes in country-specific MMRs, and includes a data model to adjust for systematic and random errors associated with different data sources. 
+	              </p>
+	              Results
+	              <p>
+	               We had data for 171 of 183 countries. The global MMR fell from 385 deaths per 100 000 livebirths (80% UI 359-427) in 1990, to 216 (207-249) in 2015, corresponding to a relative decline of 43 9% (34 0-48 7), with 303 000 (291 000-349 000) maternal deaths worldwide in 2015. Regional progress in reducing the MMR since 1990 ranged from an annual rate of reduction of 1.8% (0.0-3.1) in the Caribbean to 5.0% (4.0-6.0) in eastern Asia. Regional MMRs for 2015 ranged from 12 deaths per 100 000 livebirths (11-14) for high-income regions to 546 (511-65 2) for sub-Saharan Africa. Accelerated progress will be needed to achieve the SDG goal; countries will need to reduce their MMRs at an annual rate of reduction of at least 7.5%. 
+	              </p>
+	              Interpretation
+	               <p>
+	               Despite global progress in reducing maternal mortality, immediate action is needed to meet the ambitious SDG 2030 target, and ultimately eliminate preventable maternal mortality. Although the rates of reduction that are needed to achieve country-specific SDG targets are ambitious for most high mortality countries, countries that made a concerted effort to reduce maternal mortality between 2000 and 2010 provide inspiration and guidance on how to accomplish the acceleration necessary to substantially reduce preventable maternal deaths.
+	              </p>
+	            </div>
+	          </div>
+	        </div>
+	        <div class="card mb-4" data-tag='child'>
+	            <div class="card-body">
+	              <p class="card-title" data-toggle="collapse" data-target="#demo25">
+	              <a><strong>
+	              Global, regional, and national levels and trends in under-5 mortality between 1990 and 2015, with scenario-based projections to 2030: a systematic analysis by the UN Inter-agency Group for Child Mortality Estimation 
+	              </strong></a> 
+	              </p>
+	              <p class="card-text">
+	              D. You, L. Hug, S. Ejdemyr, P. Idele, D. Hogan, C. Mathers, P. Gerland, J.R. New<sup></sup>, L. Alkema (2015).  
+	              <i>
+	              The Lancet
+	              </i>
+	              386(10010): 2275–2286.
+	              </p>
+	              <div id="demo25" class="collapse">
+	              <br>
+	              Background
+	              <p>
+	              In 2000, world leaders agreed on the Millennium Development Goals (MDGs). MDG 4 called for a two-thirds reduction in the under-5 mortality rate between 1990 and 2015. We aimed to estimate levels and trends in under-5 mortality for 195 countries from 1990 to 2015 to assess MDG 4 achievement and then intended to project how various post-2015 targets and observed rates of change will affect the burden of under-5 deaths from 2016 to 2030.
+	              </p>
+	              Methods
+	              <p>
+	              We updated the UN Inter-agency Group for Child Mortality Estimation (UN IGME) database with 5700 country-year datapoints. As of July, 2015, the database contains about 17 000 country-year datapoints for mortality of children younger than 5 years for 195 countries, and includes all available nationally-representative data from vital registration systems, population censuses, household surveys, and sample registration systems. We used these data to generate estimates, with uncertainty intervals, of under-5 (age 0-4 years) mortality using a Bayesian B-spline bias-reduction model (B3 model). This model includes a data model to adjust for systematic biases associated with different types of data sources. To provide insights into the global and regional burden of under-5 deaths associated with post-2015 targets, we constructed five scenario-based projections for under-5 mortality from 2016 to 2030 and estimated national, regional, and global under-5 mortality rates up to 2030 for each scenario.
+	              </p>
+	              Results
+	              <p>
+	              The global under-5 mortality rate has fallen from 90·6 deaths per 1000 livebirths (90% uncertainty interval 89·3-92·2) in 1990 to 42·5 (40·9-45·6) in 2015. During the same period, the annual number of under-5 deaths worldwide dropped from 12·7 million (12·6 million-13·0 million) to 5·9 million (5·7 million-6·4 million). The global under-5 mortality rate reduced by 53% (50-55%) in the past 25 years and therefore missed the MDG 4 target. Based on point estimates, two regions-east Asia and the Pacific, and Latin America and the Caribbean-achieved the MDG 4 target. 62 countries achieved the MDG 4 target, of which 24 were low-income and lower-middle income countries. Between 2016 and 2030, 94·4 million children are projected to die before the age of 5 years if the 2015 mortality rate remains constant in each country, and 68·8 million would die if each country continues to reduce its mortality rate at the pace estimated from 2000 to 2015. If all countries achieve the Sustainable Development Goal of an under-5 mortality rate of 25 or fewer deaths per 1000 livebirths by 2030, we project 56·0 million deaths by 2030. About two-thirds of all sub-Saharan African countries need to accelerate progress to achieve this target.
+	              </p>
+	              Interpretation
+	              <p>
+	              Despite substantial progress in reducing child mortality, concerted efforts remain necessary to avoid preventable under-5 deaths in the coming years and to accelerate progress in improving child survival further. Urgent actions are needed most in the regions and countries with high under-5 mortality rates, particularly those in sub-Saharan Africa and south Asia.
+	              </p>
+	              <p>
+	              Funding
+	              No funding
+	              </p>
+	            </div>
+	          </div>
+	        </div>
+	        <div class="card mb-4" data-tag='pop'>
+	            <div class="card-body">
+	              <p class="card-title" data-toggle="collapse" data-target="#demo24">
+	              <a><strong>
+	              The United Nations Probabilistic Population Projections: An Introduction to Demographic Forecasting with Uncertainty. 
+	              </strong></a> 
+	              </p>
+	              <p class="card-text">
+	              L. Alkema, P. Gerland, A.E. Raftery, J. Wilmoth (2015).   
+	              <i>
+	              Foresight: The International Journal of Applied Forecasting 
+	              </i>
+	              37: 19–24.
+	              </p>
+	              <div id="demo24" class="collapse">
+	              <br>
+	            </div>
+	          </div>
+	        </div>
+	        <div class="card mb-4" data-tag='fun child'>
+	            <div class="card-body">
+	              <p class="card-title" data-toggle="collapse" data-target="#demo23">
+	              <a><strong>
+	              Global estimation of child mortality using a Bayesian B-spline bias-reduction method 
+	              </strong></a> 
+	              </p>
+	              <p class="card-text">
+	              L. Alkema, J.R. New<sup></sup> (2014).   
+	              <i>
+	              The Annals of Applied Statistics 
+	              </i>
+	              8(4): 2122–2149.
+	              </p>
+	              <div id="demo23" class="collapse">
+	              <br>
+	            </div>
+	          </div>
+	        </div>
+	        <div class="card mb-4" data-tag='pop'>
+	            <div class="card-body">
+	              <p class="card-title" data-toggle="collapse" data-target="#demo22">
+	              <a><strong>
+	              World population stabilization unlikely this century
+	              </strong></a> 
+	              </p>
+	              <p class="card-text">
+	              P. Gerland, A.E. Raftery, H. Ševčíková, N. Li, D. Gu, T. Spoorenberg, L. Alkema, B.K. Fosdick, J. Chunn, N. Lalic, G. Bay, T. Buettner, G.K. Heilig, J. Wilmoth (2014).    
+	              <i>
+	              Science 
+	              </i>
+	              346(6206): 234–237.
+	              </p>
+	              <div id="demo22" class="collapse">
+	              <br>
+	              Abstract
+	              <p>
+	                The United Nations recently released population projections based on data until 2012 and a Bayesian probabilistic methodology. Analysis of these data reveals that, contrary to previous literature, world population is unlikely to stop growing this century. There is an 80% probability that world population, now 7.2 billion, will increase to between 9.6 and 12.3 billion in 2100. This uncertainty is much smaller than the range from the traditional UN high and low variants. Much of the increase is expected to happen in Africa, in part due to higher fertility and a recent slowdown in the pace of fertility decline. Also, the ratio of working age people to older people is likely to decline substantially in all countries, even those that currently have young populations.
+	              </p>
+	            </div>
+	          </div>
+	        </div>
+	        <div class="card mb-4" data-tag='fun child'>
+	            <div class="card-body">
+	              <p class="card-title" data-toggle="collapse" data-target="#demo21">
+	              <a><strong>
+	              National, regional, and global sex ratios of infant, child, and under-5 mortality and identification of countries with outlying ratios: a systematic assessment
+	              </strong></a> 
+	              </p>
+	              <p class="card-text">
+	              L. Alkema, F. Chao, D. You, J. Pedersen, C.C. Sawyer (2014).     
+	              <i>
+	              The Lancet Global Health   
+	              </i>
+	              2(9): e521–e530.
+	              </p>
+	              <div id="demo21" class="collapse">
+	              <br>
+	              Background
+	              <p>
+	              Under natural circumstances, the sex ratio of male to female mortality up to the age of 5 years is greater than one but sex discrimination can change sex ratios. The estimation of mortality by sex and identification of countries with outlying levels is challenging because of issues with data availability and quality, and because sex ratios might vary naturally based on differences in mortality levels and associated cause of death distributions.
+	              </p>
+	              Methods
+	              <p>For this systematic analysis, we estimated country-specific mortality sex ratios for infants, children aged 1–4 years, and children under the age of 5 years (under 5s) for all countries from 1990 (or the earliest year of data collection) to 2012 using a Bayesian hierarchical time series model, accounting for various data quality issues and assessing the uncertainty in sex ratios. We simultaneously estimated the global relation between sex ratios and mortality levels and constructed estimates of expected and excess female mortality rates to identify countries with outlying sex ratios.
+	              </p>
+	              Findings
+	              <p>Global sex ratios in 2012 were 1·13 (90% uncertainty interval 1·12–1·15) for infants, 0·95 (0·93–0·97) for children aged 1–5 years, and 1·08 (1·07–1·09) for under 5s, an increase since 1990 of 0·01 (−0·01 to 0·02) for infants, 0·04 (0·02 to 0·06) for children aged 1–4 years, and 0·02 (0·01 to 0·04) for under 5s. Levels and trends varied across regions and countries. Sex ratios were lowest in southern Asia for 1990 and 2012 for all age groups. Highest sex ratios were seen in developed regions and the Caucasus and central Asia region. Decreasing mortality was associated with increasing sex ratios, except at very low infant mortality, where sex ratios decreased with total mortality. For 2012, we identified 15 countries with outlying under-5 sex ratios, of which ten countries had female mortality higher than expected (Afghanistan, Bahrain, Bangladesh, China, Egypt, India, Iran, Jordan, Nepal, and Pakistan). Although excess female mortality has decreased since 1990 for the vast majority of countries with outlying sex ratios, the ratios of estimated to expected female mortality did not change substantially for most countries, and worsened for India.
+	              </p>
+	              Interpretation
+	              <p>Important differences exist between boys and girls with respect to survival up to the age of 5 years. Survival chances tend to improve more rapidly for girls compared with boys as total mortality decreases, with a reversal of this trend at very low infant mortality. For many countries, sex ratios follow this pattern but important exceptions exist. An explanation needs to be sought for selected countries with outlying sex ratios and action should be undertaken if sex discrimination is present.
+	              </p>
+	              Funding
+	              <p>The National University of Singapore and the United Nations Children's Fund (UNICEF).
+	              </p>
+	            </div>
+	          </div>
+	        </div>
+	        <div class="card mb-4" data-tag='child'>
+	            <div class="card-body">
+	              <p class="card-title" data-toggle="collapse" data-target="#demo20">
+	              <a><strong>
+	              Child Mortality Estimation 2013: An overview of updates in estimation methods by the United Nations Inter-agency Group for Child Mortality Estimation 
+	              </strong></a> 
+	              </p>
+	              <p class="card-text">
+	              L. Alkema, J.R. New<sup></sup>, J. Pedersen, D. You, on behalf of the members of the UN Inter-agency Group for Child Mortality Estimation and its Technical Advisory Group (2014).      
+	              <i>
+	              PLOS ONE 
+	              </i>
+	              9(7): e101112.  
+	              </p>
+	              <div id="demo20" class="collapse">
+	              <br>
+	            </div>
+	          </div>
+	        </div>
+	        <div class="card mb-4" data-tag='fun mat'>
+	            <div class="card-body">
+	              <p class="card-title" data-toggle="collapse" data-target="#demo19">
+	              <a><strong>
+	              Global causes of maternal deaths: A WHO systematic analysis
+	              </strong></a> 
+	              </p>
+	              <p class="card-text">
+	              L. Say, D. Chou, A. Gemmill<sup></sup>, Ö. Tunçalp, A. B. Moller, J. Daniels, A. M. Gülmezoglu, M. Temmerman, L. Alkema (2014).  
+	              <i>
+	              The Lancet Global Health 
+	              </i>
+	              2(6): e323–e3332.   
+	              </p>
+	              <div id="demo19" class="collapse">
+	              <br>
+	              Background
+	              <p>
+	              Data for the causes of maternal deaths are needed to inform policies to improve maternal health. We developed and analysed global, regional, and subregional estimates of the causes of maternal death during 2003-09, with a novel method, updating the previous WHO systematic review.
+	              </p>
+	              Methods
+	              <p>
+	              We searched specialised and general bibliographic databases for articles published between between Jan 1, 2003, and Dec 31, 2012, for research data, with no language restrictions, and the WHO mortality database for vital registration data. On the basis of prespecified inclusion criteria, we analysed causes of maternal death from datasets. We aggregated country level estimates to report estimates of causes of death by Millennium Development Goal regions and worldwide, for main and subcauses of death categories with a Bayesian hierarchical model.
+	              </p>
+	              Findings
+	              <p>
+	              We identified 23 eligible studies (published 2003-12). We included 417 datasets from 115 countries comprising 60 799 deaths in the analysis. About 73% (1 771 000 of 2 443 000) of all maternal deaths between 2003 and 2009 were due to direct obstetric causes and deaths due to indirect causes accounted for 27·5% (672 000, 95% UI 19·7-37·5) of all deaths. Haemorrhage accounted for 27·1% (661 000, 19·9-36·2), hypertensive disorders 14·0% (343 000, 11·1-17·4), and sepsis 10·7% (261 000, 5·9-18·6) of maternal deaths. The rest of deaths were due to abortion (7·9% [193 000], 4·7-13·2), embolism (3·2% [78 000], 1·8-5·5), and all other direct causes of death (9·6% [235 000], 6·5-14·3). Regional estimates varied substantially.
+	              </p>
+	              Interpretation
+	              <p>
+	              Between 2003 and 2009, haemorrhage, hypertensive disorders, and sepsis were responsible for more than half of maternal deaths worldwide. More than a quarter of deaths were attributable to indirect causes. These analyses should inform the prioritisation of health policies, programmes, and funding to reduce maternal deaths at regional and global levels. Further efforts are needed to improve the availability and quality of data related to maternal mortality.
+	              </p>
+	            </div>
+	          </div>
+	        </div>
+	        <div class="card mb-4" data-tag=''>
+	            <div class="card-body">
+	              <p class="card-title" data-toggle="collapse" data-target="#demo18">
+	              <a><strong>
+	              Forecasting the burden of type 2 diabetes in Singapore using a demographic epidemiological model of Singapore
+	              </strong></a> 
+	              </p>
+	              <p class="card-text">
+	              T.P. Phan, L. Alkema, E.S. Tai, K.H.X. Tan, Q. Yang, W.Y. Lim, Y.Y. Teo, C.Y. Cheng, X. Wang, T.Y. Wong, K.S. Chia, A.R. Cook (2014).     
+	              <i>
+	              BMJ Open Diabetes Research and Care 
+	              </i>
+	              2(1): e000012. 
+	              </p>
+	              <div id="demo18" class="collapse">
+	              <br>
+	              Objective
+	              <p>
+	              Singapore is a microcosm of Asia as a whole, and its rapidly ageing, increasingly sedentary population heralds the chronic health problems other Asian countries are starting to face and will likely face in the decades ahead. Forecasting the changing burden of chronic diseases such as type 2 diabetes in Singapore is vital to plan the resources needed and motivate preventive efforts.
+	              </p>
+	              Methods
+	              <p>
+	              This paper describes an individual-level simulation model that uses evidence synthesis from multiple data streams-national statistics, national health surveys, and four cohort studies, and known risk factors-aging, obesity, ethnicity, and genetics-to forecast the prevalence of type 2 diabetes in Singapore. This comprises submodels for mortality, fertility, migration, body mass index trajectories, genetics, and workforce participation, parameterized using Markov chain Monte Carlo methods, and permits forecasts by ethnicity and employment status.
+	              </p>
+	              Results
+	              <p>
+	              We forecast that the obesity prevalence will quadruple from 4.3% in 1990 to 15.9% in 2050, while the prevalence of type 2 diabetes (diagnosed and undiagnosed) among Singapore adults aged 18-69 will double from 7.3% in 1990 to 15% in 2050, that ethnic Indians and Malays will bear a disproportionate burden compared with the Chinese majority, and that the number of patients with diabetes in the workforce will grow markedly.
+	              </p>
+	              Conclusion
+	              <p>
+	              If the recent rise in obesity prevalence continues, the lifetime risk of type 2 diabetes in Singapore will be one in two by 2050 with concomitant implications for greater healthcare expenditure, productivity losses, and the targeting of health promotion programmes.
+	              </p>
+	              </div>
+	              </div>
+	              </div>
+	        <div class="card mb-4" data-tag='pop'>
+	            <div class="card-body">
+	              <p class="card-title" data-toggle="collapse" data-target="#demo17">
+	              <a><strong>
+	              Bayesian population projections for the United Nations
+	              </strong></a> 
+	              </p>
+	              <p class="card-text">
+	              A. E. Raftery, L. Alkema, P. Gerland (2014).      
+	              <i>
+	              Statistical Science 
+	              </i>
+	              29(1): 56–68.
+	              </p>
+	              <div id="demo17" class="collapse">
+	              <br>
+	              Abstract
+	              <p>
+	              The United Nations regularly publishes projections of the populations of all the world’s countries broken down by age and sex. These projections are the de facto standard and are widely used by international organizations, governments and researchers. Like almost all other population projections, they are produced using the standard deterministic cohort-component projection method and do not yield statements of uncertainty. We describe a Bayesian method for producing probabilistic population projections for most countries that the United Nations could use. It has at its core Bayesian hierarchical models for the total fertility rate and life expectancy at birth. We illustrate the method and show how it can be extended to address concerns about the UN’s current assumptions about the long-term distribution of fertility. The method is implemented in the R packages bayesTFR, bayesLife, bayesPop and bayesDem.
+	            </p>
+	          </div>
+	        </div>
+	      </div>
+	            <div class="card mb-4" data-tag='mat'>
+	            <div class="card-body">
+	              <p class="card-title" data-toggle="collapse" data-target="#demo16">
+	              <a><strong>
+	              How informative are vital registration data for estimating maternal mortality? A Bayesian analysis of WHO adjustment data and parameters
+	              </strong></a> 
+	              </p>
+	              <p class="card-text">
+	              F. Chao<sup></sup>, L. Alkema (2014).      
+	              <i>
+	              Statistics and Public Policy
+	              </i>
+	              1(1): 6–14.
+	              </p>
+	              <div id="demo16" class="collapse">
+	              <br>
+	              Summary
+	              <p>
+	              Monitoring maternal mortality is challenging due to fragmented data of varying quality. The maternal mortality estimates published by the
+	              WHO in 2012 included data adjustment parameters to account for these data quality issues, but there was a discrepancy between the WHO
+	              assumption about, and the observed variability in, misclassification errors in vital registration (VR) observations. We developed a Bayesian
+	              hierarchical time series model to estimate the extent of VR misclassification errors and to provide a plausible assessment of the uncertainty
+	              associated with VR observations for countries with and without external information on VR adjustment parameters. The resulting Bayesian
+	              distribution for VR adjustments was more comparable to the observed biases than the WHO expert distribution and the model allows for
+	              estimation of VR adjustment values for any period of interest for countries with partial information on such adjustments. We also illustrated
+	              that a fully Bayesian modeling approach for estimating maternal mortality can provide more data-driven insights into maternal mortality
+	              estimates and data adjustment parameters. However, given the paucity of, and the issues with, maternal mortality data, validation of modeling
+	              assumptions and fin
+	              </p>
+	              </div>
+	              </div>
+	              </div>
+	            <div class="card mb-4" data-tag='pop'>
+	            <div class="card-body">
+	              <p class="card-title" data-toggle="collapse" data-target="#demo15">
+	              <a><strong>
+	              Levels of urbanization in the world’s countries: testing consistency of estimates based on national definitions
+	              </strong></a> 
+	              </p>
+	              <p class="card-text">
+	              L. Alkema, G. Jones, C. Rue (2013).       
+	              <i>
+	              Journal of Population Research
+	              </i>
+	              30(4): 291–304.
+	              </p>
+	              <div id="demo15" class="collapse">
+	              <br>
+	              Background
+	              <p>
+	              Estimates of urbanization levels for all countries, as published in the United
+	              Nations World Urbanization Prospects, are not comparable across countries because they are
+	              based on national definitions of urbanization, which vary greatly across countries.
+	              </p>
+	              Objective
+	              <p>
+	               To construct alternative estimates of urbanization for all countries for 1990 and
+	              2000 which are comparable across countries and can be used to point out countries with
+	              definitional problems or interesting urban characteristics.
+	              </p>
+	              Methods 
+	              <p>We assume that the UN estimates represent the true proportion urban in a country,
+	              with measurement errors caused by definitional issues. To construct alternative estimates, we
+	              regress this proportion urban against variables that are associated with urbanization, as well as
+	              a categorical variable that summarizes the urban definition.
+	              </p>
+	              Results
+	              <p>Among the 181 countries included in the analysis, 21 per cent have a restrictive
+	              definition, and 31 per cent a generous definition of urbanization. Among the set of candidate
+	              predictor variables, GDP per capita, percent of employment in the agriculture sector and
+	              population density were selected as important predictors for urbanization. In 2000, the
+	              difference between the alternative estimate and the UN estimate was more than 10 per cent
+	              for 67 countries. Examples of countries with large differences include Trinidad and Tobago,
+	              Guyana, Sri Lanka and Thailand.
+	              </p>
+	              Conclusions
+	              <p> Comparison of urbanization estimates across countries should be treated with
+	              care, given the wide range of definitions used. To produce more informative estimates of
+	              urbanization, several countries would need to clarify or re-think their definition of urban.
+	              </p>
+	              </div>
+	              </div>
+	              </div>
+
+	          <div class="card mb-4" data-tag='child'>
+	            <div class="card-body">
+	              <p class="card-title" data-toggle="collapse" data-target="#demo14">
+	              <a><strong>
+	              Millennium Development Goals national targets are moving targets and the results will not be known until well after the 5 deadline of 2015.
+	              </strong></a> 
+	              </p>
+	              <p class="card-text">
+	              M. Oestergaard, L. Alkema, J.E. Lawn (Editorial, 2013).       
+	              <i>
+	              International Journal of Epidemiology
+	              </i>
+	              42(3): 645–647.
+	              </p>
+	              <div id="demo14" class="collapse">
+	              <br>
+	              Summary
+	              <p>
+	                The Millennium Development Goal 4 (MDG-4) was
+	                agreed upon at the United Nations Millennium
+	                Summit in September 2000 to accelerate national
+	                and international efforts to reduce child mortality,
+	                and improve development by setting explicit targets.
+	                However, there is very little awareness among global
+	                health data experts, let alone policymakers, that in
+	                reality, the Millennium Development Goals related
+	                to mortality outcomes are moving targets that may
+	                change every year.
+	                </p>
+	                <p>
+	                The MDG-4 target is the under-five mortality rate
+	                (U5MR, deaths in children less than 5 years of age
+	                per 1000 live births) in 2015 given a two-thirds reduction
+	                in the rate compared with 1990. The target is
+	                set for each country of the world and at the global
+	                level and is determined by the estimated baseline
+	                mortality levels for year 1990.
+	                </p>
+	                <p>
+	                We explain why MDG-4 targets are moving and
+	                summarize indicators of progress, quantify how
+	                much national and global targets have moved and
+	                outline key policy implications and considerations
+	                for tracking country progress. Our aim is to
+	                strengthen the process of evaluating progress and to
+	                inform the debate on a next generation of goals that
+	                are likely to succeed when the MDG period ends in
+	                2015. We illustrate changes in targets by using MDG4
+	                predictions from the United Nations Inter-agency
+	                Group on Child Mortality Estimation (UN-IGME),1,2
+	                but the same principles and implications apply to any
+	                burden of disease prediction exercise, for example for
+	                MDG-5.3-5
+	                </p>
+	                <p>
+	                The UN-IGME, comprising the United Nations
+	                Children’s Fund, World Health Organization, United
+	                Nations Population Division and the World Bank, was
+	                formed in 2004 with a brief to produce annual updates
+	                of child mortality levels and trends for all 195
+	                UN member states in order to facilitate consistent
+	                tracking for MDG-4.6 UN-IGME has identified the
+	                annual rate of change as the indicator of choice for
+	                tracking progress towards the MDG-4 target. A twothirds
+	                reduction in U5MR between 1990 and 2015
+	                amounts to an annual rate of change of 4.4%, so if
+	                a country’s annual rate of change is 4.4% or greater,
+	                the country is said to be on target. With lower rates
+	                than this, the country is off target.
+	                Both the progress between 1990 and today and the
+	                required change going forward to reach the MDG
+	                target are changing every year as these are determined
+	                by mortality levels for both 1990 and today.
+	                Paradoxically, this means that the required change
+	                today to reach the MDG target may differ from previous
+	                years even if the 1990 level and thus the MDG-4
+	                target stay the same; or it may mean that the required
+	                change fluctuates between years even if the mortality
+	                level in recent years stays constant but the estimated
+	                1990 level changes.
+	                </p>
+	                </div>
+	                </div>
+	                </div>
+	          <div class="card mb-4" data-tag='fam fun'>
+	            <div class="card-body">
+	              <p class="card-title" data-toggle="collapse" data-target="#demo13">
+	              <a><strong>
+	              National, regional and global rates and trends in contraceptive prevalence and unmet need for family planning between 1990 and 2015: a systematic and comprehensive analysis
+	              </strong></a> 
+	              </p>
+	              <p class="card-text">
+	              L. Alkema, V. Kantorova, C. Menozzi, A. Biddlecom (2013).        
+	              <i>
+	              The Lancet 
+	              </i>
+	              381(9878): 1642–1652. 
+	              </p>
+	              <div id="demo13" class="collapse">
+	              <br>
+	              Background
+	              <p> Expansion of access to contraception and reduction of unmet n eed for family planning are key
+	              components to improve reproductive health, but scarce data and variability in data sources create diffi culties in
+	              monitoring of progress for these outcomes. We estimated and projected indicators of contraceptive prevalence and
+	              unmet need for family planning from 1990 to 2015.
+	              </p>
+	              Methods 
+	              <p>
+	              We obtained data from nationally representative surveys, for women aged 15–49 years who were married or
+	              in a union. Estimates were based on 930 observations of contraceptive prevalence between 1950 and 2011 from
+	              194 countries or areas, and 306 observations of unmet need for family planning from 111 countries or areas. We used
+	              a Bayesian hierarchical model combined with country-specifi c time trends to yield estimates of these indicators and
+	              uncertainty assessments. The model accounted for diff erences by data source, sample population, and contraceptive
+	              methods included in the measure.
+	              </p>
+	              Findings 
+	              <p>
+	              Worldwide, contraceptive prevalence increased from 54·8% (95% uncertainty interval 52·3–57·1) in 1990, to
+	              63·3% (60·4–66·0) in 2010, and unmet need for family planning decreased from 15·4% (14·1–16·9) in 1990, to
+	              12·3% (10·9–13·9) in 2010. Almost all subregions, except for those where contraceptive prevalence was already high
+	              in 1990, had an increase in contraceptive prevalence and a decrease in unmet need for family planning between
+	              1990 and 2010, although the pace of change over time varied between countries and subregions. In 2010, 146 million
+	              (130–166 million) women worldwide aged 15–49 years who were married or in a union had an unmet need for family
+	              planning. The absolute number of married women who either use contraception or who have an unmet need for
+	              family planning is projected to grow from 900 million (876–922 million) in 2010 to 962 million (927–992 million) in
+	              2015, and will increase in most developing countries.
+	              </p>
+	              Interpretation 
+	              <p>
+	              Trends in contraceptive prevalence and unmet need for family planning, and the projected growth in
+	              the number of potential contraceptive users indicate that increased investment is necessary to meet demand for
+	              contraceptive methods and improve reproductive health worldwide.
+	              </p>
+	              Funding 
+	              <p>
+	              United Nations Population Division and National University of Singapore.
+	              </p>
+	              </div>
+	              </div>
+	              </div>
+	        <div class="card mb-4" data-tag='child'>
+	            <div class="card-body">
+	              <p class="card-title" data-toggle="collapse" data-target="#demo12">
+	              <a><strong>
+	              Progress toward global reduction in under-5 mortality: A bootstrap analysis of uncertainty in Millennium Development Goal 4 estimates
+	              </strong></a> 
+	              </p>
+	              <p class="card-text">
+	              L. Alkema, J.R. New<sup></sup> (2012).         
+	              <i>
+	              PLOS Medicine 
+	              </i>
+	              9(12): e1001355. 
+	              </p>
+	              <div id="demo12" class="collapse">
+	              <br>
+	              Background
+	              <p>
+	              Millennium Development Goal 4 calls for an annual rate of reduction (ARR) of the under-five mortality rate (U5MR) of 4.4% between 1990 and 2015. Progress is measured through the point estimates of the United Nations Inter-agency Group for Child Mortality Estimation (UN IGME). To facilitate evidence-based conclusions about progress toward the goal, we assessed the uncertainty in the estimates arising from sampling errors and biases in data series and the inferior quality of specific data series.
+	              </p>
+	              Methods and Findings
+	              <p>
+	              We implemented a bootstrap procedure to construct 90% uncertainty intervals (UIs) for the U5MR and ARR to complement the UN IGME estimates. We constructed the bounds for all countries without a generalized HIV epidemic, where a standard estimation approach is carried out (174 countries). In the bootstrap procedure, potential biases in levels and trends of data series of different source types were accounted for. There is considerable uncertainty about the U5MR, particularly for high mortality countries and in recent years. Among 86 countries with a U5MR of at least 40 deaths per 1,000 live births in 1990, the median width of the UI, relative to the U5MR level, was 19% for 1990 and 48% for 2011, with the increase in uncertainty due to more limited data availability. The median absolute width of the 90% UI for the ARR from 1990 to 2011 was 2.2%. Although the ARR point estimate for all high mortality countries was greater than zero, for eight of them uncertainty included the possibility of no improvement between 1990 and 2011. For 13 countries, it is deemed likely that the ARR from 1990 to 2011 exceeded 4.4%.
+	              </p>
+	              Conclusion
+	              <p>
+	              In light of the upcoming evaluation of Millennium Development Goal 4 in 2015, uncertainty assessments need to be taken into account to avoid unwarranted conclusions about countries' progress based on limited data.
+	              </p>
+	              </div>
+	              </div>
+	              </div>
+	  <div class="card mb-4" data-tag='child'>
+	            <div class="card-body">
+	              <p class="card-title" data-toggle="collapse" data-target="#demo11">
+	              <a><strong>
+	              Child Mortality Estimation: a comparison of UN-IGME and IHME estimates of levels and trends in under-5 mortality rates and deaths
+	              </strong></a> 
+	              </p>
+	              <p class="card-text">
+	              L. Alkema, D. You (2012).          
+	              <i>
+	              PLOS Medicine 
+	              </i>
+	              9(8): e1001288.
+	              </p>
+	              <div id="demo11" class="collapse">
+	              <br>
+	              Background
+	              <p>
+	              Millennium Development Goal 4 calls for a reduction in the under-five mortality rate (U5MR) by two-thirds between 1990 and 2015. In 2011, estimates were published by the United Nations Inter-agency Group for Child Mortality Estimation (UN IGME) and the Institute for Health Metrics and Evaluation (IHME). The difference in the U5MR estimates produced by the two research groups was more than 10% and corresponded to more than ten deaths per 1,000 live births for 10% of all countries in 1990 and 20% of all countries in 2010, which can lead to conflicting conclusions with respect to countries' progress. To understand what caused the differences in estimates, we summarised differences in underlying data and modelling approaches used by the two groups, and analysed their effects.
+	              </p>
+	              Methods and Findings
+	              <p>
+	              UN IGME and IHME estimation approaches differ with respect to the construction of databases and the pre-processing of data, trend fitting procedures, inclusion and exclusion of data series, and additional adjustment procedures. Large differences in U5MR estimates between the UN IGME and the IHME exist in countries with conflicts or civil unrest, countries with high HIV prevalence, and countries where the underlying data used to derive the estimates were different, especially if the exclusion of data series differed between the two research groups. A decomposition of the differences showed that differences in estimates due to using different data (inclusion of data series and pre-processing of data) are on average larger than the differences due to using different trend fitting methods.
+	              </p>
+	              Conclusions
+	              <p>
+	              Substantial country-specific differences between UN IGME and IHME estimates for U5MR and the number of under-five deaths exist because of various differences in data and modelling assumptions used. Often differences are illustrative of the lack of reliable data and likely to decrease as more data become available. Improved transparency on methods and data used will help to improve understanding about the drivers of the differences.
+	              </p>
+	              </div>
+	              </div>
+	              </div>
+
+	  <div class="card mb-4" data-tag='child'>
+	            <div class="card-body">
+	              <p class="card-title" data-toggle="collapse" data-target="#demo10">
+	              <a><strong>
+	              Monitoring progress towards Millennium Development Goal 4: A call for improved validation of under-5 mortality rate estimates
+	              </strong></a> 
+	              </p>
+	              <p class="card-text">
+	              L. Alkema, M. Wong<sup></sup>, P.R. Seah<sup>UG</sup> (2012).        
+	              <i>
+	              Statistics, Politics, and Policy 
+	              </i>
+	              3(2): Art. 2.
+	              </p>
+	              <div id="demo10" class="collapse">
+	              <br>
+	              Background
+	              <p>
+	              With 4 years until 2015, it is essential to monitor progress towards Millennium Development Goals (MDGs) 4 and 5. Although estimates of maternal and child mortality were published in 2010, an update of estimates is timely in view of additional data sources that have become available and new methods developed. Our aim was to update previous estimates of maternal and child mortality using better data and more robust methods to provide the best available evidence for tracking progress on MDGs 4 and 5.
+	              </p>
+	              Methods
+	              <p>
+	              We update the analyses of the progress towards MDGs 4 and 5 from 2010 with additional surveys, censuses, vital registration, and verbal autopsy data. For children, we estimate early neonatal (0-6 days), late neonatal (7-28 days), postneonatal (29-364 days), childhood (ages 1-4 years), and under-5 mortality. We use an improved model for estimating mortality by age under 5 years. For maternal mortality, our updated analysis includes greater than 1000 additional site-years of data. We tested a large set of alternative models for maternal mortality; we used an ensemble model based on the models with the best out-of-sample predictive validity to generate new estimates from 1990 to 2011.
+	              </p>
+	              Findings
+	              <p>
+	              Under-5 deaths have continued to decline, reaching 7·2 million in 2011 of which 2·2 million were early neonatal, 0·7 million late neonatal, 2·1 million postneonatal, and 2·2 million during childhood (ages 1-4 years). Comparing rates of decline from 1990 to 2000 with 2000 to 2011 shows that 106 countries have accelerated declines in the child mortality rate in the past decade. Maternal mortality has also continued to decline from 409,100 (uncertainty interval 382,900-437,900) in 1990 to 273,500 (256,300-291,700) deaths in 2011. We estimate that 56,100 maternal deaths in 2011 were HIV-related deaths during pregnancy. Based on recent trends in developing countries, 31 countries will achieve MDG 4, 13 countries MDG 5, and nine countries will achieve both.
+	              </p>
+	              Interpretations
+	              <p>
+	              Even though progress on reducing maternal and child mortality in most countries is accelerating, most developing countries will take many years past 2015 to achieve the targets of the MDGs 4 and 5. Similarly, although there continues to be progress on maternal mortality the pace is slow, without any overall evidence of acceleration. Immediate concerted action is needed for a large number of countries to achieve MDG 4 and MDG 5.
+	              </p>
+	              Funding
+	              <p>
+	              Bill & Melinda Gates Foundation.
+	              </p>
+	            </div>
+	          </div>
+	        </div>
+	  <div class="card mb-4" data-tag='fert'>
+	            <div class="card-body">
+	              <p class="card-title" data-toggle="collapse" data-target="#demo9">
+	              <a><strong>
+	              Estimating trends in the total fertility rate with uncertainty using imperfect data: Examples from West Africa
+	              </strong></a> 
+	              </p>
+	              <p class="card-text">
+	              L. Alkema, A. E. Raftery, P. Gerland, S. J. Clark, F. Pelletier (2012).       
+	              <i>
+	              Demographic Research 
+	              </i>
+	              26(15): 331–362. 
+	              </p>
+	              <div id="demo9" class="collapse">
+	              <br>
+	              Background
+	              <p>
+	              Estimating the total fertility rate is challenging for many developing countries because of
+	              limited data and varying data quality. A standardized, reproducible approach to produce
+	              estimates that include an uncertainty assessment is desired.
+	              </p>
+	              Methods
+	              <p>
+	              We develop a method to estimate and assess uncertainty in the total fertility rate over time,
+	              based on multiple imperfect observations from different data sources, including surveys
+	              and censuses. We take account of measurement error in observations by decomposing it
+	              into bias and variance, and assess both by linear regression on a variety of data quality covariates. We estimate the total fertility rate using a local smoother, and assess uncertainty
+	              using the weighted likelihood bootstrap.
+	              </p>
+	              Results
+	              <p>
+	              We apply our method to data from seven countries in West Africa and construct estimates
+	              and uncertainty intervals for the total fertility rate. Based on cross-validation exercises,
+	              we find that accounting for differences in data quality between observations gives better
+	              calibrated confidence intervals and reduces bias.
+	              </p>
+	              Conclusion
+	              <p>
+	              When working with multiple imperfect observations from different data sources to estimate
+	              the total fertility rate, or demographic indicators in general, potential biases and
+	              differences in error variance should be taken into account to improve the estimates and
+	              their uncertainty assessment.
+	              </p>
+	              </div>
+	              </div>
+	              </div>
+	        <div class="card mb-4" data-tag='child'>
+	            <div class="card-body">
+	              <p class="card-title" data-toggle="collapse" data-target="#demo8">
+	              <a><strong>
+	              Estimating the under-5 mortality rate using a Bayesian hierarchical time series model
+	              </strong></a> 
+	              </p>
+	              <p class="card-text">
+	              L. Alkema, W.L. Ann<sup></sup> (2011).      
+	              <i>
+	              PLOS ONE
+	              </i>
+	              6(9): e23954. 
+	              </p>
+	              <div id="demo8" class="collapse">
+	              <br>
+	              Background
+	              <P>
+	              Millennium Development Goal 4 calls for a reduction in the under-five mortality rate by two-thirds between 1990 and 2015, which corresponds to an annual rate of decline of 4.4%. The United Nations Inter-Agency Group for Child Mortality Estimation estimates under-five mortality in every country to measure progress. For the majority of countries, the estimates within a country are based on the assumption of a piece-wise constant rate of decline.
+	              </P>
+	              Methods and Findings
+	              <p>
+	              This paper proposes an alternative method to estimate under-five mortality, such that the underlying rate of change is allowed to vary smoothly over time using a time series model. Information about the average rate of decline and changes therein is exchanged between countries using a Bayesian hierarchical model. Cross-validation exercises suggest that the proposed model provides credible bounds for the under-five mortality rate that are reasonably well calibrated during the observation period. The alternative estimates suggest smoother trends in under-five mortality and give new insights into changes in the rate of decline within countries.
+	              </p>
+	              Conclusions
+	              <p>
+	              The proposed model offers an alternative modeling approach for obtaining estimates of under-five mortality which removes the restriction of a piece-wise linear rate of decline and introduces hierarchy to exchange information between countries. The newly proposed estimates of the rate of decline in under-5 mortality and the uncertainty assessments would help to monitor progress towards Millennium Development Goal 4.
+	              </p>
+	              </div>
+	              </div>
+	              </div>
+	        <div class="card mb-4" data-tag='fert fun'>
+	            <div class="card-body">
+	              <p class="card-title" data-toggle="collapse" data-target="#demo7">
+	              <a><strong>
+	              Probabilistic projections of the total fertility rate for all countries.
+	              </strong></a> 
+	              </p>
+	              <p class="card-text">
+	              L. Alkema, A. E. Raftery, P. Gerland, S.J. Clark, F. Pelletier, T. Buettner, G. K. Heilig (2011).       
+	              <i>
+	              Demography
+	              </i>
+	              48(3): 815–839 
+	              </p>
+	              <div id="demo7" class="collapse">
+	              <br>
+	              Abstract
+	              <p>
+	              We describe a Bayesian projection model to produce country-specific projections of the total fertility rate (TFR) for all countries. The model decomposes the evolution of TFR into three phases: pre-transition high fertility, the fertility transition, and post-transition low fertility. The model for the fertility decline builds on the United Nations Population Division's current deterministic projection methodology, which assumes that fertility will eventually fall below replacement level. It models the decline in TFR as the sum of two logistic functions that depend on the current TFR level, and a random term. A Bayesian hierarchical model is used to project future TFR based on both the country's TFR history and the pattern of all countries. It is estimated from United Nations estimates of past TFR in all countries using a Markov chain Monte Carlo algorithm. The post-transition low fertility phase is modeled using an autoregressive model, in which long-term TFR projections converge toward and oscillate around replacement level. The method is evaluated using out-of-sample projections for the period since 1980 and the period since 1995, and is found to be well calibrated.
+	              </p>
+	              </div>
+	              </div>
+	              </div>
+	        <div class="card mb-4" data-tag='mat'>
+	            <div class="card-body">
+	              <p class="card-title" data-toggle="collapse" data-target="#demo6">
+	              <a><strong>
+	              BayesTFR: An R package for probabilistic projections of the total fertility rate
+	              </strong></a> 
+	              </p>
+	              <p class="card-text">
+	              H. Ševčíková, L. Alkema, A. E. Raftery (2011).      
+	              <i>
+	              Journal of Statistical Software
+	              </i>
+	              43: 1–29.
+	              </p>
+	              <div id="demo6" class="collapse">
+	              <br>
+	              Abstract
+	              <p>
+	                The bayesTFR package for R provides a set of functions to produce probabilistic projections of the total fertility rate (TFR) for all countries. In the model, a random walk with drift is used to project the TFR during the fertility transition, using a Bayesian hierarchical model to estimate the parameters of the drift term. The TFR is modeled with a first order autoregressive process during the post-transition phase. The computationally intensive part of the projection model is a Markov chain Monte Carlo algorithm for estimating the parameters of the drift term. This article summarizes the projection model and describes the basic steps to generate probabilistic projections, as well as other functionalities such as projecting aggregate outcomes and dealing with missing values.
+	              </p>
+	  </div>
+	  </div>
+	  </div>
+	        <div class="card mb-4" data-tag='hiv'>
+	            <div class="card-body">
+	              <p class="card-title" data-toggle="collapse" data-target="#demo4">
+	              <a><strong>
+	              A Bayesian approach to uncertainty analysis of sexually transmitted infection models
+	              </strong></a> 
+	              </p>
+	              <p class="card-text">
+	              L. F. Johnson, L. Alkema, R. E. Dorrington (2010).      
+	              <i>
+	              Sexually Transmitted Infections
+	              </i>
+	              86: 169–174. 
+	              </p>
+	              <div id="demo4" class="collapse">
+	              <br>
+
+	              Objectives
+	              <p>
+	              To propose a Bayesian approach to uncertainty analysis of sexually transmitted infection (STI) models, that can be used to quantify uncertainty in model assessments of policy options, estimate regional STI prevalence from sentinel surveillance data and make inferences about STI transmission and natural history parameters.
+	              </p>
+
+	              Methods
+	              <p>Prior distributions are specified to represent uncertainty regarding STI parameters. A likelihood function is defined using a hierarchical approach that takes account of variation between study populations, variation in diagnostic accuracy as well as random binomial variation. The method is illustrated using a model of syphilis, gonorrhoea, chlamydial infection and trichomoniasis in South Africa.
+	              </p>
+
+	              Results
+	              <p>Model estimates of STI prevalence are in good agreement with observations. Out-of-sample projections and cross-validations also show that the model is reasonably well calibrated. Model predictions of the impact of interventions are subject to significant uncertainty: the predicted reductions in the prevalence of syphilis by 2020, as a result of doubling the rate of health seeking, increasing the proportion of private practitioners using syndromic management protocols, and screening all pregnant women for syphilis, are 43% (95% CI: 3–77%), 9% (95% CI: 1–19%) and 6% (95% CI: 4–7%) respectively.
+	              </p>
+
+	              Conclusions
+	              <p>This study extends uncertainty analysis techniques for fitted HIV/AIDS models to models that are fitted to other STI prevalence data. There is significant uncertainty regarding the relative effectiveness of different STI control strategies. The proposed technique is reasonable for estimating uncertainty in past STI prevalence levels and for projections of future STI prevalence.
+	              </p>
+	              </div>
+	              </div>
+	              </div>
+	        <div class="card mb-4" data-tag='hiv'>
+	            <div class="card-body">
+	              <p class="card-title" data-toggle="collapse" data-target="#demo3">
+	              <a><strong>
+	              Bayesian melding for estimating uncertainty in national HIV prevalence estimates
+	              </strong></a> 
+	              </p>
+	              <p class="card-text">
+	              L. Alkema, A. E. Raftery, T. Brown (2008).      
+	              <i>
+	              Sexually Transmitted Infections
+	              </i>
+	              84 (Suppl I): i11–i16.  
+	              </p>
+	              <div id="demo3" class="collapse">
+	              <br>
+	              Objective
+	              <p>
+	              To construct confidence intervals for HIV prevalence in countries with generalised epidemics.
+	              </p>
+
+	              Methods
+	              <p>In the Bayesian melding approach, a sample of country-specific epidemic curves describing HIV prevalence over time is derived based on time series of antenatal clinic prevalence data and general information on the parameters that describe the HIV epidemic. The prevalence trends at antenatal clinics are calibrated to population-based HIV prevalence estimates from national surveys. For countries without population based estimates, a general calibration method is developed. Based on the sample of calibrated epidemic curves, we derive annual 95% confidence intervals for HIV prevalence. The curve that best represents the data at antenatal clinics and population-based surveys, as well as general information about the epidemic, is chosen to represent the best estimates and predictions.
+	              </p>
+
+	              Results
+	              <p>
+	              We present results for urban areas in Haiti and Namibia to illustrate the estimates and confidence intervals that are derived with the methodology.
+	              </p>
+	              </div>
+	              </div>
+	              </div>
+	        <div class="card mb-4" data-tag='hiv'>
+	            <div class="card-body">
+	              <p class="card-title" data-toggle="collapse" data-target="#demo2">
+	              <a><strong>
+	              Progress and challenges in modelling country-level HIV/AIDS epidemics: the UNAIDS Estimation and Projection Package 2007
+	              </strong></a> 
+	              </p>
+	              <p class="card-text">
+	              T. Brown, J. A. Salomon, L. Alkema, A. E. Raftery, E. Gouws (2008)      
+	              <i>
+	              Sexually Transmitted Infections  
+	              </i>
+	              84 (Suppl I): i5–i11.
+	              </p>
+	              <div id="demo2" class="collapse">
+	              <br>
+	              Abstract
+	              <p>
+	                The UNAIDS Estimation and Projection Package (EPP) was developed to aid in country-level estimation and short-term projection of HIV/AIDS epidemics. This paper describes advances reflected in the most recent update of this tool (EPP 2007), and identifies key issues that remain to be addressed in future versions. The major change to EPP 2007 is the addition of uncertainty estimation for generalised epidemics using the technique of Bayesian melding, but many additional changes have been made to improve the user interface and efficiency of the package. This paper describes the interface for uncertainty analysis, changes to the user interface for calibration procedures and other user interface changes to improve EPP’s utility in different settings. While formal uncertainty assessment remains an unresolved challenge in low-level and concentrated epidemics, the Bayesian melding approach has been applied to provide analysts in these settings with a visual depiction of the range of models that may be consistent with their data. In fitting the model to countries with longer-running epidemics in sub-Saharan Africa, a number of limitations have been identified in the current model with respect to accommodating behaviour change and accurately replicating certain observed epidemic patterns. This paper discusses these issues along with their implications for future changes to EPP and to the underlying UNAIDS Reference Group model.
+	              </p>
+	              </div>
+	              </div>
+	              </div>
+	        <div class="card mb-4" data-tag='hiv'>
+	            <div class="card-body">
+	              <p class="card-title" data-toggle="collapse" data-target="#demo2">
+	              <a><strong>
+	              Probabilistic projections of HIV prevalence using Bayesian melding
+	              </strong></a> 
+	              </p>
+	              <p class="card-text">
+	              L. Alkema, A. E. Raftery, S. J. Clark (2007)      
+	              <i>
+	              The Annals of Applied Statistics   
+	              </i>
+	              1(1): 229–248
+	              </p>
+	              <div id="demo2" class="collapse">
+	              <br>
+	              Abstract
+	              <p>
+	                The Joint United Nations Programme on HIV/AIDS (UNAIDS) has developed the Estimation and Projection Package (EPP) for making national estimates and short-term projections of HIV prevalence based on observed prevalence trends at antenatal clinics. Assessing the uncertainty about its estimates and projections is important for informed policy decision making, and we propose the use of Bayesian melding for this purpose. Prevalence data and other information about the EPP model's input parameters are used to derive a probabilistic HIV prevalence projection, namely a probability distribution over a set of future prevalence trajectories. We relate antenatal clinic prevalence to population prevalence and account for variability between clinics using a random effects model. Predictive intervals for clinic prevalence are derived for checking the model. We discuss predictions given by the EPP model and the results of the Bayesian melding procedure for Uganda, where prevalence peaked at around 28% in 1990; the 95% prediction interval for 2010 ranges from 2% to 7%.
+	              </p>
+	              </div>
+	              </div>
+	              </div>
 
 
 
 
-            </div>
-
-            <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-            <script src="vendor/bootstrap/js/bootstrap-portfilter.js"></script>
 
 
 
 
+	            </div>
+
+	            <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	            <script src="vendor/bootstrap/js/bootstrap-portfilter.js"></script>
 
 
 
 
 
-      <!-- Footer -->
-        <div class="row mb-4">
-          <div class="col-md-8">
-          </div>
-        </div>
 
-      </div>
-      <!-- /.container -->
 
-      <footer class="py-5">
-        <div class="container">
-          <p class="m-0 text-center text-black">Copyright &copy; GregGu 2018</p>
-        </div>
-        <!-- /.container -->
-      </footer>
 
-      <!-- Bootstrap core JavaScript -->
-      <script src="vendor/jquery/jquery.min.js"></script>
-      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    </body>
+	      <!-- Footer -->
+	        <div class="row mb-4">
+	          <div class="col-md-8">
+	          </div>
+	        </div>
 
-  </html>
+	      </div>
+	      <!-- /.container -->
+
+	      <footer class="py-5">
+	        <div class="container">
+	          <p class="m-0 text-center text-black">Copyright &copy; GregGu 2018</p>
+	        </div>
+	        <!-- /.container -->
+	      </footer>
+
+	      <!-- Bootstrap core JavaScript -->
+	      <script src="vendor/jquery/jquery.min.js"></script>
+	      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+	    </body>
+
+	  </html>
