@@ -140,27 +140,29 @@
 .carousel-caption {
   position: absolute;
   z-index: 20;
+  left: -55%;
   }
 ol {
  z-index: 20!important;
  position: absolute;
  }
 .carousel-indicators {
-  right: -80%;
+  right: -90%;
 }
 .carousel-indicators li {
-    border-radius: 10px;
-    margin: 1px 3px;
-    height: 10px;
-    max-width: 10px;
-    border: 1px solid #FFF;
+    border-radius: 15px;
+    margin: 2px 3px;
+    height: 13px;
+    max-width: 13px;
+    border: 2px solid #FFF;
     background-color: transparent;
+/*    box-shadow: 0 0 1px 0 #FFF;*/
 }
 .carousel-indicators .active {
-    background-color: #fff;
-    max-width: 12px;
-    margin: 0 3px;
-    height: 12px;
+    background-color: #FFF;
+    max-width: 13px;
+    margin: 2 3px;
+    height: 13px;
 }
 
   .main-slider {
