@@ -196,8 +196,18 @@ ol {
     background-color:#E6E6FA; important;
   }
 
+#breadmover {
+  margin-left: 21%;
+}
 
+/*cant move the breadcrumb itself, the section needs to be moved*/
 
+/*.breadcrumb {
+  float: left;
+  right: inherit;
+    margin-left: 18%;
+}
+*/
 
   /* ===================================
   10. Nav 2 Inner - Section: page headline
