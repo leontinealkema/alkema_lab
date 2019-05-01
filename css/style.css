@@ -41,32 +41,14 @@ used here that would contain all other page content.*/
   background-color:#E6E6FA;           
 }
 
-.copyright{
-  margin-top: 20%;
-}
+
 /* a class edit*/
 .text-link {
   color: #20B2AA!important;
 }
 
 
-  .navbar-expand-md {
-    background-color:#E6E6FA;
-  }
 
-  /* space between words? */
-  .navbar {
-    padding: .8rem; important;
-  }
-
-  /* shift to the rightk */
-  .navbar-nav li {
-    padding-right: 5px;
-  }
-
-  .nav-link {
-    font-size: 1.1em; !important;
-  }
 
   h1, h2, h3, h4, h5{
    margin: 0px;
@@ -110,7 +92,28 @@ used here that would contain all other page content.*/
       width: 15%;
   }
 
-  /* unvisited link */
+  /* Navigation */
+
+    .navbar-expand-md {
+    background-color:#E6E6FA;
+  }
+
+  /* space between words? */
+  .navbar {
+    /*padding: .8rem; important;*/
+    padding: 0;
+    border-bottom: 2px solid grey;
+    margin-bottom: 0 auto;
+  }
+
+  /* shift to the rightk */
+  .bar-nav li {
+    padding-right: 5px;
+  }
+
+  .nav-link {
+    font-size: 1.1em; !important;
+  }
   #myNav:hover {
     color: black !important;
   }
@@ -122,6 +125,62 @@ used here that would contain all other page content.*/
   #navbarResponsive a.active {
     color: black !important;
   }
+
+.navbar-nav>li a{
+  border-right: 2px solid grey;
+}
+.navbar-nav>li:first-child{
+   border-left: 2px solid grey;
+}
+
+.navbar-nav li:hover{
+  background-color:#20B2AA;
+
+}
+
+.custombetween {
+  display: flex;
+    justify-content: space-between;
+}
+
+/*nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 5px;
+
+  position: relative;
+}
+
+
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+*/
+
 
   a:link {
       color: black;
@@ -140,9 +199,9 @@ used here that would contain all other page content.*/
 
 
   /* 54px top to go to no padding */
-  body {
+/*  body {
     padding-top: 54px;
-  }
+  }*/
 
 
   @media (min-width: 992px) {
@@ -250,7 +309,7 @@ ol {
 
   #inner-headline .inner-heading h2 {
     color: #fff;
-    margin: 20px 0 0 0;
+    margin: 5px 0 0 0;
   }
 
   /* --- breadcrumbs --- */
