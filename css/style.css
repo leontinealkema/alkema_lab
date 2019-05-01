@@ -38,7 +38,7 @@ used here that would contain all other page content.*/
   bottom: 0;
   width: 100%;
   height: 3.5rem; 
-  background-color:#E6E6FA;           
+  background-color:#9595ea; /*#E6E6FA; */          
 }
 
 
@@ -57,26 +57,25 @@ used here that would contain all other page content.*/
   .card-text {
     font-size: 14px;
   }
-  .btn {
-    display: inline-block;
-    
-  }
+
 
   /* unvisited link */
   .btn {
-    color:black;
-    background-color:#E6E6FA; important;
+    display: inline-block;
+    color:#fff;
+    background-color:#9595ea; important;
     text-transform: lowercase;
+    font-size: 14px;
   }
 
-  .mystyle{
+/*  .mystyle{
     background-color: #20B2AA;
-  }
+  }*/
 
   /* mouse over link */
   .btn:hover {
-    color:black;
-    background-color:#20B2AA; important;
+    color:#fff;
+    background-color: #6a6ae2 !important; /*#20B2AA;*/
     border-color:black;
   }
 
@@ -95,14 +94,14 @@ used here that would contain all other page content.*/
   /* Navigation */
 
     .navbar-expand-md {
-    background-color:#E6E6FA;
+    background-color: #9595ea;  /*#E6E6FA;*/
   }
 
   /* space between words? */
   .navbar {
     /*padding: .8rem; important;*/
     padding: 0;
-    border-bottom: 2px solid grey;
+    /*border-bottom: 2px solid grey;*/
     margin-bottom: 0 auto;
   }
 
@@ -114,27 +113,32 @@ used here that would contain all other page content.*/
   .nav-link {
     font-size: 1.1em; !important;
   }
-  #myNav:hover {
-    color: black !important;
+
+  #myNav {
+    color: #fff !important;
   }
 
-  #myNav a:active {
-    color: black !important;
+  #myNav:hover {
+    color: #fff !important;
+  }
+
+ /* #myNav a:active {
+    color: #fff !important;
   }
 
   #navbarResponsive a.active {
-    color: black !important;
-  }
+    color: #fff !important;
+  }*/
 
 .navbar-nav>li a{
-  border-right: 2px solid grey;
+  border-right: 1px solid white;
 }
 .navbar-nav>li:first-child{
-   border-left: 2px solid grey;
+   border-left: 1px solid white;
 }
 
 .navbar-nav li:hover{
-  background-color:#20B2AA;
+  background-color: #6a6ae2;    /*#20B2AA;*/
 
 }
 
@@ -193,12 +197,15 @@ nav a:hover::before {
   /* visited link */
 
   /* mouse over link */
-  a:hover {
-      color: #20B2AA !important;
-  }
-
-
-  /* 54px top to go to no padding */
+/*  a:hover {
+      color: #6a6ae2 !important;
+  }*/
+.breadcrumb a:hover{
+  color: #20B2AA !important;
+}
+.card-title a:hover{
+  color: #6a6ae2 !important;
+}
 /*  body {
     padding-top: 54px;
   }*/
@@ -266,11 +273,11 @@ ol {
       content: "";
       position: absolute;
       left: 0;
-      opacity: .7;
+      opacity: .9;
       top: 78%;
       width: 180%;
       height: 120%;
-      background: black;
+      background: #9595ea;
       z-index: 2;
   }
 /* carousel code end*/
