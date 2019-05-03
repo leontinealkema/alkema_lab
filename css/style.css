@@ -80,10 +80,10 @@ used here that would contain all other page content.*/
   }
 
   .btn:focus{
-     background-color:#20B2AA;
+     background-color:#6a6ae2;
   }
   .btn:active{
-    background-color:#20B2AA !important;
+    background-color:#6a6ae2 !important;
   }
 
   /* logo */
@@ -183,32 +183,8 @@ nav a::before {
 nav a:hover::before {
   width: 100%;
 }
-*/
 
 
-  a:link {
-      color: black;
-  }
-
-  a:hover {
-    cursor: pointer;
-  }
-
-  /* visited link */
-
-  /* mouse over link */
-/*  a:hover {
-      color: #6a6ae2 !important;
-  }*/
-.breadcrumb a:hover{
-  color: #20B2AA !important;
-}
-.card-title a:hover{
-  color: #6a6ae2 !important;
-}
-/*  body {
-    padding-top: 54px;
-  }*/
 
 
   @media (min-width: 992px) {
@@ -280,6 +256,10 @@ ol {
       background: #9595ea;
       z-index: 2;
   }
+
+  section.main-slider:hover {
+    opacity: 1;
+  }
 /* carousel code end*/
 
   .portfolio-item {
@@ -293,14 +273,10 @@ ol {
 
 
 
-/*cant move the breadcrumb itself, the section needs to be moved*/
 
-/*.breadcrumb {
-  float: left;
-  right: inherit;
-    margin-left: 18%;
-}
-*/
+
+
+
 
   /* ===================================
   10. Nav 2 Inner - Section: page headline
@@ -335,11 +311,11 @@ ol {
 
   #inner-headline ul.breadcrumb li {
     font-size: 15px;
-    color: #ddd;
+    color: #fff;
   }
 
   #inner-headline ul.breadcrumb li i {
-    color: #dedede;
+    color: #fff;
   }
 
   #inner-headline ul.breadcrumb li a {
@@ -347,14 +323,18 @@ ol {
   }
 
   #people-card ul.breadcrumb li a {
+    margin-right: 2%;
     color: #ddd;
     font-size: 30px;
   }
-
-  ul.breadcrumb li a:hover {
-    text-decoration: none;
+  #people-card ul.breadcrumb li a:hover {
+    color: #20B2AA;
+    font-size: 30px;
   }
 
+  #people-card ul.breadcrumb {
+    margin-right: 2%;
+  }
 
 
 
