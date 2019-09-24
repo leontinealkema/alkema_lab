@@ -57,7 +57,25 @@ used here that would contain all other page content.*/
   .card-text {
     font-size: 14px;
   }
+.card-title:hover{
+  color: #6a6ae2;
+  cursor: pointer;
+}
+/*.card:hover{
+  cursor: pointer;
+  background-color: #E6E6FA; 
+}*/
 
+#table .container th{
+  background-color: #e6e6e6 ;
+}
+#table .table-bordered{
+  background-color: #FCFCFC;
+  /*color: black !important;*/
+}
+#table td{
+  border: 1px  grey;
+}
 
   /* unvisited link */
   .btn {
@@ -431,7 +449,7 @@ ol {
   /* ==================================================
      Icons Example
   ================================================== */
-
+/*
   .icons-example ul {
     margin: 0 0 0 -20px;
     padding: 0;
@@ -464,7 +482,7 @@ ol {
 
   .icon-control {
     margin: 0 0 0 140px;
-  }
+  }*/
 
 
 
