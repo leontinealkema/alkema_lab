@@ -132,6 +132,9 @@ used here that would contain all other page content.*/
     font-size: 1.1em; !important;
   }
 
+  .nav-link-index {
+  
+  }
   #myNav {
     color: #fff !important;
   }
@@ -376,7 +379,7 @@ ol {
 
       margin-left: 10px;
       margin-right: 10px;
-      object-fit: contain;
+      object-fit: cover;
   }
 
 
