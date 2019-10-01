@@ -42,7 +42,7 @@ used here that would contain all other page content.*/
 }
 
 #footer2 {
-  bottom: 10;
+  bottom: 0;
   width: 100%;
   height: 3.5rem; 
   background-color:#9595ea; /*#E6E6FA; */          
@@ -141,6 +141,13 @@ used here that would contain all other page content.*/
   }
     .nav-link-index:hover {
     /*color: #ddd;*/
+    text-decoration: none;
+  }
+    .cv-button {
+    color: #ddd;
+  }
+    .cv-button:hover {
+    color: #20B2AA;
     text-decoration: none;
   }
 
