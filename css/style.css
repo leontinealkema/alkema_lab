@@ -195,8 +195,8 @@ used here that would contain all other page content.*/
 
 /* carousel code start */
   .carousel-item {
-    height: 55vh;
-    min-height: 300px;
+    height: 300px;
+    /*min-height: 200px;*/
     background: no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -214,7 +214,7 @@ used here that would contain all other page content.*/
   /*left: -55%;*/
   text-align: left;
   left: 3% !important;
-  top: 78%;
+  top: 75%;
   }
 ol {
  z-index: 20!important;
