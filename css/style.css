@@ -209,12 +209,13 @@ used here that would contain all other page content.*/
   z-index: 3;
 }
 .carousel-caption {
+  font-size: 18px;
   position: absolute;
   z-index: 20;
   /*left: -55%;*/
   text-align: left;
   left: 3% !important;
-  top: 75%;
+  top: 220px;
   }
 ol {
  z-index: 20!important;
