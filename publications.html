@@ -1338,6 +1338,18 @@
 	  										<!-- Bootstrap core JavaScript -->
 	  										<script src="vendor/jquery/jquery.min.js"></script>
 	  										<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	  										  	  <script>
+	  	function myFunction(j) {
+	  		var element = document.getElementById("demo"+j);
+	  		element.classList.toggle("mystyle");
+	  		for (i = 0; i < 9; i++) { 
+	  			if (i != j){
+	  				var element = document.getElementById("demo" + i );
+	  				element.classList.remove("mystyle");
+	  			}
+	  		}
+	  	}
+	  </script>
 
 	  									</body>
 
