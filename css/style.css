@@ -139,10 +139,10 @@ used here that would contain all other page content.*/
     font-size: 1.1em; !important;
   }
 
-  .nav-link-home {
+  .nav-link-index {
     /*color: #6a6ae2;*/
   }
-    .nav-link-home:hover {
+    .nav-link-index:hover {
     /*color: #ddd;*/
     text-decoration: none;
   }
