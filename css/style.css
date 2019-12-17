@@ -157,7 +157,9 @@ used here that would contain all other page content.*/
 
   .nav-link-index {
     /*color: #6a6ae2;*/
+    font-weight: bold;
   }
+
     .nav-link-index:hover {
     /*color: #ddd;*/
     text-decoration: none;
@@ -443,13 +445,23 @@ ol {
     color: #757575;
     /*font-weight: bold;*/
   }
+  .listtext {
+    color: #757575;
+   margin-left: 4%;
+  }
+  .listtext2 {
+    color: #757575;
+   margin-left: 14%;
+  }
   .card-body {
     padding-top: 2%;
   }
   .pagepad {
     padding: 30px;
   }
-
+#minibreak {
+  padding: .5%;
+}
 
   /* end people page */
 
