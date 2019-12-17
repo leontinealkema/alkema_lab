@@ -25,9 +25,27 @@ background-image: <svg height="1755" width="1755" viewBox="0 0 1755 1755" xmlns=
   background-color: #cfc ;
 }
 */
-#boxgrey {
+#boxgreytop {
   margin-top: -30px;
   background-color: #ddd;
+}
+#page-container2 {
+  /* margin-top: -30px; */
+  color: #ddd;
+  background-color: #ddd;
+  position: relative;
+  min-height: 100vh;
+}
+
+#box {
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: #fff;
+  border-radius: 15px;
+}
+#boxinner {
+  padding: 2%;
+  margin: 2%;
 }
 #boxtext {
   margin-top: 30px;
@@ -456,9 +474,9 @@ ol {
   .card-body {
     padding-top: 2%;
   }
-  .pagepad {
+  /* .pagepad {
     padding: 30px;
-  }
+  } */
 #minibreak {
   padding: .5%;
 }
@@ -496,7 +514,7 @@ ol {
     border-top: 1px dotted #e6e6e6;
     margin: 0 0 30px;
   }
-
+f
   .dashedline {
     border-top: 1px dotted #e6e6e6;
     margin: 0 0 30px;
