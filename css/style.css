@@ -408,7 +408,9 @@ ol {
 
 
 
-
+.date {
+  color:#757575;
+}
 
 
   .row, .row-fluid {
@@ -429,12 +431,12 @@ ol {
 
   .solidline {
     border-top: 1px solid #e6e6e6;
-    margin: 0 0 30px;
+    margin: 0 0 5px;
   }
 
   .dottedline {
     border-top: 1px dotted #e6e6e6;
-    margin: 0 0 30px;
+    margin: 0 0 5px;
   }
 
   .dashedline {
@@ -444,5 +446,5 @@ ol {
 
   .blankline {
     height: 1px;
-    margin: 0 0 30px;
+    margin: 0 0 5px;
   }
