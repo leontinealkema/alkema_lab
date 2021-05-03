@@ -448,3 +448,27 @@ ol {
     height: 1px;
     margin: 0 0 5px;
   }
+
+  /* xs */
+  img {
+      width: 25px;
+      height: auto;
+  }
+  /* sm */
+  @media (min-width: 768px) {
+      img {
+          width: 50px;
+      }
+  }
+  /* md */
+  @media (min-width: 992px) {
+      img {
+          width: 75px;
+      }
+  }
+  /* lg */
+  @media (min-width: 1200px) {
+      img {
+          width: 100px;
+      }
+  }
