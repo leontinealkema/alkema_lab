@@ -1,45 +1,45 @@
-	  <!DOCTYPE html>
-	  <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-	  <head>
-	  	<!-- Bootstrap core CSS -->
-	  	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	  	<!-- Custom styles for this template -->
-	  	<link href="css/style.css" rel="stylesheet">
-	  	  <script defer src="vendor/bootstrap/js/brands.js"></script>
-  <script defer src="vendor/bootstrap/js/solid.js"></script>
-  <script defer src="vendor/bootstrap/js/fontawesome.js"></script>
-  	  <script>
-	  	function myFunction(j) {
-	  		var element = document.getElementById("demo"+j);
-	  		element.classList.toggle("mystyle");
-	  		for (i = 0; i < 9; i++) {
-	  			if (i != j){
-	  				var element = document.getElementById("demo" + i );
-	  				element.classList.remove("mystyle");
-	  			}
-	  		}
-	  	}
-	  </script>
-	  </head>
+<head>
+	<!-- Bootstrap core CSS -->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="css/style.css" rel="stylesheet">
+	<script defer src="vendor/bootstrap/js/brands.js"></script>
+	<script defer src="vendor/bootstrap/js/solid.js"></script>
+	<script defer src="vendor/bootstrap/js/fontawesome.js"></script>
+	<script>
+	function myFunction(j) {
+		var element = document.getElementById("demo"+j);
+		element.classList.toggle("mystyle");
+		for (i = 0; i < 9; i++) {
+			if (i != j){
+				var element = document.getElementById("demo" + i );
+				element.classList.remove("mystyle");
+			}
+		}
+	}
+	</script>
+</head>
 
-	  <body>
-  <div id="page-container">
-    <div id="content-wrap">
+<body>
+	<div id="page-container">
+		<div id="content-wrap">
 
 
 
 			<!-- Navigation -->
-      <nav class="navbar  navbar-expand-md navbar-dark">
-        <div class="container">
-          <a class="navbar-brand"  href="index.html"><img src=""> Alkema Lab</a>
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li>
-                <a  class="nav-link active" href="index.html">Home</a>
+			<nav class="navbar  navbar-expand-md navbar-dark">
+				<div class="container">
+					<a class="navbar-brand"  href="index.html"><img src=""> Alkema Lab</a>
+					<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarResponsive">
+						<ul class="navbar-nav ml-auto">
+							<li>
+                <a  class="nav-link" href="index.html">Home</a>
               </li>
               <li>
                 <a  class="nav-link" href="about.html">About</a>
@@ -48,199 +48,118 @@
                 <a  class="nav-link" href="people.html">People</a>
               </li>
               <li>
-                <a  class="nav-link" href="publications.html">Publications</a>
+                <a  class="nav-link" href="talks.html">Talks</a>
               </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <!-- Navigation -->
+              <li>
+                <a  class="nav-link active" href="publications.html">Publications</a>
+              </li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- Navigation -->
 
-	  	<!-- Navigation2 -->
-	  	<section id="inner-headline">
-	  		<div class="container">
-	  			<div class="custombetween">
-	  				<!-- <div class="row justify-content-between"> -->
-	  					<div class="span4">
-	  						<div class="inner-heading">
-	  							<h2>Publications</h2>
-	  						</div>
-	  					</div>
-	  					<div class="span12">
-	  						<ul class="breadcrumb">
-	  							<li><a href="index.html"><i class="icon-home"></i></a><i class="icon-angle-right"></i></li>
-	  							<li class="active">Publications</li>
-	  						</ul>
-	  					</div>
-	  				</div>
-	  			</div>
-	  		</section>
-
-
-
-
-	  		<!-- Page Content -->
-	  		<div class="container">
-	  			<div class="container wrapper">
-	  				<div classs="pull-right">
-	  					<div class="row">
-	  						<div>
-	  							<button id="demo0" class="btn btn-small btn-light btn-primary" data-toggle="portfilter" data-target="all" onclick="myFunction(0)">All</button>
-	  						</div>
-	  						<div>
-	  							<button id="demo1" class="btn btn-small btn-light" data-toggle="portfilter" data-target="fun" onclick="myFunction(1)">Bayesian modeling highlights</button>
-	  						</div>
-	  						<div>
-	  							<button id="demo3" class="btn btn-small btn-light" data-toggle="portfilter" data-target="fam" onclick="myFunction(2)">Family planning</button>
-	  						</div>
-	  						<div>
-	  							<button id="demo8" class="btn btn-small btn-light" data-toggle="portfilter" data-target="abo"
-	  							onclick="myFunction(3)">Unintended pregnancies and abortion</button>
-	  						</div>
-	  						<div>
-	  							<button id="demo5" class="btn btn-small btn-light" data-toggle="portfilter" data-target="mat" onclick="myFunction(4)">Maternal mortality</button>
-	  						</div>
-	  						<div>
-	  							<button id="demo2" class="btn btn-small btn-light" data-toggle="portfilter" data-target="child" onclick="myFunction(5)">Child mortality</button>
-	  						</div>
-	  						<div>
-	  							<button id="demo4" class="btn btn-small btn-light" data-toggle="portfilter" data-target="fertpop"  onclick="myFunction(6)">Fertility & Population projections</button>
-	  						</div>
-<!-- 	  						<div>
-	  							<button id="demo6" class="btn btn-small btn-light" data-toggle="portfilter" data-target="hiv" onclick="myFunction(7)">HIV/AIDS</button>
-	  						</div> -->
-<!-- 	  						<div>
-	  							<button id="demo7" class="btn btn-small btn-light" data-toggle="portfilter" data-target="pop"
-	  							onclick="myFunction(7)">Population projections</button>
-	  						</div> -->
-	  						<br>
-	  						<br>
-	  					</div>
-	  				</div>
+			<!-- Navigation2 -->
+			<section id="inner-headline">
+				<div class="container">
+					<div class="custombetween">
+						<!-- <div class="row justify-content-between"> -->
+						<div class="span4">
+							<div class="inner-heading">
+								<h2>Publications</h2>
+							</div>
+						</div>
+						<div class="span12">
+							<ul class="breadcrumb">
+								<li><a href="index.html"><i class="icon-home"></i></a><i class="icon-angle-right"></i></li>
+								<li class="active">Publications</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
 
 
-						<div class="card mb-4" data-tag='fun'>
-		  					<div class="card-body">
-		  						<p class="card-title" data-toggle="collapse" data-target="#demo39">
-		  							<a><strong>Global estimation and scenario-based projections of sex ratio at birth and missing female births using a Bayesian hierarchical time series mixture model.</strong></a> </p>
-		  							<p class="card-text">  F Chao, P Gerland, A Cook, L Alkema (2020). <i>arXiv preprint, accepted in the Annals of Applied Statistics </i> 1909.08578(15)
-		  						</p>
-		  						<div id="demo39" class="collapse">
 
 
-		  							 <section id="breadmover-pub">
-	              					<ul class="breadcrumb">
+			<!-- Page Content -->
+			<div class="container">
+				<div class="container wrapper">
+					<div classs="pull-right">
+						<div class="row">
+							<div>
+								<button id="demo0" class="btn btn-small btn-light btn-primary" data-toggle="portfilter" data-target="all" onclick="myFunction(0)">All</button>
+							</div>
+							<div>
+								<button id="demo1" class="btn btn-small btn-light" data-toggle="portfilter" data-target="fun" onclick="myFunction(1)">Bayesian modeling highlights</button>
+							</div>
+							<div>
+								<button id="demo3" class="btn btn-small btn-light" data-toggle="portfilter" data-target="fam" onclick="myFunction(2)">Family planning</button>
+							</div>
+							<div>
+								<button id="demo8" class="btn btn-small btn-light" data-toggle="portfilter" data-target="abo"
+								onclick="myFunction(3)">Unintended pregnancies and abortion</button>
+							</div>
+							<div>
+								<button id="demo5" class="btn btn-small btn-light" data-toggle="portfilter" data-target="mat" onclick="myFunction(4)">Maternal mortality</button>
+							</div>
+							<div>
+								<button id="demo2" class="btn btn-small btn-light" data-toggle="portfilter" data-target="child" onclick="myFunction(5)">Child mortality</button>
+							</div>
+							<div>
+								<button id="demo4" class="btn btn-small btn-light" data-toggle="portfilter" data-target="fertpop"  onclick="myFunction(6)">Fertility & Population projections</button>
+							</div>
+							<!-- 	  						<div>
+							<button id="demo6" class="btn btn-small btn-light" data-toggle="portfilter" data-target="hiv" onclick="myFunction(7)">HIV/AIDS</button>
+						</div> -->
+						<!-- 	  						<div>
+						<button id="demo7" class="btn btn-small btn-light" data-toggle="portfilter" data-target="pop"
+						onclick="myFunction(7)">Population projections</button>
+					</div> -->
+					<br>
+					<br>
+				</div>
+			</div>
+
+
+			<div class="card mb-4" data-tag='fun'>
+				<div class="card-body">
+					<p class="card-title" data-toggle="collapse" data-target="#demo39">
+						<a><strong>Global estimation and scenario-based projections of sex ratio at birth and missing female births using a Bayesian hierarchical time series mixture model.</strong></a> </p>
+						<p class="card-text">  F Chao, P Gerland, A Cook, L Alkema (2020). <i>arXiv preprint, accepted in the Annals of Applied Statistics </i> 1909.08578(15)
+						</p>
+						<div id="demo39" class="collapse">
+
+
+							<section id="breadmover-pub">
+								<ul class="breadcrumb">
 									<a href="https://arxiv.org/abs/2006.07101" target="_blank" class="pub-icon-text"><i class="fas fa-book"></i> full text </a>
+								</ul>
+							</section>
+							<br>
+							<br>
+							<br>
+							Abstract
+							<p>The sex ratio at birth (SRB) is defined as the ratio of male to female live births. The SRB imbalance in parts of the world over the past several decades is a direct consequence of sex-selective abortion, driven by the co-existence of son preference, readily available technology of prenatal sex determination, and fertility decline. Estimation and projection of the degree of SRB imbalance is complicated because of variability in SRB reference levels and because of the uncertainty associated with SRB observations. We develop Bayesian hierarchical time series mixture models for SRB estimation and scenario-based projections for all countries from 1950 to 2100. We model the SRB regional and national reference levels, and the fluctuation around national reference levels. We identify countries at risk of SRB imbalances and model both (i) the absence or presence of sex ratio transitions in such countries and, if present, (ii) the transition process. The transition model of SRB imbalance captures three stages (increase, stagnation and convergence back to SRB baselines). The model identifies countries with statistical evidence of SRB inflation in a fully Bayesian approach. The scenario-based SRB projections are based on the sex ratio transition model with varying assumptions regarding the occurrence of a sex ratio transition in at-risk countries. Projections are used to quantify the future burden of missing female births due to sex-selective abortions under different scenarios.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="card mb-4" data-tag='fun mat'>
+					<div class="card-body">
+						<p class="card-title" data-toggle="collapse" data-target="#demo38">
+							<a><strong>Estimating maternal mortality using data from national civil registration vital statistics systems: A Bayesian hierarchical bivariate random walk model to estimate sensitivity and specificity of reporting.</strong></a> </p>
+							<p class="card-text">  E Peterson, D Chou, AB Moller, A Gemmill, L Say, L Alkema (2019). <i>arXiv preprint </i> 1909.08578(15)
+							</p>
+							<div id="demo38" class="collapse">
+
+
+								<section id="breadmover-pub">
+									<ul class="breadcrumb">
+										<a href="https://arxiv.org/abs/1909.08578" target="_blank" class="pub-icon-text"><i class="fas fa-book"></i> full text </a>
 									</ul>
-									</section>
-									<br>
-									<br>
-									<br>
-		  							Abstract
-		  							<p>The sex ratio at birth (SRB) is defined as the ratio of male to female live births. The SRB imbalance in parts of the world over the past several decades is a direct consequence of sex-selective abortion, driven by the co-existence of son preference, readily available technology of prenatal sex determination, and fertility decline. Estimation and projection of the degree of SRB imbalance is complicated because of variability in SRB reference levels and because of the uncertainty associated with SRB observations. We develop Bayesian hierarchical time series mixture models for SRB estimation and scenario-based projections for all countries from 1950 to 2100. We model the SRB regional and national reference levels, and the fluctuation around national reference levels. We identify countries at risk of SRB imbalances and model both (i) the absence or presence of sex ratio transitions in such countries and, if present, (ii) the transition process. The transition model of SRB imbalance captures three stages (increase, stagnation and convergence back to SRB baselines). The model identifies countries with statistical evidence of SRB inflation in a fully Bayesian approach. The scenario-based SRB projections are based on the sex ratio transition model with varying assumptions regarding the occurrence of a sex ratio transition in at-risk countries. Projections are used to quantify the future burden of missing female births due to sex-selective abortions under different scenarios.</p>
-		  						</div>
-		  					</div>
-		  				</div>
-
-					<div class="card mb-4" data-tag='fun mat'>
-	  					<div class="card-body">
-	  						<p class="card-title" data-toggle="collapse" data-target="#demo38">
-	  							<a><strong>Estimating maternal mortality using data from national civil registration vital statistics systems: A Bayesian hierarchical bivariate random walk model to estimate sensitivity and specificity of reporting.</strong></a> </p>
-	  							<p class="card-text">  E Peterson, D Chou, AB Moller, A Gemmill, L Say, L Alkema (2019). <i>arXiv preprint </i> 1909.08578(15)
-	  						</p>
-	  						<div id="demo38" class="collapse">
-
-
-	  							 <section id="breadmover-pub">
-              					<ul class="breadcrumb">
-								<a href="https://arxiv.org/abs/1909.08578" target="_blank" class="pub-icon-text"><i class="fas fa-book"></i> full text </a>
-								</ul>
 								</section>
 								<br>
-								<br>
-								<br>
-	  							Abstract
-	  							<p>Civil registration vital statistics (CRVS) data are used to produce national estimates of maternal mortality, but are often subject to substantial reporting errors due to misclassification of maternal deaths. The accuracy of CRVS systems can be assessed by comparing CRVS-based counts of maternal and non-maternal deaths to those obtained from specialized studies, which are rigorous assessments of maternal mortality for a given country-period. We developed a Bayesian bivariate random walk model to estimate sensitivity and specificity of the reporting on maternal mortality in CRVS data, and associated CRVS adjustment factors. The model was fitted to a global data set of CRVS and specialized study data. Validation exercises suggest that the model performs well in terms of predicting CRVS-based proportions of maternal deaths for country-periods without specialized studies. The new model is used by the UN Maternal Mortality Inter-Agency Group to account for misclassification errors when estimating maternal mortality using CRVS data.</p>
-
-
-	  						</div>
-	  					</div>
-	  				</div>
-
-	  				<div class="card mb-4" data-tag='fun child'>
-	  					<div class="card-body">
-	  						<p class="card-title" data-toggle="collapse" data-target="#demo37">
-	  							<a><strong>Systematic assessment of the sex ratio at birth for all countries and estimation of national imbalances and regional reference levels.</strong></a> </p>
-	  							<p class="card-text">  F Chao, P Gerland, AR Cook, L Alkema (2019). <i>Proc Natl Acad Sci U S A. 116(19) 9303–9311 </i>
-	  						</p>
-	  						<div id="demo37" class="collapse">
-	  							 <section id="breadmover-pub">
-              					<ul class="breadcrumb">
-								<a href="https://www.pnas.org/content/116/19/9303.short" target="_blank" class="pub-icon-text"><i class="fas fa-book"></i> full text </a>
-								</ul>
-								</section>
-								<br>
-								<br>
-	  							<br>
-	  							Abstract
-
-	  							<p>The sex ratio at birth (SRB; ratio of male to female live births) imbalance in parts of the world over the past few decades is a direct consequence of sex-selective abortion, driven by the coexistence of son preference, readily available technology of prenatal sex determination, and fertility decline. Estimation of the degree of SRB imbalance is complicated because of unknown SRB reference levels and because of the uncertainty associated with SRB observations. There are needs for reproducible methods to construct SRB estimates with uncertainty, and to assess SRB inflation due to sex-selective abortion. We compile an extensive database from vital registration systems, censuses and surveys with 10,835 observations, and 16,602 country-years of information from 202 countries. We develop Bayesian methods for SRB estimation for all countries from 1950 to 2017. We model the SRB regional and national reference levels, the fluctuation around national reference levels, and the inflation. The estimated regional reference levels range from 1.031 (95% uncertainty interval [1.027; 1.036]) in sub-Saharan Africa to 1.063 [1.055; 1.072] in southeastern Asia, 1.063 [1.054; 1.072] in eastern Asia, and 1.067 [1.058; 1.077] in Oceania. We identify 12 countries with strong statistical evidence of SRB imbalance during 1970–2017, resulting in 45.0 [36.4; 54.8] million missing female births globally. The majority of those missing female births are in China, with 23.1 [16.5; 30.7] million, and in India, with 20.7 [15.5; 26.6] million.</p>
-
-	  						</div>
-	  					</div>
-	  				</div>
-
-	  				<div class="card mb-4" data-tag='child'>
-	  					<div class="card-body">
-	  						<p class="card-title" data-toggle="collapse" data-target="#demo36">
-	  							<a><strong>National, regional, and global levels and trends
-	  							in neonatal mortality between 1990 and 2017, with scenario-based projections to 2030: a systematic analysis by the United Nations Inter-agency Group for Child Mortality Estimation.</strong></a> </p>
-	  							<p class="card-text">  D You, L Hug, S Ejdemyr, P Idele, D Hogan, C Mathers, P Gerland, J Rou New, L Alkema (2018). <i>The Lancet
-	  							Global Health</i> S0140-6736(15)
-	  						</p>
-	  						<div id="demo36" class="collapse">
-
-	  								  							 <section id="breadmover-pub">
-              					<ul class="breadcrumb">
-								<a href="https://www.sciencedirect.com/science/article/pii/S2214109X19301639" target="_blank" class="pub-icon-text"><i class="fas fa-book"></i> full text </a>
-								</ul>
-								</section>
-								<br>
-								<br>
-	  							<br>
-	  							Background
-	  							<p>In 2000, world leaders agreed on the Millennium Development Goals (MDGs). MDG 4 called for a two-thirds reduction in the under-5 mortality rate between 1990 and 2015. We aimed to estimate levels and trends in under-5 mortality for 195 countries from 1990 to 2015 to assess MDG 4 achievement and then intended to project how various post-2015 targets and observed rates of change will affect the burden of under-5 deaths from 2016 to 2030.</p>
-
-	  							Method
-	  							<p> We updated the UN Inter-agency Group for Child Mortality Estimation (UN IGME) database with 5700 country-year datapoints. As of July, 2015, the database contains about 17 000 country-year datapoints for mortality of children younger than 5 years for 195 countries, and includes all available nationally-representative data from vital registration systems, population censuses, household surveys, and sample registration systems. We used these data to generate estimates, with uncertainty intervals, of under-5 (age 0–4 years) mortality using a Bayesian B-spline bias-reduction model (B3 model). This model includes a data model to adjust for systematic biases associated with different types of data sources. To provide insights into the global and regional burden of under-5 deaths associated with post-2015 targets, we constructed five scenario-based projections for under-5 mortality from 2016 to 2030 and estimated national, regional, and global under-5 mortality rates up to 2030 for each scenario.
-	  							</p>
-	  							Findings
-	  							<p>The global under-5 mortality rate has fallen from 90·6 deaths per 1000 livebirths (90% uncertainty interval 89·3–92·2) in 1990 to 42·5 (40·9–45·6) in 2015. During the same period, the annual number of under-5 deaths worldwide dropped from 12·7 million (12·6 million–13·0 million) to 5·9 million (5·7 million–6·4 million). The global under-5 mortality rate reduced by 53% (50–55%) in the past 25 years and therefore missed the MDG 4 target. Based on point estimates, two regions—east Asia and the Pacific, and Latin America and the Caribbean—achieved the MDG 4 target. 62 countries achieved the MDG 4 target, of which 24 were low-income and lower-middle income countries. Between 2016 and 2030, 94·4 million children are projected to die before the age of 5 years if the 2015 mortality rate remains constant in each country, and 68·8 million would die if each country continues to reduce its mortality rate at the pace estimated from 2000 to 2015. If all countries achieve the Sustainable Development Goal of an under-5 mortality rate of 25 or fewer deaths per 1000 livebirths by 2030, we project 56·0 million deaths by 2030. About two-thirds of all sub-Saharan African countries need to accelerate progress to achieve this target.</p>
-
-	  							Interpretation
-	  							<p>Despite substantial progress in reducing child mortality, concerted efforts remain necessary to avoid preventable under-5 deaths in the coming years and to accelerate progress in improving child survival further. Urgent actions are needed most in the regions and countries with high under-5 mortality rates, particularly those in sub-Saharan Africa and south Asia.</p>
-
-	  							Funding
-	  							<p>None.</p>
-
-	  						</div>
-	  					</div>
-	  				</div>
-
-	  				<div class="card mb-4" data-tag='child'>
-	  					<div class="card-body">
-	  						<p class="card-title" data-toggle="collapse" data-target="#demo35">
-	  							<a><strong>National and regional under-5 mortality rate by
-	  							economic status for low-income and middle-income countries: a systematic assessment.</strong></a> </p>
-	  							<p class="card-text">  F Chao, D You, J Pedersen, L Hug, L Alkema (2019). <i>The Lancet
-	  							Global Health</i> 6(5): e535-e547.
-	  						</p>
-	  						<div id="demo35" class="collapse">
-
-	  							              					<ul class="breadcrumb">
-								<a href="https://www.sciencedirect.com/science/article/pii/S2214109X18300597" target="_blank" class="pub-icon-text"><i class="fas fa-book"></i> full text </a>
-								</ul>
-								</section>
 								<br>
 								<br>
 	  							<br>
