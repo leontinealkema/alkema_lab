@@ -52,7 +52,7 @@ used here that would contain all other page content.*/
 
 /* a class edit*/
 .text-link {
-  color: #6a6ae2!important;
+  color: #6a6ae2;
 }
 
 
@@ -124,8 +124,8 @@ used here that would contain all other page content.*/
 
   /* space between words? */
   .navbar {
-    /*padding: .8rem; important;*/
-    padding: 0;
+    padding-top: .8rem; important;
+    padding-bottom: .8rem;  important;
     /*border-bottom: 2px solid grey;*/
     margin-bottom: 0 auto;
   }
@@ -139,13 +139,7 @@ used here that would contain all other page content.*/
     font-size: 1.1em; !important;
   }
 
-  .nav-link-index {
-    /*color: #6a6ae2;*/
-  }
-    .nav-link-index:hover {
-    /*color: #ddd;*/
-    text-decoration: none;
-  }
+
 
 
 .footer-text {
@@ -165,26 +159,6 @@ used here that would contain all other page content.*/
 }
 
 
-  #myNav {
-    color: #fff !important;
-  }
-
-  #myNav:hover {
-    color: #fff !important;
-  }
-
-
-.navbar-nav>li a{
-  border-right: 1px solid white;
-}
-.navbar-nav>li:first-child{
-   border-left: 1px solid white;
-}
-
-.navbar-nav li:hover{
-  background-color: #6a6ae2;    /*#6a6ae2;*/
-
-}
 
 .custombetween {
   display: flex;
